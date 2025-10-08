@@ -3,31 +3,6 @@
 import { useCallback, useEffect } from "react"
 
 export function useNiceSelect() {
-	const initializeNiceSelect = useCallback(() => {
-		const selects = document.querySelectorAll<HTMLSelectElement>("select")
-
-		selects.forEach((select) => {
-			// Skip if already initialized
-			if (select.nextElementSibling?.classList.contains("nice-select")) return
-
-			// Hide native select
-			select.style.display = "none"
-
-			// Create custom markup
-			createNiceSelect(select)
-		})
-	}, [])
-
-	useEffect(() => {
-		initializeNiceSelect()
-
-		// Cleanup on unmount
-		return () => {
-			document.querySelectorAll<HTMLElement>(".nice-select").forEach((el) => el.remove())
-			document.querySelectorAll<HTMLSelectElement>("select").forEach((el) => (el.style.display = ""))
-		}
-	}, [initializeNiceSelect])
-
 	function createNiceSelect(select: HTMLSelectElement) {
 		// Create wrapper element
 		const dropdown = document.createElement("div")
@@ -220,6 +195,31 @@ export function useNiceSelect() {
 		}
 		return prev
 	}
+
+	const initializeNiceSelect = useCallback(() => {
+		const selects = document.querySelectorAll<HTMLSelectElement>("select")
+
+		selects.forEach((select) => {
+			// Skip if already initialized
+			if (select.nextElementSibling?.classList.contains("nice-select")) return
+
+			// Hide native select
+			select.style.display = "none"
+
+			// Create custom markup
+			createNiceSelect(select)
+		})
+	}, [])
+
+	useEffect(() => {
+		initializeNiceSelect()
+
+		// Cleanup on unmount
+		return () => {
+			document.querySelectorAll<HTMLElement>(".nice-select").forEach((el) => el.remove())
+			document.querySelectorAll<HTMLSelectElement>("select").forEach((el) => (el.style.display = ""))
+		}
+	}, [initializeNiceSelect])
 
 	return { initializeNiceSelect }
 }

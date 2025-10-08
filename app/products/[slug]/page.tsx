@@ -17,8 +17,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 }
 
-export default function ProductPage({ params }: { params: { slug: string } }) {
-  const product: any = (pumpsData as any)[params.slug]
+export default async function ProductPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params
+  const product: any = (pumpsData as any)[slug]
   if (!product) {
     notFound()
   }
