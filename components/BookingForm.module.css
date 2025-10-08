@@ -1,0 +1,97 @@
+/* BookingForm.module.css */
+.bookingForm {
+  max-width: 360px;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #fff;
+}
+
+.bookingForm:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.formGroup {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.formGroup input,
+.formGroup textarea {
+  width: 100%;
+  padding: 16px 12px 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: transparent;
+  font-size: 14px;
+  outline: none;
+  color: #fff;
+  caret-color: #fff;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #ff6600;
+}
+
+.formGroup label {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 14px;
+  color: #fff;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+/* Floating label behavior */
+.formGroup input:focus + label,
+.formGroup input:not(:placeholder-shown) + label,
+.formGroup textarea:focus + label,
+.formGroup textarea:not(:placeholder-shown) + label {
+  top: -8px;
+  left: 8px;
+  font-size: 12px;
+  background: var(--booking-bg, #fcfcf7);
+  padding: 0 4px;
+  color: #fff;
+}
+
+/* Placeholder color */
+.formGroup input::placeholder,
+.formGroup textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.error {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #e60000;
+}
+
+.charCount {
+  position: absolute;
+  bottom: 8px;
+  right: 12px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.btnSubmit {
+  width: 100%;
+  padding: 14px;
+  background: #ff6600;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btnSubmit:hover {
+  background: #e65c00;
+}

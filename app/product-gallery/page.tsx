@@ -1,0 +1,203 @@
+'use client'
+
+import { useState, useEffect } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+import Layout from '@/components/layout/Layout'
+import { pumpsData } from '@/app/products/_data'
+
+export default function ProductGallery() {
+  const [selectedCategory, setSelectedCategory] = useState('All')
+  const [filteredProducts, setFilteredProducts] = useState(Object.entries(pumpsData))
+
+  const categories = ['All', 'Process', 'Chemical', 'High Temperature', 'Slurry', 'Multistage']
+
+  useEffect(() => {
+    const query = selectedCategory.toLowerCase()
+    if (selectedCategory === 'All') {
+      setFilteredProducts(Object.entries(pumpsData))
+    } else {
+      const filtered = Object.entries(pumpsData).filter(([slug, product]: any) => {
+        const title = product?.hero?.title?.toLowerCase?.() || ''
+        const subtitle = product?.hero?.subtitle?.toLowerCase?.() || ''
+        const seoTitle = product?.seo?.title?.toLowerCase?.() || ''
+        const seoDesc = product?.seo?.description?.toLowerCase?.() || ''
+        const applications: string = (product?.mainContent?.applications || []).join(' ').toLowerCase()
+        const specValues: string = (product?.quickSpecs || [])
+          .map((s: any) => `${s?.label || ''} ${s?.value || ''}`)
+          .join(' ')
+          .toLowerCase()
+        const haystack = `${title} ${subtitle} ${seoTitle} ${seoDesc} ${applications} ${specValues}`
+        return haystack.includes(query)
+      })
+      setFilteredProducts(filtered)
+    }
+  }, [selectedCategory])
+
+  return (
+    <Layout headerStyle={4} footerStyle={4}>
+      {/* Hero Section */}
+      <motion.section
+        className="hero-section"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <div className="container mx-auto px-4 py-16 text-center">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Our Pump Range</h1>
+            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+              Engineered pumping solutions for every industrial application
+            </p>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* Filter Categories */}
+      <motion.section
+        className="filter-section py-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, delay: 0.4 }}
+      >
+        <div className="container mx-auto px-4">
+          <div className="flex flex-wrap justify-center gap-4">
+            {categories.map((category, index) => (
+              <motion.button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`pg-filter-btn ${selectedCategory === category ? 'pg-active' : ''}`}
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                {category}
+              </motion.button>
+            ))}
+          </div>
+        </div>
+      </motion.section>
+
+      {/* Products Grid */}
+      <section className="products-grid py-16">
+        <div className="container mx-auto px-4">
+          <motion.div className="grid" layout>
+            {filteredProducts.map(([slug, product]: any, index: number) => (
+              <ProductCard key={slug} slug={slug} product={product} index={index} />
+            ))}
+          </motion.div>
+        </div>
+      </section>
+    </Layout>
+  )
+}
+
+// Product Card Component with Advanced Animations
+function ProductCard({ slug, product, index }: { slug: string; product: any; index: number }) {
+  const [isHovered, setIsHovered] = useState(false)
+
+  return (
+    <motion.div
+      className="product-card group"
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: index * 0.1 }}
+      layout
+      whileHover={{ y: -10 }}
+      onHoverStart={() => setIsHovered(true)}
+      onHoverEnd={() => setIsHovered(false)}
+    >
+      <Link href={`/products/${slug}`}>
+        <div className="pg-card relative overflow-hidden">
+          {/* Image Container with Overlay */}
+          <div className="pg-image">
+            <motion.div className="pg-image-inner" whileHover={{ scale: 1.1 }} transition={{ duration: 0.6 }}>
+              {product?.hero?.mainImage ? (
+                <Image
+                  src={product.hero.mainImage}
+                  alt={product?.hero?.title || 'product'}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              ) : (
+                <div className="loading-shimmer" style={{ width: '100%', height: '100%' }} />
+              )}
+            </motion.div>
+
+            {/* Animated Overlay */}
+            <motion.div
+              className="pg-overlay"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: isHovered ? 1 : 0 }}
+              transition={{ duration: 0.3 }}
+            />
+
+            {/* Hover Content */}
+            <motion.div
+              className="pg-hover-center"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: isHovered ? 1 : 0, scale: isHovered ? 1 : 0.8 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="pg-overlay-content">
+                <motion.div
+                  className="pg-action-circle"
+                  whileHover={{ scale: 1.1, rotate: 360 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <svg className="pg-action-icon" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                  </svg>
+                </motion.div>
+                <p className="font-semibold">View Details</p>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Content Section */}
+          <div className="pg-content">
+            <motion.h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-orange-500 transition-colors" layoutId={`title-${slug}`}>
+              {product?.hero?.title}
+            </motion.h3>
+
+            <motion.p className="line-clamp-2" layoutId={`subtitle-${slug}`}>
+              {product?.hero?.subtitle}
+            </motion.p>
+
+            {/* Specs Pills */}
+            <div className="pg-specs">
+              {product?.quickSpecs?.slice?.(0, 2)?.map((spec: any, idx: number) => (
+                <motion.span
+                  key={idx}
+                  className="pg-spec-pill"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: idx * 0.1 }}
+                >
+                  {spec.label}
+                </motion.span>
+              ))}
+            </div>
+
+            {/* Action Button */}
+            <motion.button
+              className="pg-button"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              View Specifications
+            </motion.button>
+          </div>
+        </div>
+      </Link>
+    </motion.div>
+  )
+}

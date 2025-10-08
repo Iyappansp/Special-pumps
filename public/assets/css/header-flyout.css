@@ -1,0 +1,70 @@
+/* base */
+.main-menu ul { list-style: none; margin: 0; padding: 0; }
+.main-menu li { position: relative; }
+
+/* top-level dropdown */
+.main-menu .has-dropdown > .dropdown-padding {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 280px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: all .18s ease;
+  z-index: 50;
+}
+.main-menu .has-dropdown:hover > .dropdown-padding,
+.main-menu .has-dropdown:focus-within > .dropdown-padding {
+  opacity: 1; visibility: visible; transform: translateY(0);
+}
+
+/* level-1 items */
+.main-menu .dropdown-padding > li > a {
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 12px; padding: 10px 14px; color: #0f172a; text-decoration: none;
+}
+.main-menu .dropdown-padding > li > a:hover { background: #f1f5f9; }
+
+/* flyout for Product Specification (hidden by default) */
+.main-menu .has-flyout > .flyout {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 300px;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,.08);
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  padding: 10px 0;
+  opacity: 0; visibility: hidden; transform: translateX(8px);
+  transition: all .18s ease;
+}
+
+/* show flyout only when hovering “Product Specification” */
+.main-menu .has-flyout:hover > .flyout,
+.main-menu .has-flyout:focus-within > .flyout {
+  opacity: 1; visibility: visible; transform: translateX(0);
+}
+
+/* flyout item styling */
+.main-menu .flyout > li > a {
+  display: block; padding: 9px 14px; color: #0f172a; text-decoration: none;
+}
+.main-menu .flyout > li > a:hover { background: #eef2ff; }
+
+/* small screens: make submenus stack instead of flyout */
+@media (max-width: 992px) {
+  .main-menu .has-dropdown > .dropdown-padding,
+  .main-menu .has-flyout > .flyout {
+    position: static; transform: none; opacity: 1; visibility: visible;
+    box-shadow: none; border: 0; min-width: 100%; padding: 0;
+  }
+  .main-menu .dropdown-padding > li > a,
+  .main-menu .flyout > li > a { padding: 12px 10px; }
+}
