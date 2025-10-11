@@ -5,20 +5,24 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import Layout from '@/components/layout/Layout'
-import { pumpsData } from '@/app/products/_data'
+import { allowedProductSlugs, curatedProductsData } from '@/app/products/_data/curated'
 
 export default function ProductGallery() {
   const [selectedCategory, setSelectedCategory] = useState('All')
-  const [filteredProducts, setFilteredProducts] = useState(Object.entries(pumpsData))
+  const [filteredProducts, setFilteredProducts] = useState(
+    allowedProductSlugs.map((slug) => [slug, (curatedProductsData as any)[slug]]) as any
+  )
 
   const categories = ['All', 'Process', 'Chemical', 'High Temperature', 'Slurry', 'Multistage']
 
   useEffect(() => {
     const query = selectedCategory.toLowerCase()
     if (selectedCategory === 'All') {
-      setFilteredProducts(Object.entries(pumpsData))
+      setFilteredProducts(allowedProductSlugs.map((slug) => [slug, (curatedProductsData as any)[slug]]) as any)
     } else {
-      const filtered = Object.entries(pumpsData).filter(([slug, product]: any) => {
+      const filtered = allowedProductSlugs
+        .map((slug) => [slug, (curatedProductsData as any)[slug]])
+        .filter(([slug, product]: any) => {
         const title = product?.hero?.title?.toLowerCase?.() || ''
         const subtitle = product?.hero?.subtitle?.toLowerCase?.() || ''
         const seoTitle = product?.seo?.title?.toLowerCase?.() || ''
@@ -30,7 +34,7 @@ export default function ProductGallery() {
           .toLowerCase()
         const haystack = `${title} ${subtitle} ${seoTitle} ${seoDesc} ${applications} ${specValues}`
         return haystack.includes(query)
-      })
+      }) as any
       setFilteredProducts(filtered)
     }
   }, [selectedCategory])
@@ -38,26 +42,27 @@ export default function ProductGallery() {
   return (
     <Layout headerStyle={4} footerStyle={4}>
       {/* Hero Section */}
-      <motion.section
-        className="hero-section"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-      >
-        <div className="container mx-auto px-4 py-16 text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-          >
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Our Pump Range</h1>
-            <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-              Engineered pumping solutions for every industrial application
-            </p>
-          </motion.div>
-        </div>
-      </motion.section>
-
+      <div className="hero-inner-section-area-sidebar">
+						<img src="/assets/img/all-images/hero/hero-img1.png" alt="Special Pumps" className="hero-img1" />
+						<div className="container">
+							<div className="row">
+								<div className="col-lg-12">
+									<div className="hero-header-area text-center">
+										<Link href="/">Home <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+											<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+											</path>
+										</svg> Listing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+												<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+												</path>
+											</svg>Product Gallery</Link>
+										<div className="space24" />
+										<h1>Product Gallery</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+<br /><br />
       {/* Filter Categories */}
       <motion.section
         className="filter-section py-8"

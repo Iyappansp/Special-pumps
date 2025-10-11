@@ -59,7 +59,7 @@ export default function Testimonial4() {
 								<div className="heading3  text-center">
 									<h5>our testimonials</h5>
 									<div className="space20" />
-									<h2 className="text-anime-style-3">Feedback Our Investor</h2>
+									<h2 className="text-anime-style-3">Feedback From Our Clients</h2>
 								</div>
 							</div>
 						</div>

@@ -22,7 +22,7 @@ import Footer4 from './footer/Footer4'
 // import Header1 from "./header/Header1"
 // import Header2 from './header/Header2'
 // import Header3 from './header/Header3'
-import Header4 from './header/Header4'
+import Header4Fixed from './header/Header4Fixed'
 // import Header5 from './header/Header5'
 import MobileMenu from './MobileMenu'
 import Search from './Search'
@@ -75,7 +75,7 @@ export default function Layout({ headerStyle, footerStyle, breadcrumbTitle, chil
 			{/* {headerStyle == 1 ? <Header1 /> : null}
 			{headerStyle == 2 ? <Header2 /> : null}
 			{headerStyle == 3 ? <Header3 /> : null} */}
-			{headerStyle == 4 ? <Header4 /> : null}
+			{headerStyle == 4 ? <Header4Fixed /> : null}
 			{/* {headerStyle == 5 ? <Header5 /> : null} */}
 			<Search />
 			<MobileMenu isMobileMenu={isMobileMenu} handleMobileMenu={handleMobileMenu} />

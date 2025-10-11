@@ -1,0 +1,14 @@
+/* Position BackToTop above the floating phone icon */
+.progress-wrap {
+  /* Phone: bottom:24px; height:56px -> top of phone ≈ 80px; keep 16px gap */
+  bottom: 96px !important;
+  right: 24px; /* align with .fab-phone */
+}
+
+@media (max-width: 768px) {
+  .progress-wrap {
+    /* Phone mobile: bottom:20px; height:50px -> top ≈ 70px; keep ~16px gap */
+    bottom: 86px !important;
+    right: 20px;
+  }
+}

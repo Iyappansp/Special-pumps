@@ -26979,7 +26979,6 @@ Location:
 .swiper-pagination {
 	z-index: 9999 !important;
 }
-
 .image-anime .swiper {
 	z-index: 10;
 }
@@ -26992,5 +26991,95 @@ Location:
 	display: block;
 }
 
-/*============= WORK CSS AREA ===============*/
-/*# sourceMappingURL=main.css.map */
+/* Floating Action Buttons - Corner Positioning */
+.fab-whatsapp, .fab-phone {
+	position: fixed;
+	bottom: 24px;
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+	cursor: pointer;
+	transition: all 0.3s ease;
+	text-decoration: none;
+}
+
+.fab-whatsapp {
+	left: 24px;
+	background: #25D366;
+}
+.fab-whatsapp:hover {
+	background: #1ebd57;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+.fab-phone {
+	right: 24px;
+	background: #3b82f6;
+}
+.fab-phone:hover {
+	background: #2563eb;
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(59, 130, 246, 0.4);
+}
+
+ /* Scroll to Top Button - Right Side Middle Area */
+ .fab-scroll-top {
+     position: fixed;
+     right: 24px;
+     top: 15%;
+     transform: translateY(-50%);
+     width: 48px;
+     height: 48px;
+     border-radius: 50%;
+     z-index: 100;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: #374151;
+     color: white;
+     border: none;
+     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+     cursor: pointer;
+     transition: all 0.3s ease;
+ }
+
+.fab-scroll-top:hover {
+    background: #1f2937;
+    transform: translateY(-50%) translateY(-2px);
+    box-shadow: 0 6px 20px rgba(55, 65, 81, 0.4);
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 768px) {
+	.fab-whatsapp, .fab-phone {
+		width: 50px;
+		height: 50px;
+		bottom: 20px;
+	}
+	
+	.fab-whatsapp {
+		left: 20px;
+	}
+	
+	.fab-phone {
+		right: 20px;
+	}
+	
+	.fab-scroll-top {
+		width: 44px;
+		height: 44px;
+		right: 20px;
+		top: 22%;
+	}
+	
+	.fab-scroll-top svg {
+		width: 18px;
+		height: 18px;
+	}
+}

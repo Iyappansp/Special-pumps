@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import Link from 'next/link'
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -37,7 +37,7 @@ export default function Properties4() {
 									<h2 className="text-anime-style-3">Our Featured Products</h2>
 								</div>
 								<div className="btn-area1">
-									<Link href="/sidebar-grid" className="theme-btn5">See All Products <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+									<Link href="/product-gallery" className="theme-btn5">See All Products <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 										<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 									</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 										<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -131,9 +131,9 @@ export default function Properties4() {
 															<li><Link href="/#">For Rent</Link></li>
 														</ul>
 														<div className="content-area">
-															<Link href="/property-details-v1" className="head">Back Pullout And Processed Pump</Link>
+															<Link href="/products/chemical-process" className="head">Back Pullout And Processed Pump</Link>
 															<div className="space16" />
-															<p> End‑suction centrifugal with easy motor-back‑pullout service for fast maintenance.</p>
+															<p> Endâ€‘suction centrifugal with easy motor-backâ€‘pullout service for fast maintenance.</p>
 															<div className="space24" />
 															{/* <ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -170,7 +170,7 @@ export default function Properties4() {
 															<li><Link href="/#">For Rent</Link></li>
 														</ul>
 														<div className="content-area">
-															<Link href="/property-details-v1" className="head">Process Pump and Stainless Steel Pump</Link>
+															<Link href="/products/stainless-steel" className="head">Process Pump and Stainless Steel Pump</Link>
 															<div className="space16" />
 															<p>Robust SS construction coupled to standard TEFC motors for chemical/process duty.</p>
 															{/* <div className="space24" /> */}
@@ -219,10 +219,10 @@ export default function Properties4() {
 															<li><Link href="/#">For Rent</Link></li>
 														</ul>
 														<div className="content-area">
-															<Link href="/property-details-v1" className="head">High Pressure Multistage Pumps
+															<Link href="/products/chemical-process" className="head">High Pressure Multistage Pumps
 </Link>
 															<div className="space16" />
-															<p>Multistage centrifugal design with greased antifriction bearings; vertical discharge for clear‑liquid high head</p>
+															<p>Multistage centrifugal design with greased antifriction bearings; vertical discharge for clearâ€‘liquid high head</p>
 															{/* <div className="space24" />
 															<ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -269,11 +269,11 @@ export default function Properties4() {
 															<li><Link href="/#">For Rent</Link></li>
 														</ul>
 														<div className="content-area">
-															<Link href="/property-details-v1" className="head">Polypropylene Pump
+															<Link href="/products/polypropylene" className="head">Polypropylene Pump
 
 </Link>
 															<div className="space16" />
-															<p>Non‑metallic wetted parts; couples with standard motors using ceramic/SS/Hastelloy sleeves for corrosives.</p>
+															<p>Nonâ€‘metallic wetted parts; couples with standard motors using ceramic/SS/Hastelloy sleeves for corrosives.</p>
 															{/* <div className="space24" />
 															<ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -323,9 +323,9 @@ export default function Properties4() {
 															<li><Link href="/#">For Rent</Link></li>
 														</ul>
 														<div className="content-area">
-															<Link href="/property-details-v1" className="head">Filter Press Pump</Link>
+															<Link href="/products/filter-press" className="head">Filter Press Pump</Link>
 															<div className="space16" />
-															<p>Filter press pump with self‑priming capability; suitable for wastewater and sludge handling.</p>
+															<p>Filter press pump with selfâ€‘priming capability; suitable for wastewater and sludge handling.</p>
 															{/* <div className="space24" />
 															<ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -362,12 +362,12 @@ export default function Properties4() {
 															<li><Link href="/#">For Rent</Link></li>
 														</ul>
 														<div className="content-area">
-															<Link href="/property-details-v1" className="head">Rotary Gear Pump
+															<Link href="/products/chemical-process" className="head">Rotary Gear Pump
 
 
 </Link>
 															<div className="space16" />
-															<p>External gear positive‑displacement; pairs with geared/TEFC motors for viscous fluids and smooth flow.</p>
+															<p>External gear positiveâ€‘displacement; pairs with geared/TEFC motors for viscous fluids and smooth flow.</p>
 															{/*<div className="space24" />
 															 <ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -408,11 +408,11 @@ export default function Properties4() {
 															<li><Link href="/#">For Rent</Link></li>
 														</ul>
 														<div className="content-area">
-															<Link href="/property-details-v1" className="head">Horizontal Non‑Clog Pump
+															<Link href="/property-details-v1" className="head">Horizontal Nonâ€‘Clog Pump
 
 </Link>
 															<div className="space16" />
-															<p>Horizontal non‑clog pump with self‑priming capability; suitable for wastewater and sludge handling.</p>
+															<p>Horizontal nonâ€‘clog pump with selfâ€‘priming capability; suitable for wastewater and sludge handling.</p>
 															{/* <div className="space24" />
 															<ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -449,11 +449,11 @@ export default function Properties4() {
 															<li><Link href="/#">For Rent</Link></li>
 														</ul>
 														<div className="content-area">
-															<Link href="/property-details-v1" className="head">Filter Press Pump
+															<Link href="/products/filter-press" className="head">Filter Press Pump
 
 </Link>
 															{/* <div className="space16" /> */}
-															<p>Filter press pump with self‑priming capability; suitable for wastewater and sludge handling.</p>
+															<p>Filter press pump with selfâ€‘priming capability; suitable for wastewater and sludge handling.</p>
 															{/* <div className="space24" />
 															<ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -610,9 +610,9 @@ export default function Properties4() {
 															<li><Link href="/#">For Rent</Link></li>
 														</ul>
 														<div className="content-area">
-															<Link href="/property-details-v1" className="head">Filter Press Pump</Link>
+															<Link href="/products/filter-press" className="head">Filter Press Pump</Link>
 															<div className="space16" />
-															<p>Filter press pump with self‑priming capability; suitable for wastewater and sludge handling.</p>
+															<p>Filter press pump with selfâ€‘priming capability; suitable for wastewater and sludge handling.</p>
 															{/* <div className="space24" />
 															<ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -733,9 +733,9 @@ export default function Properties4() {
 															<li><Link href="/#">For Rent</Link></li>
 														</ul>
 														<div className="content-area">
-															<Link href="/property-details-v1" className="head">Filter Press Pump</Link>
+															<Link href="/products/filter-press" className="head">Filter Press Pump</Link>
 															<div className="space16" />
-															<p>Filter press pump with self‑priming capability; suitable for wastewater and sludge handling.</p>
+															<p>Filter press pump with selfâ€‘priming capability; suitable for wastewater and sludge handling.</p>
 															{/* <div className="space24" />
 															<ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -1625,3 +1625,6 @@ export default function Properties4() {
 		</>
 	)
 }
+
+
+

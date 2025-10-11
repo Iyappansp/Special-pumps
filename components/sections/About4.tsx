@@ -70,7 +70,7 @@ export default function About4() {
 							<div className="about-heading heading3">
 								<h5 data-aos="fade-left" data-aos-duration={800}>About</h5>
 								<div className="space20" />
-								<h2 className="text-anime-style-3">Special Pumps by Rotomech Industries</h2>
+								<h2 className="text-anime-style-3">Special Pumps by  <br />Rotomech Industries</h2>
 								<div className="space18" />
 								<p data-aos="fade-left" data-aos-duration={900}>Manufacturer from Coimbatore delivering industrial pumps for process, chemical, hot oil, slurry, filtration, and dewatering applications. One range—many solutions.</p>
 								<div className="space32" />
