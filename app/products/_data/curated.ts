@@ -1,0 +1,135 @@
+import { pumpsData as allProducts } from './index'
+
+export const allowedProductSlugs = [
+  'chemical-process',
+  'filter-press',
+  'non-clog',
+  'polypropylene',
+  'stainless-steel',
+  'thermic-fluid',
+  'vacuum',
+] as const
+
+export type CuratedSlug = typeof allowedProductSlugs[number]
+
+export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://special-pumps.vercel.app'
+
+// Map curated slugs to exact files under public/images/motors (filenames preserved as-is)
+const heroImageBySlug: Record<CuratedSlug, string> = {
+  'chemical-process': '/images/motors/chemical-process-pumps .png',
+  'filter-press': '/images/motors/filter-press pumps.jpg',
+  'non-clog': '/images/motors/non-clog-pumps.png',
+  'polypropylene': '/images/motors/polypropylene-pumps.png',
+  'stainless-steel': '/images/motors/stainless-steel-pumps.png',
+  'thermic-fluid': '/images/motors/thermic-fluid-pumps.png',
+  'vacuum': '/images/motors/vaccum-pumps.png',
+}
+
+function mapSlug(slug: CuratedSlug): { key: string | null; title: string; description?: string } {
+  switch (slug) {
+    case 'chemical-process':
+      return { key: 'process-pump', title: 'Chemical Process Pumps', description: 'Chemical process pumps engineered for aggressive fluids with high efficiency and reliable sealing.' }
+    case 'stainless-steel':
+      return { key: 'process-pump', title: 'Stainless Steel Pumps', description: 'Industrial stainless steel pumps in SS316/SS304 for hygienic and corrosive service.' }
+    case 'filter-press':
+      return { key: 'filter-press-pump', title: 'Filter Press Pumps', description: 'Reliable press-feed pumping for filtration, sludge pumping and dewatering operations.' }
+    case 'non-clog':
+      return { key: 'horizontal-non-clog-pump', title: 'Non-Clog Pumps', description: 'Heavy-duty non-clog pumps designed to handle solids in suspension and slurry duties.' }
+    case 'polypropylene':
+      return { key: 'polypropylene-pump', title: 'Polypropylene Pumps', description: 'Non-metallic polypropylene pumps for acids, alkalis and corrosive media with robust construction.' }
+    case 'thermic-fluid':
+      return { key: 'thermic-fluid-hot-oil-pump', title: 'Thermic Fluid Pumps', description: 'High-temperature thermic fluid circulation up to 320°C with reinforced bearings and cooling.' }
+    case 'vacuum':
+      return { key: null, title: 'Vacuum Pumps', description: 'Industrial vacuum solutions for process and utility applications with dependable performance.' }
+  }
+}
+
+export function buildCuratedProduct(slug: CuratedSlug) {
+  const info = mapSlug(slug)
+  let base: any = info.key ? (allProducts as any)[info.key] : null
+
+  if (!base && slug === 'vacuum') {
+    base = {
+      seo: {
+        title: `${info.title} | Special Pumps — Specifications & Models`,
+        description: info.description,
+      },
+      hero: {
+        breadcrumbs: ['Home', 'Products', info.title],
+        title: info.title,
+        subtitle: 'Reliable vacuum generation for process and industrial applications',
+        mainImage: '/images/vacuum-hero.jpg',
+        gallery: [],
+      },
+      quickSpecs: [
+        { label: 'Type', value: 'Liquid ring / Rotary vane', icon: 'pump' },
+        { label: 'Capacity', value: 'Up to 500 m³/hr', icon: 'flow' },
+        { label: 'Vacuum', value: 'Down to 33 mbarA', icon: 'pressure' },
+        { label: 'Materials', value: 'CI / SS options', icon: 'material' },
+      ],
+      mainContent: {
+        general:
+          'Vacuum pumps engineered for reliable rough-vacuum service across filtration, priming, packaging and process utilities. Designed for continuous operation with low vibration and ease of maintenance.',
+        applications: ['Evacuation', 'Filtration assistance', 'Priming', 'Process vacuum', 'Packaging'],
+      },
+      specifications: {
+        'Typical Flow Range (m³/hr)': 'Up to 500',
+        'Typical Head Range (m)': '—',
+        'Typical Power Range (kW / HP)': '2–55 kW',
+        'Max Working Pressure (bar)': 'Ambient',
+        'Max Temp (°C)': '80',
+        'RPM (nominal)': '1450/2900',
+        'Seal Type(s)': 'Mechanical seal',
+        'Construction Materials': 'CI / SS304 / SS316',
+      },
+    }
+  }
+
+  if (!base && info.key) return null
+
+  // Ensure default spec fields
+  const defaultSpecs: Record<string, string> = {
+    'Typical Flow Range (m³/hr)': '—',
+    'Typical Head Range (m)': '—',
+    'Typical Power Range (kW / HP)': '—',
+    'Max Working Pressure (bar)': '—',
+    'Max Temp (°C)': '—',
+    'RPM (nominal)': '1450/2900',
+    'Solids Handling (mm / %)': '—',
+    'Viscosity Range (cP)': '—',
+    'Seal Type(s)': 'Mechanical seal / Gland packing',
+    'Construction Materials': '—',
+  }
+
+  const merged = {
+    ...base,
+    seo: {
+      ...base?.seo,
+      title: `${info.title} | Special Pumps — Specifications & Models`,
+      description: base?.seo?.description || info.description,
+      canonical: `${siteUrl}/products/${slug}`,
+    },
+    hero: {
+      ...base?.hero,
+      breadcrumbs: ['Home', 'Products', info.title],
+      title: info.title,
+    },
+    specifications: {
+      ...defaultSpecs,
+      ...(base?.specifications || {}),
+    },
+    slug,
+  }
+
+  // Override hero image per curated slug if provided in mapping
+  const overrideHero = heroImageBySlug[slug]
+  if (overrideHero) {
+    merged.hero = { ...merged.hero, mainImage: overrideHero }
+  }
+
+  return merged
+}
+
+export const curatedProductsData: Record<CuratedSlug, any> = Object.fromEntries(
+  allowedProductSlugs.map((s) => [s, buildCuratedProduct(s)!])
+) as Record<CuratedSlug, any>

@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import Slider from "react-slick"
 
 // import Header4 from "@/components/layout/header/Header4"
@@ -105,9 +105,9 @@ export default function AboutUs() {
 									<div className="about-heading heading1">
 										<h5 data-aos="fade-left" data-aos-duration={800}>About Special Pumps</h5>
 										<div className="space20" />
-										<h2 className="text-anime-style-3">Embrace the Excellence of Industrial Pump Engineering</h2>
+										<h2 className="text-anime-style-3">Excellence of Industrial Pump Engineering</h2>
 										<div className="space18" />
-										<p data-aos="fade-left" data-aos-duration={900}>Special Pumps, by Rotomech Industries, designs and manufactures robust pumping solutions for process, chemical, hot‑oil, slurry, filtration, and dewatering applications from Coimbatore, India.</p>
+										<p data-aos="fade-left" data-aos-duration={900}>Special Pumps, by Rotomech Industries, designs and manufactures robust pumping solutions for process, chemical, hotâ€‘oil, slurry, filtration, and dewatering applications from Coimbatore, India.</p>
 										<div className="space32" />
 										<div className="counter-boxes" data-aos="fade-left" data-aos-duration={1000}>
 											<div className="row">
@@ -137,7 +137,7 @@ export default function AboutUs() {
 										</div>
 										<div className="space32" />
 										<div className="btn-area1" data-aos="fade-left" data-aos-duration={1100}>
-											<Link href="/property-halfmap-grid" className="theme-btn1">See All Properties <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+											<Link href="/product-gallery" className="theme-btn1">See All Properties <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 											</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -167,18 +167,18 @@ export default function AboutUs() {
 									<div className="vission-mission-box">
 										<h3>Our Path to Real Estate Excellence</h3>
 										<div className="space24" />
-										<p>Our lineup includes Thermic Fluid Hot Oil, Polypropylene, Process & Stainless Steel, Back Pullout Process, High Pressure Multistage, Horizontal Non‑Clog, Filter Press, Rotary Gear, and Dewatering/Mud pumps.</p>
+										<p>Our lineup includes Thermic Fluid Hot Oil, Polypropylene, Process & Stainless Steel, Back Pullout Process, High Pressure Multistage, Horizontal Nonâ€‘Clog, Filter Press, Rotary Gear, and Dewatering/Mud pumps.</p>
 										<div className="space24" />
 										<h4>Our Mission</h4>
 										<div className="space16" />
-										<p>Deliver dependable, application‑matched pumps with quick service and long lifecycle value for industrial operations</p>
+										<p>Deliver dependable, applicationâ€‘matched pumps with quick service and long lifecycle value for industrial operations</p>
 										<div className="space24" />
 										<h4>Our Vision</h4>
 										<div className="space16" />
 										<p> Be a trusted manufacturing partner for critical fluid handling across Indian industry and global markets.</p>
 										<div className="space32" />
 										<div className="btn-area1">
-											<Link href="/property-halfmap-grid" className="theme-btn1">See All Properties <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+											<Link href="/product-gallery" className="theme-btn1">See All Properties <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 											</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -230,7 +230,7 @@ export default function AboutUs() {
 										<div className="space20" />
 										<h2 className="text-anime-style-3">Embrace the Elegance Our Exclusive Property</h2>
 										<div className="space18" />
-										<p data-aos="fade-left" data-aos-duration={900}>At Special Pumps, we’re redefining the way people
+										<p data-aos="fade-left" data-aos-duration={900}>At Special Pumps, weâ€™re redefining the way people
 											find, sell, and invest in properties. Our mission is to simplify real a estate by provide
 											innovative solutions, expert guidance.</p>
 										<div className="accordion" id="accordionExample">
@@ -276,7 +276,7 @@ export default function AboutUs() {
 										</div>
 										<div className="space32" />
 										<div className="btn-area1">
-											<Link href="/property-halfmap-grid" className="theme-btn1">See All Properties <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+											<Link href="/product-gallery" className="theme-btn1">See All Properties <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 											</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -318,13 +318,13 @@ export default function AboutUs() {
 												</div>
 												<div className="space24" />
 												<div className="content">
-													<Link href="/property-details-v1">Pump Selection & Sizing
+													<Link href="/products/chemical-process">Pump Selection & Sizing
 
 </Link>
 													<div className="space16" />
-													<p>Get the right pump for flow, head, temperature, and fluid compatibility across Thermic Fluid, Polypropylene, Process/SS, Multistage, Non‑Clog, Filter Press, Rotary Gear, and Dewatering ranges.</p>
+													<p>Get the right pump for flow, head, temperature, and fluid compatibility across Thermic Fluid, Polypropylene, Process/SS, Multistage, Nonâ€‘Clog, Filter Press, Rotary Gear, and Dewatering ranges.</p>
 													<div className="space24" />
-													<Link href="/property-details-v1" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+													<Link href="/products/chemical-process" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 														<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z">
 														</path>
 													</svg></Link>
@@ -341,13 +341,13 @@ export default function AboutUs() {
 												</div>
 												<div className="space24" />
 												<div className="content">
-													<Link href="/property-details-v1">Installation & Commissioning
+													<Link href="/products/chemical-process">Installation & Commissioning
 
 </Link>
 													<div className="space16" />
-													<p>Foundation, alignment, piping interface, and start‑up checks to put new or replacement pumps into reliable operation, fast,     </p>
+													<p>Foundation, alignment, piping interface, and startâ€‘up checks to put new or replacement pumps into reliable operation, fast,     </p>
 													<div className="space24" />
-													<Link href="/property-details-v1" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+													<Link href="/products/chemical-process" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 														<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z">
 														</path>
 													</svg></Link>
@@ -364,11 +364,11 @@ export default function AboutUs() {
 												</div>
 												<div className="space24" />
 												<div className="content">
-													<Link href="/property-details-v1">Renting A Home</Link>
+													<Link href="/products/chemical-process">Renting A Home</Link>
 													<div className="space16" />
 													<p>Preventive service, overhauls, seals, bearings, and OEM spares to maximize uptime and reduce lifecycle cost.</p>
 													<div className="space24" />
-													<Link href="/property-details-v1" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+													<Link href="/products/chemical-process" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 														<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z">
 														</path>
 													</svg></Link>
@@ -385,14 +385,14 @@ export default function AboutUs() {
 												</div>
 												<div className="space24" />
 												<div className="content">
-													<Link href="/property-details-v1">Performance Optimization
+													<Link href="/products/chemical-process">Performance Optimization
 </Link>
 													<div className="space16" />
 													<p>Troubleshooting and efficiency upgrades for hot oil, chemical, slurry, filtration, and dewatering duty cycles.
 
 </p>
 													<div className="space24" />
-													<Link href="/property-details-v1" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+													<Link href="/products/chemical-process" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 														<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z">
 														</path>
 													</svg></Link>
@@ -553,7 +553,7 @@ export default function AboutUs() {
 														<div className="space16" />
 														<p>"When I decided to sell my home, I was overwhelmed with where to start.
 															Special Pumps stepped in with a clear plan, professional marketing, constant
-															communicate. Within two weeks, my house was sold above asking.”</p>
+															communicate. Within two weeks, my house was sold above asking.â€</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -574,7 +574,7 @@ export default function AboutUs() {
 														<div className="space16" />
 														<p>"When I decided to sell my home, I was overwhelmed with where to start.
 															Special Pumps stepped in with a clear plan, professional marketing, constant
-															communicate. Within two weeks, my house was sold above asking.”</p>
+															communicate. Within two weeks, my house was sold above asking.â€</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -595,7 +595,7 @@ export default function AboutUs() {
 														<div className="space16" />
 														<p>"When I decided to sell my home, I was overwhelmed with where to start.
 															Special Pumps stepped in with a clear plan, professional marketing, constant
-															communicate. Within two weeks, my house was sold above asking.”</p>
+															communicate. Within two weeks, my house was sold above asking.â€</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -616,7 +616,7 @@ export default function AboutUs() {
 														<div className="space16" />
 														<p>"When I decided to sell my home, I was overwhelmed with where to start.
 															Special Pumps stepped in with a clear plan, professional marketing, constant
-															communicate. Within two weeks, my house was sold above asking.”</p>
+															communicate. Within two weeks, my house was sold above asking.â€</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -655,7 +655,7 @@ export default function AboutUs() {
 													<h2 className="text-anime-style-3">Step Into Your Dream Home with Special Pumps</h2>
 													<div className="space16" />
 													<p data-aos="fade-left" data-aos-duration={1000}>At Special Pumps, we believe your next
-														home is more than just a place – it’s where your future begins you’re buy.</p>
+														home is more than just a place â€“ itâ€™s where your future begins youâ€™re buy.</p>
 												</div>
 											</div>
 											<div className="col-lg-2" />

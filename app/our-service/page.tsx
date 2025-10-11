@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 import Slider from "react-slick"
 
 import Layout from "@/components/layout/Layout"
@@ -96,7 +96,7 @@ export default function OurService() {
 											<img src="/assets/img/all-images/project/project-img1.png" alt="Special Pumps" />
 										</div>
 										<div className="space40" />
-										<Link href="/property-details-v1" className="head">Pump Selection & Sizing</Link>
+										<Link href="/products/chemical-process" className="head">Pump Selection & Sizing</Link>
 										<div className="space16" />
 										<p>Get the right pump first time. Share flow, head, temperature, and fluid; receive a matched model and BOM.</p>
 										<div className="space24" />
@@ -115,7 +115,7 @@ export default function OurService() {
 											<img src="/assets/img/all-images/project/project-img2.png" alt="Special Pumps" />
 										</div>
 										<div className="space40" />
-										<Link href="/property-details-v1" className="head">Installation & Commissioning</Link>
+										<Link href="/products/chemical-process" className="head">Installation & Commissioning</Link>
 										<div className="space16" />
 										<p>Get the right pump first time. Share flow, head, temperature, and fluid; receive a matched model and BOM.</p>
 										<div className="space24" />
@@ -134,7 +134,7 @@ export default function OurService() {
 											<img src="/assets/img/all-images/project/project-img3.png" alt="Special Pumps" />
 										</div>
 										<div className="space40" />
-										<Link href="/property-details-v1" className="head">Maintenance & Spares
+										<Link href="/products/chemical-process" className="head">Maintenance & Spares
 
 </Link>
 										<div className="space16" />
@@ -190,7 +190,7 @@ export default function OurService() {
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p>"When I decided to sell my home, I was overwhelmed with where to start. Special Pumps stepped in with a clear plan, professional marketing, constant communicate. Within two weeks, my house was sold above asking.”</p>
+														<p>"When I decided to sell my home, I was overwhelmed with where to start. Special Pumps stepped in with a clear plan, professional marketing, constant communicate. Within two weeks, my house was sold above asking.â€</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -296,7 +296,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you’re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -308,7 +308,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you’re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -320,7 +320,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you’re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -332,7 +332,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you’re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -344,7 +344,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you’re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -356,7 +356,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you’re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -368,7 +368,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseSeven" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you’re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -390,13 +390,13 @@ export default function OurService() {
 												<div className="cta-header">
 													<h2 className="text-anime-style-3">Step Into Your Dream Home with Special Pumps</h2>
 													<div className="space16" />
-													<p data-aos="fade-left" data-aos-duration={1000}>At Special Pumps, we believe your next home is more than just a place – it’s where your future begins you’re buy.</p>
+													<p data-aos="fade-left" data-aos-duration={1000}>At Special Pumps, we believe your next home is more than just a place â€“ itâ€™s where your future begins youâ€™re buy.</p>
 												</div>
 											</div>
 											<div className="col-lg-2" />
 											<div className="col-lg-5" data-aos="zoom-in" data-aos-duration={1000}>
 												<div className="btn-area1 text-center">
-													<Link href="/sidebar-grid" className="theme-btn1">Find Your Dream Home <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+													<Link href="/product-gallery" className="theme-btn1">Find Your Dream Home <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 													</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -415,3 +415,4 @@ export default function OurService() {
 		</>
 	)
 }
+

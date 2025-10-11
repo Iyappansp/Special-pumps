@@ -1,0 +1,18 @@
+/* Footer list left alignment override, scoped to footer section to avoid side effects */
+.footer4-section-area .footer-content ul,
+.footer4-section-area .footer-content2 ul {
+  padding-left: 0; /* remove default ul indent */
+  margin-left: -8px; /* slight left nudge on desktop */
+}
+
+.footer4-section-area .footer-content ul li,
+.footer4-section-area .footer-content2 ul li {
+  text-align: left;
+}
+
+@media (max-width: 991.98px) {
+  .footer4-section-area .footer-content ul,
+  .footer4-section-area .footer-content2 ul {
+    margin-left: -6px; /* slightly less nudge on tablet/mobile */
+  }
+}

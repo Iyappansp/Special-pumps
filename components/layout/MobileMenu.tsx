@@ -80,15 +80,13 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
 										<Link href="/products">Product Specification</Link>
 										<span className={`submenu-button ${isSpecOpen ? "submenu-opened" : ""}`} onClick={() => setIsSpecOpen(!isSpecOpen)}><em></em></span>
 										<ul className="sub-menu" style={{ display: isSpecOpen ? "block" : "none" }}>
-											<li><Link href="/products/thermic-fluid-hot-oil-pump">Thermic Fluid Hot Oil Pump</Link></li>
-											<li><Link href="/products/process-pump">Process Pump and Stainless Steel Pump</Link></li>
-											<li><Link href="/products/polypropylene-pump">Polypropylene Pump</Link></li>
-											<li><Link href="/products/back-pullout-process-pump">Back Pullout Process Pump</Link></li>
-											<li><Link href="/products/horizontal-non-clog-pump">Horizontal Non-Clog Pump</Link></li>
-											<li><Link href="/products/filter-press-pump">Filter Press Pump</Link></li>
-											<li><Link href="/products/high-pressure-multistage-pump">High Pressure Multistage Pump</Link></li>
-											<li><Link href="/products/rotary-gear-pump">Rotary Gear Pump</Link></li>
-											<li><Link href="/products/dewatering-mud-pump">Dewatering / Mud Pump</Link></li>
+											<li><Link href="/products/chemical-process">Chemical Process Pumps</Link></li>
+											<li><Link href="/products/filter-press">Filter Press Pumps</Link></li>
+											<li><Link href="/products/non-clog">Non-Clog Pumps</Link></li>
+											<li><Link href="/products/polypropylene">Polypropylene Pumps</Link></li>
+											<li><Link href="/products/stainless-steel">Stainless Steel Pumps</Link></li>
+											<li><Link href="/products/thermic-fluid">Thermic Fluid Pumps</Link></li>
+											<li><Link href="/products/vacuum">Vacuum Pumps</Link></li>
 										</ul>
 									</li>
 									<li><Link href="/product-gallery">Product Gallery</Link></li>
