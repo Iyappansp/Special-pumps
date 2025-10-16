@@ -1,6 +1,79 @@
+'use client'
+import React, { useState } from 'react'
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
+
+type ContactFormValues = {
+  name: string;
+  phone: string;
+  message: string;
+}
+
+type ContactFormErrors = {
+  name?: string;
+  phone?: string;
+  message?: string;
+}
+
 export default function Contact() {
+  // Contact form state and handlers
+  const [values, setValues] = useState<ContactFormValues>({ name: '', phone: '', message: '' })
+  const [errors, setErrors] = useState<ContactFormErrors>({})
+  const [toast, setToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null)
+  const [submitting, setSubmitting] = useState(false)
+
+  const validate = (): boolean => {
+    const nextErrors: ContactFormErrors = {}
+    const name = values.name.trim()
+    if (!name || name.length < 2) nextErrors.name = 'Please enter a valid name.'
+    const phone = values.phone.trim()
+    if (!phone || !/^[0-9]{10,15}$/.test(phone)) nextErrors.phone = 'Enter a valid mobile number.'
+    const msg = values.message.trim()
+    if (!msg || msg.length > 500) nextErrors.message = 'Please add a short message (max 500 characters).'
+    setErrors(nextErrors)
+    return Object.keys(nextErrors).length === 0
+  }
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target
+    let v = value
+    if (name === 'phone') v = v.replace(/\D/g, '')
+    setValues(prev => ({ ...prev, [name]: v }))
+    setErrors(prev => ({ ...prev, [name]: undefined }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    if (!validate()) {
+      setToast({ message: 'Please check the highlighted fields.', type: 'error' })
+      setTimeout(() => setToast(null), 3500)
+      return
+    }
+    try {
+      setSubmitting(true)
+      const res = await fetch('/api/send-mail', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: values.name,
+          phone: values.phone,
+          message: values.message,
+        }),
+      })
+      const data = await res.json().catch(() => ({}))
+      if (res.ok && (data as any)?.success) {
+        setToast({ message: 'Message sent successfully ✅', type: 'success' })
+        setValues({ name: '', phone: '', message: '' })
+      } else {
+        setToast({ message: 'Failed to send message. Try again.', type: 'error' })
+      }
+    } catch (err) {
+      setToast({ message: 'Something went wrong.', type: 'error' })
+    } finally {
+      setTimeout(() => setToast(null), 3500)
+      setSubmitting(false)
+    }
+  }
 
 	return (
 		<>
@@ -95,42 +168,77 @@ export default function Contact() {
 								<div className="col-lg-5">
 									<div className="contact-form-area">
 										<h4>Get In Touch</h4>
-										<div className="row">
-											<div className="col-lg-12">
-												<div className="input-area">
-													<input type="text" placeholder="First Name" />
+										<form onSubmit={handleSubmit} noValidate>
+											<div className="row">
+												<div className="col-lg-12">
+													<div className="input-area">
+														<input 
+															type="text" 
+															name="name"
+															placeholder="Full Name" 
+															value={values.name}
+															onChange={handleChange}
+															aria-invalid={errors.name ? 'true' : 'false'}
+															aria-describedby="name-error"
+															autoComplete="name"
+															required 
+														/>
+														{errors.name && <div id="name-error" style={{ color: '#dc2626', fontSize: '0.875rem', marginTop: '4px' }}>{errors.name}</div>}
+													</div>
+												</div>
+												<div className="col-lg-12">
+													<div className="input-area">
+														<input 
+															type="tel" 
+															name="phone"
+															inputMode="tel"
+															pattern="[0-9\s+()\-]*"
+															placeholder="Phone Number" 
+															value={values.phone}
+															onChange={handleChange}
+															aria-invalid={errors.phone ? 'true' : 'false'}
+															aria-describedby="phone-error"
+															autoComplete="tel"
+															required 
+														/>
+														{errors.phone && <div id="phone-error" style={{ color: '#dc2626', fontSize: '0.875rem', marginTop: '4px' }}>{errors.phone}</div>}
+													</div>
+												</div>
+												<div className="col-lg-12">
+													<div className="input-area">
+														<textarea 
+															name="message"
+															placeholder="Your Message" 
+															value={values.message}
+															onChange={handleChange}
+															aria-invalid={errors.message ? 'true' : 'false'}
+															aria-describedby="message-error message-counter"
+															maxLength={500}
+															required 
+														/>
+														<div id="message-counter" style={{ fontSize: '0.75rem', color: '#6b7280', textAlign: 'right', marginTop: '4px' }} aria-live="polite" aria-atomic="true">{values.message.length}/500</div>
+														{errors.message && <div id="message-error" style={{ color: '#dc2626', fontSize: '0.875rem', marginTop: '4px' }}>{errors.message}</div>}
+													</div>
+												</div>
+												<div className="col-lg-12">
+													<div className="input-area">
+														<button type="submit" className="theme-btn5" disabled={submitting}>
+															{submitting ? 'Sending...' : 'Send Now'} 
+															<span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+																<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
+															</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+																<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
+															</svg></span>
+														</button>
+													</div>
 												</div>
 											</div>
-											{/* <div className="col-lg-12">
-												<div className="input-area">
-													<input type="text" placeholder="Last Name" />
-												</div>
-											</div> */}
-											{/* <div className="col-lg-12">
-												<div className="input-area">
-													<input type="email" placeholder="Email Address" />
-												</div>
-											</div> */}
-											<div className="col-lg-12">
-												<div className="input-area">
-													<input type="number" placeholder="Phone Number" />
-												</div>
+										</form>
+										{toast && (
+											<div role="status" aria-live="polite" style={{ position: 'fixed', top: 20, right: 20, background: toast.type === 'success' ? '#16a34a' : '#dc2626', color: '#fff', padding: '10px 14px', borderRadius: 8, boxShadow: '0 4px 12px rgba(0,0,0,0.2)', zIndex: 9999 }}>
+												{toast.message}
 											</div>
-											<div className="col-lg-12">
-												<div className="input-area">
-													<textarea placeholder="Your Message" />
-												</div>
-											</div>
-											<div className="col-lg-12">
-												<div className="input-area">
-													<span style={{ color: '#ff9800' }}></span><button type="submit" className="theme-btn5" >Send Now <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
-														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
-													</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
-														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
-													</svg></span></button>
-												</div>
-											</div>
-										</div>
+										)}
 									</div>
 								</div>
 							</div>

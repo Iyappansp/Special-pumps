@@ -17,6 +17,7 @@ import "/public/assets/css/footer-override.css"
 import "/public/assets/css/typography.css"
 import "/public/assets/css/privacy-policy-utilities.css"
 import "/public/assets/css/cta-override.css"
+import "/public/assets/css/product-cards.css"
 
 import StoreProvider from '@/features/StoreProvider'
 import FloatingContacts from '@/components/FloatingContacts'

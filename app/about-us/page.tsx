@@ -111,28 +111,31 @@ export default function AboutUs() {
 										<div className="space32" />
 										<div className="counter-boxes" data-aos="fade-left" data-aos-duration={1000}>
 											<div className="row">
-												<div className="col-lg-4 col-md-4 col-6">
-													<div className="counter-boxarea text-center">
-														<h2><CounterUp className="counter">0</CounterUp>K</h2>
-														<div className="space12" />
-														<p>Pumps Sold</p>
-													</div>
-												</div>
-												<div className="col-lg-4 col-md-4 col-6">
-													<div className="counter-boxarea text-center">
-														<h2><CounterUp className="counter">0</CounterUp>K</h2>
-														<div className="space12" />
-														<p>Happy Client</p>
-													</div>
-												</div>
-												<div className="col-lg-4 col-md-4 col-6">
-													<div className="space20 d-md-none d-block" />
-													<div className="counter-boxarea text-center">
-														<h2><CounterUp className="counter">0</CounterUp>%</h2>
-														<div className="space12" />
-														<p>Satisfaction Rate</p>
-													</div>
-												</div>
+											<div className="col-lg-4 col-md-4 col-6">
+  <div className="counter-boxarea text-center">
+    <h2><CounterUp end={150} /></h2>
+    <div className="space12" />
+    <p>Pumps Sold</p>
+  </div>
+</div>
+
+<div className="col-lg-4 col-md-4 col-6">
+  <div className="counter-boxarea text-center">
+    <h2><CounterUp end={100} /></h2>
+    <div className="space12" />
+    <p>Happy Clients</p>
+  </div>
+</div>
+
+<div className="col-lg-4 col-md-4 col-6">
+  <div className="space20 d-md-none d-block" />
+  <div className="counter-boxarea text-center">
+    <h2><CounterUp end={90} suffix="%" /></h2>
+    <div className="space12" />
+    <p>Satisfaction Rate</p>
+  </div>
+</div>
+
 											</div>
 										</div>
 										<div className="space32" />
@@ -554,7 +557,7 @@ export default function AboutUs() {
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p>"The Chemical Process Pumps from Rotomech have exceeded our expectations in both efficiency and build quality.</p>
+														<p>"When I decided to sell my home, I was overwhelmed with where to start. Special Pumps stepped in with a clear plan, professional marketing, constant communicate. Within two weeks, my house was sold above asking.</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -567,40 +570,21 @@ export default function AboutUs() {
 																	<p>Happy Client</p>
 																</div>
 															</div>
-															<img className="" src="\image.png" alt="Special Pumps" />
+															<img src="\image.png" alt="Special Pumps" width={100} height={100} className="brand1" />
 														</div>
 													</div>
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p>"We use their Thermic Fluid Pumps in 24/7 production, and the performance remains consistent. Truly dependable!</p>
+														<p>"Selling our home felt like a huge challenge until we found. Their team guided us every step of the way, from staging the property to negotiating offers. Within days, our home was sold for more than we expected."</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
 																<div className="img1">
-																	<img src="/assets/img/all-images/testimonial/testimonial-img2.png" alt="Special Pumps" />
+																	<img src="/assets/img/all-images/testimonial/testimonial-img3.png" alt="Special Pumps" />
 																</div>
 																<div className="text">
-																	<Link href="/#">Shakib Mahmud</Link>
-																	<div className="space10" />
-																	<p>Happy Client</p>
-																</div>
-															</div>
-															<img src="\image.png" alt="Special Pumps" className="brand1" />
-														</div>
-													</div>
-													<div className="testimonial-box">
-														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
-														<div className="space16" />
-														<p> “Our Filter Press Pumps run daily in sludge handling — zero leakage and smooth operation.”</p>
-														<div className="space32" />
-														<div className="test-images">
-															<div className="auhtor-area">
-																<div className="img1">
-																	<img src="/assets/img/all-images/testimonial/testimonial-img2.png" alt="Special Pumps" />
-																</div>
-																<div className="text">
-																	<Link href="/#">Shakib Mahmud</Link>
+																	<Link href="/#">Kumar P</Link>
 																	<div className="space10" />
 																	<p>Happy Client</p>
 																</div>
@@ -611,17 +595,34 @@ export default function AboutUs() {
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p> “The Polypropylene Pumps have outstanding chemical resistance and require minimal maintenance.”
-
-														</p>
+														<p>"We were first-time buyers, and the process seemed daunting. made everything so simple and stress-free. They listened to our needs, showed us perfect options"</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
 																<div className="img1">
-																	<img src="/assets/img/all-images/testimonial/testimonial-img2.png" alt="Special Pumps" />
+																	<img src="/assets/img/all-images/testimonial/testimonial-img4.png" alt="Special Pumps" />
 																</div>
 																<div className="text">
-																	<Link href="/#">Shakib Mahmud</Link>
+																	<Link href="/#">Sasi K</Link>
+																	<div className="space10" />
+																	<p>Happy Client</p>
+																</div>
+															</div>
+															<img src="\image.png" alt="Special Pumps" className="brand1" />
+														</div>
+													</div>
+													<div className="testimonial-box">
+														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
+														<div className="space16" />
+														<p>"I relocated for work and needed to sell my house quickly. [Your Real Estate Agency] delivered! They handled everything smoothly, and I could focus on my move without worry. I highly recommend their services."</p>
+														<div className="space32" />
+														<div className="test-images">
+															<div className="auhtor-area">
+																<div className="img1">
+																	<img src="/assets/img/all-images/testimonial/testimonial-img5.png" alt="Special Pumps" />
+																</div>
+																<div className="text">
+																	<Link href="/#">Kumaresan</Link>
 																	<div className="space10" />
 																	<p>Happy Client</p>
 																</div>
@@ -639,7 +640,7 @@ export default function AboutUs() {
 					</div>
 					{/*===== TESTIMONIAL AREA ENDS =======*/}
 					<div className="space100 d-lg-block d-none" />
-					<div className="space50 d-lg-none d-block" />
+					{/* <div className="space50 d-lg-none d-block" /> */}
 					{/*===== CTA AREA STARTS =======*/}
 					<div className="cta1-section-area">
 						<div className="container">
