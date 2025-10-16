@@ -8,7 +8,7 @@ export default function Contact() {
 			<Layout headerStyle={4} footerStyle={4}>
 				<div>
 					<div className="hero-inner-section-area-sidebar">
-						<img src="/assets/img/all-images/hero/hero-img1.png" alt="Special Pumps" className="hero-img1" />
+						<img src="/property/hero-img.webp" alt="Special Pumps" className="hero-img1" />
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-12">
@@ -36,7 +36,7 @@ export default function Contact() {
 										<div className="space32" />
 										<h2>Let’s Start the Conversation</h2>
 										<div className="space24" />
-										<p>At Special Pumps, we value communication and are here to assist with all your real estate needs. Whether you’re buying, selling, renting, or managing a property, our dedicated team is ready to provide guidance and support. Reach out to us via phone, email, or visit our office—we’re here to make your real estate journey as smooth and successful as possible. Let’s turn your property goals into reality!</p>
+										<p>At Special Pumps, clear communication drives reliable performance. Whether you need help selecting a non‑clog sewage pump, sizing a thermic fluid unit for high‑temperature service, specifying corrosion‑resistant polypropylene or stainless‑steel construction, or optimizing an existing process line, the engineering team is ready to assist end‑to‑end. Share your duty conditions—flow, head, temperature, viscosity, solids handling, and NPSH—and receive an application‑matched recommendation, performance data, and a transparent quote. From RFQs and site surveys to installation, commissioning, spares, and maintenance.</p>
 										<div className="space40" />
 										<div className="number-address-area">
 											<div className="phone-number">
@@ -46,8 +46,10 @@ export default function Contact() {
 													</svg>
 												</div>
 												<div className="content">
-													<p>Phone Number</p>
-													<Link href="/tel:123-456-7890">123-456-7890</Link>
+													{/* <p>Phone Number</p> */}
+													<div className="content">
+														<Link href="/tel:123-456-7890">91 98430 18058</Link>
+													</div>
 												</div>
 											</div>
 											<div className="phone-number m-0">
@@ -57,8 +59,8 @@ export default function Contact() {
 													</svg>
 												</div>
 												<div className="content">
-													<p>Email Address</p>
-													<Link href="/mailto:Infoseoc@gmail.com">Special Pumps@gmail.com</Link>
+													{/* <p>Email Address</p> */}
+													<Link href="/mailto:Infoseoc@gmail.com"> info@specialpumps.com</Link>
 												</div>
 											</div>
 										</div>
@@ -71,22 +73,22 @@ export default function Contact() {
 													</svg>
 												</div>
 												<div className="content">
-													<Link href="/#">8708 Technology Forest Pl Suite <br className="d-lg-block d-none" /> 125 -G, The Woodlands, TX 773</Link>
+													<Link href="/#">5/593-B, Kuppanaickanpalayam Road,Thadagam Road,<br className="d-lg-block d-none" />  Kanuvai Post,Tamil Nadu, India.</Link>
 												</div>
 											</div>
-											<div className="phone-number">
+											{/* <div className="phone-number">
 												<Link href="/https://www.google.com/maps/@24.0098057,88.9892437,15z?entry=ttu" className="map" target="_blank">View Our Map</Link>
-											</div>
+											</div> */}
 										</div>
 										<div className="space40" />
-										<div className="social">
-											<ul>
-												<li><Link href="/#"><i className="fa-brands fa-facebook-f" /></Link></li>
+										{/* <div className="social no-left-padding">
+											<ul no-left-padding>
+												<li><Link href="/#"><i className="fa-brands fa-facebook-f" /></Link></li> 
 												<li><Link href="/#"><i className="fa-brands fa-linkedin-in" /></Link></li>
 												<li><Link href="/#"><i className="fa-brands fa-instagram" /></Link></li>
 												<li><Link href="/#"><i className="fa-brands fa-youtube" /></Link></li>
 											</ul>
-										</div>
+										</div> */}
 									</div>
 								</div>
 								<div className="col-lg-1" />
@@ -99,16 +101,16 @@ export default function Contact() {
 													<input type="text" placeholder="First Name" />
 												</div>
 											</div>
-											<div className="col-lg-12">
+											{/* <div className="col-lg-12">
 												<div className="input-area">
 													<input type="text" placeholder="Last Name" />
 												</div>
-											</div>
-											<div className="col-lg-12">
+											</div> */}
+											{/* <div className="col-lg-12">
 												<div className="input-area">
 													<input type="email" placeholder="Email Address" />
 												</div>
-											</div>
+											</div> */}
 											<div className="col-lg-12">
 												<div className="input-area">
 													<input type="number" placeholder="Phone Number" />
@@ -121,7 +123,7 @@ export default function Contact() {
 											</div>
 											<div className="col-lg-12">
 												<div className="input-area">
-													<button type="submit" className="theme-btn1">Send Now <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+													<span style={{ color: '#ff9800' }}></span><button type="submit" className="theme-btn5" >Send Now <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 													</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -134,7 +136,7 @@ export default function Contact() {
 							</div>
 						</div>
 					</div>
-					<div className="location-section-area sp2" style={{ backgroundImage: 'url(assets/img/all-images/bg/bg1.png)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+					<div className="location-section-area sp2">
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-4 m-auto">
@@ -145,7 +147,7 @@ export default function Contact() {
 									</div>
 								</div>
 							</div>
-							<div className="row">
+							{/* <div className="row">
 								<div className="col-lg-4 col-md-6">
 									<div className="location-boxes">
 										<div className="img1">
@@ -197,10 +199,10 @@ export default function Contact() {
 										<Link href="/https://www.google.com/maps/@24.0098057,88.9892437,15z?entry=ttu" className="map" target="_blank">View Our Map</Link>
 									</div>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
-					<div className="mapouter">
+					<div className="mapouter text-center">
 						<div className="gmap_canvas">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4506257.120552435!2d88.67021924228865!3d21.954385721237916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1704088968016!5m2!1sen!2sbd" width={600} height={450} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
 						</div>
@@ -212,7 +214,7 @@ export default function Contact() {
 							<div className="row">
 								<div className="col-lg-6 m-auto">
 									<div className="heading1 text-center space-margin60">
-										<h5>FAQ,s</h5>
+										<h5>FAQ</h5>
 										<div className="space20" />
 										<h2>Frequently Asked Question</h2>
 									</div>
@@ -249,7 +251,7 @@ export default function Contact() {
 											<div className="accordion-item">
 												<h2 className="accordion-header">
 													<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-														Can I find rental properties on Special Pumps?
+														Can I find rental Products on Special Pumps?
 													</button>
 												</h2>
 												<div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -322,7 +324,7 @@ export default function Contact() {
 										<div className="row align-items-center">
 											<div className="col-lg-5">
 												<div className="cta-header">
-													<h2 className="text-anime-style-3">Step Into Your Dream Home with Special Pumps</h2>
+													<h2 className="text-anime-style-3">Step Into Your Home with Special Pumps</h2>
 													<div className="space16" />
 													<p data-aos="fade-left" data-aos-duration={1000}>At Special Pumps, we believe your next home is more than just a place – it’s where your future begins you’re buy.</p>
 												</div>
@@ -330,7 +332,7 @@ export default function Contact() {
 											<div className="col-lg-2" />
 											<div className="col-lg-5" data-aos="zoom-in" data-aos-duration={1000}>
 												<div className="btn-area1 text-center">
-													<Link href="/sidebar-grid" className="theme-btn1">Find Your Dream Home <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+													<Link href="/sidebar-grid" className="theme-btn5">Find Your Perfect Pump <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 													</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />

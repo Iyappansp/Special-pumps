@@ -10,14 +10,12 @@ export default function Pricing() {
 
 				<div>
 					<div className="hero-inner-section-area-sidebar">
-						<img src="/assets/img/all-images/hero/hero-img1.png" alt="Special Pumps" className="hero-img1" />
+						<img src="/property/hero-img.webp" alt="Special Pumps" className="hero-img1" />
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-12">
 									<div className="hero-header-area text-center">
-										<Link href="/">Home <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-											<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
-										</svg> Listing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+										<Link href="/">Home<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 												<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
 											</svg> Our Pricing Plan</Link>
 										<div className="space24" />
@@ -53,7 +51,7 @@ export default function Pricing() {
 													<p>Perfect for homeowners looking to <br className="d-lg-block d-none" /> sell or rent their property.</p>
 													<div className="space32" />
 													<div className="btn-area1">
-														<Link href="/contact" className="theme-btn1">View Listing <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+														<Link href="/contact" className="theme-btn5">View Listing <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 															<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 														</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 															<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -94,7 +92,7 @@ export default function Pricing() {
 													<p>Ideal for clients who want expert <br className="d-lg-block d-none" /> assistance throughout the process.</p>
 													<div className="space32" />
 													<div className="btn-area1">
-														<Link href="/contact" className="theme-btn1">View Listing <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+														<Link href="/contact" className="theme-btn5">View Listing <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 															<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 														</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 															<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -138,7 +136,7 @@ export default function Pricing() {
 													<p>Designed for investors and <br className="d-lg-block d-none" /> property owners seeking end-to<br className="d-lg-block d-none" />-end solutions.</p>
 													<div className="space32" />
 													<div className="btn-area1">
-														<Link href="/contact" className="theme-btn1">View Listing <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+														<Link href="/contact" className="theme-btn5">View Listing <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 															<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 														</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 															<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -218,7 +216,7 @@ export default function Pricing() {
 											<div className="accordion-item">
 												<h2 className="accordion-header">
 													<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-														Can I find rental properties on Special Pumps?
+														Can I find rental Products on Special Pumps?
 													</button>
 												</h2>
 												<div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -291,7 +289,7 @@ export default function Pricing() {
 										<div className="row align-items-center">
 											<div className="col-lg-5">
 												<div className="cta-header">
-													<h2 className="text-anime-style-3">Step Into Your Dream Home with Special Pumps</h2>
+													<h2 className="text-anime-style-3">Step Into Your Home with Special Pumps</h2>
 													<div className="space16" />
 													<p data-aos="fade-left" data-aos-duration={1000}>At Special Pumps, we believe your next home is more than just a place – it’s where your future begins you’re buy.</p>
 												</div>
@@ -299,7 +297,7 @@ export default function Pricing() {
 											<div className="col-lg-2" />
 											<div className="col-lg-5" data-aos="zoom-in" data-aos-duration={1000}>
 												<div className="btn-area1 text-center">
-													<Link href="/property-halfmap-grid" className="theme-btn1">Find Your Dream Home <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+													<Link href="/property-halfmap-grid" className="theme-btn5">Find Your Perfect Pump <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 													</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />

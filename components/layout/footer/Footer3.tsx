@@ -15,7 +15,7 @@ export default function Footer3() {
 									</div>
 									<div className="pera">
 										<p>Your trusted partner for buying, selling, and renting <br className="d-md-block d-none" />
-											properties with seamless, personalized solutions.</p>
+											Products with seamless, personalized solutions.</p>
 									</div>
 									<div className="social">
 										<ul>
@@ -51,7 +51,7 @@ export default function Footer3() {
 									<h3>Quick Links</h3>
 									<ul>
 										<li><Link href="/property-details-v1">Property For Sale</Link></li>
-										<li><Link href="/property-details-v2">Property For Rent</Link></li>
+										<li><Link href="/property-details-v2">Property For Services</Link></li>
 										<li><Link href="/property-details-v3">Property For Buy</Link></li>
 										<li><Link href="/property-details-v4">Become a Seller</Link></li>
 										<li><Link href="/privacy-policy">Help Center</Link></li>

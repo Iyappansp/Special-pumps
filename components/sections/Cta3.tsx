@@ -9,7 +9,7 @@ export default function Cta3() {
 					<div className="row">
 						<div className="col-lg-6">
 							<div className="cta-header heading2">
-								<h2 className="text-anime-style-3">Find Your Dream Home Today Where Comfort Meets Style</h2>
+								<h2 className="text-anime-style-3">Find Your Perfect Pump Today Where Comfort Meets Style</h2>
 								<div className="space16" />
 								<p data-aos="fade-left" data-aos-duration={900}>At Special Pumps, we believe the finding a home is
 									more a transaction-it’s a journey discovering the perfect space that fits your lifestyles.
@@ -17,7 +17,7 @@ export default function Cta3() {
 								<div className="space30" />
 								<form data-aos="fade-left" data-aos-duration={1100}>
 									<input type="text" placeholder="Email Address" />
-									<button type="submit" className="theme-btn4">Subscribe <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+									<button type="submit" className="theme-btn5">Subscribe <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 										<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 									</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 										<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />

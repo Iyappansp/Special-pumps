@@ -59,8 +59,8 @@ export default function ComponentDetails({ component, onClose }: ComponentDetail
       icon: '⚙️',
       color: '#f59e0b'
     },
-    'motor': {
-      title: 'Electric Motor',
+    'Pumps': {
+      title: 'Electric Pumps',
       category: 'Drive System',
       specs: [
         { label: 'Power', value: '3HP/5HP', unit: 'Variable' },
@@ -68,7 +68,7 @@ export default function ComponentDetails({ component, onClose }: ComponentDetail
         { label: 'Efficiency', value: '92%', unit: 'IE3 Class' },
         { label: 'Voltage', value: '415V', unit: '3-Phase' }
       ],
-      description: 'Premium efficiency motor with thermal protection and soft-start capability.',
+      description: 'Premium efficiency Pumps with thermal protection and soft-start capability.',
       features: [
         'Thermal overload protection',
         'Soft-start capability',

@@ -61,15 +61,14 @@ export default function AboutUs() {
 			<Layout headerStyle={4} footerStyle={4}>
 				<div>
 					<div className="hero-inner-section-area-sidebar">
-						<img src="/assets/img/all-images/hero/hero-img1.png" alt="Special Pumps" className="hero-img1" />
+						<img src="/property/hero-img.webp" alt="Special Pumps" className="hero-img1" />
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-12">
 									<div className="hero-header-area text-center">
-										<Link href="/">Home <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-											<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
-											</path>
-										</svg> Listing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+										<Link href="/">Home 
+										
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 												<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
 												</path>
 											</svg> About Us</Link>
@@ -88,10 +87,10 @@ export default function AboutUs() {
 								<div className="col-lg-6">
 									<div className="about-images-area">
 										<div className="img2 image-anime reveal">
-											<img src="/assets/img/all-images/about/about-img2.png" alt="Special Pumps" />
+											<img src="property/small-about.webp" alt="Special Pumps" />
 										</div>
 										<div className="img1 image-anime reveal">
-											<img src="/assets/img/all-images/about/about-img1.png" alt="Special Pumps" />
+											<img src="property/big-about.webp" alt="Special Pumps" />
 										</div>
 										<div className="author-img aniamtion-key-1">
 											<h3>Our Happy Customer</h3>
@@ -103,24 +102,25 @@ export default function AboutUs() {
 								<div className="col-lg-1" />
 								<div className="col-lg-5">
 									<div className="about-heading heading1">
-										<h5 data-aos="fade-left" data-aos-duration={800}>About Special Pumps</h5>
+																				<h2 className="text-anime-style-3">About Us</h2>
+
 										<div className="space20" />
-										<h2 className="text-anime-style-3">Excellence of Industrial Pump Engineering</h2>
+										<h5 data-aos="fade-left" data-aos-duration={800}>Excellence Industrials Pump Engineering</h5>
 										<div className="space18" />
-										<p data-aos="fade-left" data-aos-duration={900}>Special Pumps, by Rotomech Industries, designs and manufactures robust pumping solutions for process, chemical, hotâ€‘oil, slurry, filtration, and dewatering applications from Coimbatore, India.</p>
+										<p data-aos="fade-left" data-aos-duration={900}>At Special Pumps, clear communication drives reliable performance. Whether you need help selecting a non‑clog sewage pump, sizing a thermic fluid unit for high‑temperature service, specifying corrosion‑resistant polypropylene or stainless‑steel construction, or optimizing an existing process line, the engineering team is ready to assist end‑to‑end.</p>
 										<div className="space32" />
 										<div className="counter-boxes" data-aos="fade-left" data-aos-duration={1000}>
 											<div className="row">
 												<div className="col-lg-4 col-md-4 col-6">
 													<div className="counter-boxarea text-center">
-														<h2><CounterUp className="counter">10</CounterUp>K</h2>
+														<h2><CounterUp className="counter">0</CounterUp>K</h2>
 														<div className="space12" />
-														<p>Homes Sold</p>
+														<p>Pumps Sold</p>
 													</div>
 												</div>
 												<div className="col-lg-4 col-md-4 col-6">
 													<div className="counter-boxarea text-center">
-														<h2><CounterUp className="counter">9</CounterUp>K</h2>
+														<h2><CounterUp className="counter">0</CounterUp>K</h2>
 														<div className="space12" />
 														<p>Happy Client</p>
 													</div>
@@ -128,7 +128,7 @@ export default function AboutUs() {
 												<div className="col-lg-4 col-md-4 col-6">
 													<div className="space20 d-md-none d-block" />
 													<div className="counter-boxarea text-center">
-														<h2><CounterUp className="counter">98</CounterUp>%</h2>
+														<h2><CounterUp className="counter">0</CounterUp>%</h2>
 														<div className="space12" />
 														<p>Satisfaction Rate</p>
 													</div>
@@ -137,7 +137,7 @@ export default function AboutUs() {
 										</div>
 										<div className="space32" />
 										<div className="btn-area1" data-aos="fade-left" data-aos-duration={1100}>
-											<Link href="/product-gallery" className="theme-btn1">See All Properties <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+											<Link href="/product-gallery" className="theme-btn5">See All Products <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 											</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -155,9 +155,12 @@ export default function AboutUs() {
 							<div className="row">
 								<div className="col-lg-6 m-auto">
 									<div className="heading1 text-center space-margin60">
-										<h5>Our Mission</h5>
+																			<h2>Our Mission &amp; Vision</h2>
+
 										<div className="space20" />
-										<h2>Our Mission &amp; Vision</h2>
+											<h5>Turning complex fluid challenges into simple, dependable flow.
+
+</h5>
 									</div>
 									<div className="space100 d-lg-block d-none" />
 								</div>
@@ -165,20 +168,20 @@ export default function AboutUs() {
 							<div className="row">
 								<div className="col-lg-7">
 									<div className="vission-mission-box">
-										<h3>Our Path to Real Estate Excellence</h3>
+										<h3>Our Journey to Pumping Excellence</h3>
 										<div className="space24" />
-										<p>Our lineup includes Thermic Fluid Hot Oil, Polypropylene, Process & Stainless Steel, Back Pullout Process, High Pressure Multistage, Horizontal Nonâ€‘Clog, Filter Press, Rotary Gear, and Dewatering/Mud pumps.</p>
+										<p>Our portfolio features Thermic Fluid Hot Oil, Polypropylene, Process & Stainless Steel, Back Pullout Process, High Pressure Multistage, Horizontal Non-Clog, Filter Press, Rotary Gear, and Dewatering/Mud pumps.</p>
 										<div className="space24" />
 										<h4>Our Mission</h4>
 										<div className="space16" />
-										<p>Deliver dependable, applicationâ€‘matched pumps with quick service and long lifecycle value for industrial operations</p>
+										<p>To provide reliable, application-specific pumps with prompt service and long-lasting performance for industrial operations.</p>
 										<div className="space24" />
 										<h4>Our Vision</h4>
 										<div className="space16" />
-										<p> Be a trusted manufacturing partner for critical fluid handling across Indian industry and global markets.</p>
+										<p>To be a trusted partner in precision fluid handling, serving both Indian industries and global markets with excellence.</p>
 										<div className="space32" />
 										<div className="btn-area1">
-											<Link href="/product-gallery" className="theme-btn1">See All Properties <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+											<Link href="/product-gallery" className="theme-btn5">See All Products <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 											</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -188,7 +191,7 @@ export default function AboutUs() {
 								</div>
 								<div className="col-lg-5">
 									<div className="img1">
-										<img src="/assets/img/all-images/properties/property-img47.png" alt="Special Pumps" />
+										<img src="property/about-mission.webp" alt="Special Pumps" />
 									</div>
 								</div>
 							</div>
@@ -231,7 +234,7 @@ export default function AboutUs() {
 										<h2 className="text-anime-style-3">Embrace the Elegance Our Exclusive Property</h2>
 										<div className="space18" />
 										<p data-aos="fade-left" data-aos-duration={900}>At Special Pumps, weâ€™re redefining the way people
-											find, sell, and invest in properties. Our mission is to simplify real a estate by provide
+											find, sell, and invest in Products. Our mission is to simplify real a estate by provide
 											innovative solutions, expert guidance.</p>
 										<div className="accordion" id="accordionExample">
 											<div className="accordion-item">
@@ -276,7 +279,7 @@ export default function AboutUs() {
 										</div>
 										<div className="space32" />
 										<div className="btn-area1">
-											<Link href="/product-gallery" className="theme-btn1">See All Properties <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+											<Link href="/product-gallery" className="theme-btn5">See All Products <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 											</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -294,16 +297,16 @@ export default function AboutUs() {
 							<div className="row">
 								<div className="col-lg-7 m-auto">
 									<div className="heading1 text-center space-margin60">
-										<h5>What We Offer</h5>
+										<h2>What We Offer</h2>
 										<div className="space20" />
-										<h2>Upgrade To a Smarter Living Experience With Home Automation</h2>
+										<h5>Upgrade To a Smarter Living Experience With Home Automation</h5>
 									</div>
 								</div>
 							</div>
 							<div className="row">
 								<div className="col-lg-4">
 									<div className="img1">
-										<img src="/assets/img/all-images/about/about-img9.png" alt="Special Pumps" />
+										<img src="property/about-customer.webp" alt="Special Pumps" />
 									</div>
 								</div>
 								<div className="col-lg-8">
@@ -322,9 +325,9 @@ export default function AboutUs() {
 
 </Link>
 													<div className="space16" />
-													<p>Get the right pump for flow, head, temperature, and fluid compatibility across Thermic Fluid, Polypropylene, Process/SS, Multistage, Nonâ€‘Clog, Filter Press, Rotary Gear, and Dewatering ranges.</p>
+													<p>Get the right pump for flow, head, temperature, and fluid compatibility across Thermic Fluid, Polypropylene, Process/SS, Multistage, Non Clog, Filter Press, Rotary Gear, and Dewatering ranges.</p>
 													<div className="space24" />
-													<Link href="/products/chemical-process" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+													<Link href="/" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 														<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z">
 														</path>
 													</svg></Link>
@@ -345,9 +348,9 @@ export default function AboutUs() {
 
 </Link>
 													<div className="space16" />
-													<p>Foundation, alignment, piping interface, and startâ€‘up checks to put new or replacement pumps into reliable operation, fast,     </p>
+													<p>Foundation, alignment, piping interface, and start‘up checks to put new or replacement pumps into reliable operation, fast, Complete foundation, and start-up checks to get new or replacement pumps.</p>
 													<div className="space24" />
-													<Link href="/products/chemical-process" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+													<Link href="/" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 														<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z">
 														</path>
 													</svg></Link>
@@ -364,11 +367,11 @@ export default function AboutUs() {
 												</div>
 												<div className="space24" />
 												<div className="content">
-													<Link href="/products/chemical-process">Renting A Home</Link>
+													<Link href="/products/chemical-process"> Maintenance & Rentals</Link>
 													<div className="space16" />
-													<p>Preventive service, overhauls, seals, bearings, and OEM spares to maximize uptime and reduce lifecycle cost.</p>
+													<p> Preventive servicing, overhauls, and OEM spares to maximize uptime, reduce costs, and extend pump life.</p>
 													<div className="space24" />
-													<Link href="/products/chemical-process" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+													<Link href="/" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 														<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z">
 														</path>
 													</svg></Link>
@@ -392,7 +395,7 @@ export default function AboutUs() {
 
 </p>
 													<div className="space24" />
-													<Link href="/products/chemical-process" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+													<Link href="/" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 														<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z">
 														</path>
 													</svg></Link>
@@ -520,7 +523,7 @@ export default function AboutUs() {
 							<div className="row">
 								<div className="col-lg-6">
 									<div className="testimonial-header space-margin60 heading1">
-										<h5 data-aos="fade-left" data-aos-duration={800}>feedback/testimonial</h5>
+										<h5 data-aos="fade-left" data-aos-duration={800}>Testimonial</h5>
 										<div className="space20" />
 										<h2 className="text-anime-style-3">A Legacy Of Happy Clients</h2>
 									</div>
@@ -533,16 +536,16 @@ export default function AboutUs() {
 											<div className="col-lg-5">
 												<Slider {...settings2} className="images-area2 slider2">
 													<div className="img1 image-anime">
-														<img src="/assets/img/all-images/testimonial/testimonial-img1.png" alt="Special Pumps" />
+														<img src="property/testinomials.webp" alt="Special Pumps" />
 													</div>
 													<div className="img1 image-anime">
-														<img src="/assets/img/all-images/testimonial/testimonial-img1.png" alt="Special Pumps" />
+														<img src="property/testinomials.webp" alt="Special Pumps" />
 													</div>
 													<div className="img1 image-anime">
-														<img src="/assets/img/all-images/testimonial/testimonial-img1.png" alt="Special Pumps" />
+														<img src="property/testinomials.webp" alt="Special Pumps" />
 													</div>
 													<div className="img1 image-anime">
-														<img src="/assets/img/all-images/testimonial/testimonial-img1.png" alt="Special Pumps" />
+														<img src="property/testinomials.webp" alt="Special Pumps" />
 													</div>
 												</Slider>
 											</div>
@@ -551,9 +554,7 @@ export default function AboutUs() {
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p>"When I decided to sell my home, I was overwhelmed with where to start.
-															Special Pumps stepped in with a clear plan, professional marketing, constant
-															communicate. Within two weeks, my house was sold above asking.â€</p>
+														<p>"The Chemical Process Pumps from Rotomech have exceeded our expectations in both efficiency and build quality.</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -566,15 +567,13 @@ export default function AboutUs() {
 																	<p>Happy Client</p>
 																</div>
 															</div>
-															<img src="/assets/img/elements/brand1.png" alt="Special Pumps" className="brand1" />
+															<img className="" src="\image.png" alt="Special Pumps" />
 														</div>
 													</div>
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p>"When I decided to sell my home, I was overwhelmed with where to start.
-															Special Pumps stepped in with a clear plan, professional marketing, constant
-															communicate. Within two weeks, my house was sold above asking.â€</p>
+														<p>"We use their Thermic Fluid Pumps in 24/7 production, and the performance remains consistent. Truly dependable!</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -587,15 +586,13 @@ export default function AboutUs() {
 																	<p>Happy Client</p>
 																</div>
 															</div>
-															<img src="/assets/img/elements/brand1.png" alt="Special Pumps" className="brand1" />
+															<img src="\image.png" alt="Special Pumps" className="brand1" />
 														</div>
 													</div>
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p>"When I decided to sell my home, I was overwhelmed with where to start.
-															Special Pumps stepped in with a clear plan, professional marketing, constant
-															communicate. Within two weeks, my house was sold above asking.â€</p>
+														<p> “Our Filter Press Pumps run daily in sludge handling — zero leakage and smooth operation.”</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -608,15 +605,15 @@ export default function AboutUs() {
 																	<p>Happy Client</p>
 																</div>
 															</div>
-															<img src="/assets/img/elements/brand1.png" alt="Special Pumps" className="brand1" />
+															<img src="\image.png" alt="Special Pumps" className="brand1" />
 														</div>
 													</div>
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p>"When I decided to sell my home, I was overwhelmed with where to start.
-															Special Pumps stepped in with a clear plan, professional marketing, constant
-															communicate. Within two weeks, my house was sold above asking.â€</p>
+														<p> “The Polypropylene Pumps have outstanding chemical resistance and require minimal maintenance.”
+
+														</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -629,7 +626,7 @@ export default function AboutUs() {
 																	<p>Happy Client</p>
 																</div>
 															</div>
-															<img src="/assets/img/elements/brand1.png" alt="Special Pumps" className="brand1" />
+															<img src="\image.png" alt="Special Pumps" className="brand1" />
 														</div>
 													</div>
 												</Slider>
@@ -652,16 +649,16 @@ export default function AboutUs() {
 										<div className="row align-items-center">
 											<div className="col-lg-5">
 												<div className="cta-header">
-													<h2 className="text-anime-style-3">Step Into Your Dream Home with Special Pumps</h2>
+													<h2 className="text-anime-style-3">Step Into Your Home with Special Pumps</h2>
 													<div className="space16" />
 													<p data-aos="fade-left" data-aos-duration={1000}>At Special Pumps, we believe your next
-														home is more than just a place â€“ itâ€™s where your future begins youâ€™re buy.</p>
+														home is more than just a place it's where your future begins you are buy.</p>
 												</div>
 											</div>
 											<div className="col-lg-2" />
 											<div className="col-lg-5" data-aos="zoom-in" data-aos-duration={1000}>
 												<div className="btn-area1 text-center">
-													<Link href="/sidebar-grid" className="theme-btn1">Find Your Dream Home <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+													<Link href="/" className="theme-btn5">Find Your Perfect Pump<span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 													</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />

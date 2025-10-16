@@ -1,8 +1,9 @@
 /* Footer list left alignment override, scoped to footer section to avoid side effects */
 .footer4-section-area .footer-content ul,
 .footer4-section-area .footer-content2 ul {
-  padding-left: 0; /* remove default ul indent */
-  margin-left: -8px; /* slight left nudge on desktop */
+  padding-left: 16px;
+  margin-left: 0;
+  list-style-position: inside;
 }
 
 .footer4-section-area .footer-content ul li,
@@ -10,9 +11,20 @@
   text-align: left;
 }
 
+.footer4-section-area .footer-content,
+.footer4-section-area .footer-content2 {
+  margin-left: 8px; /* slight right nudge for the three content columns */
+}
+
 @media (max-width: 991.98px) {
   .footer4-section-area .footer-content ul,
   .footer4-section-area .footer-content2 ul {
-    margin-left: -6px; /* slightly less nudge on tablet/mobile */
+    padding-left: 12px;
+    margin-left: 0;
+  }
+
+  .footer4-section-area .footer-content,
+  .footer4-section-area .footer-content2 {
+    margin-left: 6px;
   }
 }

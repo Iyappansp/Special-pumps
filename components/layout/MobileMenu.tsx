@@ -1,7 +1,10 @@
 'use client'
 import Link from 'next/link'
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
+	const pathname = usePathname()
+	const productsActive = pathname?.startsWith('/products') || pathname === '/installation-methods'
 	const [isAccordion, setIsAccordion] = useState(0)
 	const handleAccordion = (key: any) => {
 		setIsAccordion(prevState => prevState === key ? null : key)
@@ -69,11 +72,11 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
 					</div>
 					<div className="mobile-nav mobile-nav1">
 						<ul className="mobile-nav-list nav-list1">
-							<li><Link href="/">Home</Link></li>
-							<li><Link href="/about-us">About</Link></li>
-							<li><Link href="/our-service">Our Services</Link></li>
-							<li><Link href="/product-gallery">Product Gallery</Link></li>
-							<li><Link href="/#">Products</Link>
+							<li><Link href="/" className={pathname === '/' ? 'active' : ''}>Home</Link></li>
+							<li><Link href="/about-us" className={pathname === '/about-us' ? 'active' : ''}>About</Link></li>
+							<li><Link href="/our-service" className={pathname === '/our-service' ? 'active' : ''}>Our Services</Link></li>
+							<li><Link href="/product-gallery" className={pathname === '/product-gallery' ? 'active' : ''}>Product Gallery</Link></li>
+							<li><Link href="/#" className={productsActive ? 'active' : ''}>Products</Link>
 								<span className={`submenu-button ${isProductsOpen ? "submenu-opened" : ""}`} onClick={() => setIsProductsOpen(!isProductsOpen)}><em></em></span>
 								<ul className="sub-menu" style={{ display: isProductsOpen ? "block" : "none" }}>
 									<li>
@@ -93,10 +96,10 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
 									<li><Link href="/installation-methods">Installation Method</Link></li>
 								</ul>
 							</li>
-							<li><Link href="/contact">Contact</Link></li>
+							<li><Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact</Link></li>
 						</ul>
 						<div className="allmobilesection">
-							<Link href="/contact" className="theme-btn1">Contact Us <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+							<Link href="/contact" className="theme-btn5">Contact Us <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 								<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 							</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 								<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />

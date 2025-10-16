@@ -60,7 +60,7 @@ const initialState: FilterState = {
     },
     price: {
       min: 0,
-      max: 5000000, // Increased max price to accommodate luxury properties
+      max: 5000000, // Increased max price to accommodate luxury Products
     },
     size: {
       min: 0,

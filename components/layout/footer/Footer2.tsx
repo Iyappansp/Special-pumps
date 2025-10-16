@@ -39,7 +39,7 @@ export default function Footer2() {
 								<ul>
 									<li><Link href="/">Modern House</Link></li>
 									<li><Link href="/listing">Cottage House</Link></li>
-									<li><Link href="/properties">Cabin House</Link></li>
+									<li><Link href="/Products">Cabin House</Link></li>
 									<li><Link href="/blog">Rambler House</Link></li>
 									<li><Link href="/dashboard">Pent House</Link></li>
 								</ul>
@@ -52,7 +52,7 @@ export default function Footer2() {
 								<ul>
 									<li><Link href="/privacy-policy">Terms of Service</Link></li>
 									<li><Link href="/listing">Privacy Policy</Link></li>
-									<li><Link href="/properties">Refund Policy</Link></li>
+									<li><Link href="/Products">Refund Policy</Link></li>
 									<li><Link href="/blog">Become a Seller</Link></li>
 									<li><Link href="/dashboard">Help Center</Link></li>
 								</ul>

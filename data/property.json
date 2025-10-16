@@ -3,9 +3,9 @@
     "id": 1,
     "keyword": "Luxury Villa",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img1.png",
-      "img2": "/assets/img/all-images/properties/property-img2.png",
-      "img3": "/assets/img/all-images/properties/property-img3.png"
+      "img1": "/assets/img/all-images/Products/property-img1.png",
+      "img2": "/assets/img/all-images/Products/property-img2.png",
+      "img3": "/assets/img/all-images/Products/property-img3.png"
     },
     "address": "123 Beverly Hills, CA",
     "city": "Los Angeles",
@@ -35,14 +35,14 @@
     "id": 2,
     "keyword": "Modern Apartment sale",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img4.png",
-      "img2": "/assets/img/all-images/properties/property-img5.png",
-      "img3": "/assets/img/all-images/properties/property-img6.png"
+      "img1": "/assets/img/all-images/Products/property-img4.png",
+      "img2": "/assets/img/all-images/Products/property-img5.png",
+      "img3": "/assets/img/all-images/Products/property-img6.png"
     },
     "address": "45 Downtown St, NY",
     "city": "New York",
     "state": "New York",
-    "status": "For Rent",
+    "status": "For Services",
     "label": "New Offer",
     "type": "Apartment",
     "bedrooms": 3,
@@ -66,9 +66,9 @@
     "id": 3,
     "keyword": "Beachfront Condo",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img7.png",
-      "img2": "/assets/img/all-images/properties/property-img8.png",
-      "img3": "/assets/img/all-images/properties/property-img9.png"
+      "img1": "/assets/img/all-images/Products/property-img7.png",
+      "img2": "/assets/img/all-images/Products/property-img8.png",
+      "img3": "/assets/img/all-images/Products/property-img9.png"
     },
     "address": "78 Ocean Drive, FL",
     "city": "Miami",
@@ -97,14 +97,14 @@
     "id": 4,
     "keyword": "Cozy Cottage",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img10.png",
-      "img2": "/assets/img/all-images/properties/property-img11.png",
-      "img3": "/assets/img/all-images/properties/property-img12.png"
+      "img1": "/assets/img/all-images/Products/property-img10.png",
+      "img2": "/assets/img/all-images/Products/property-img11.png",
+      "img3": "/assets/img/all-images/Products/property-img12.png"
     },
     "address": "234 Greenway Ave, TX",
     "city": "Dallas",
     "state": "Texas",
-    "status": "For Rent",
+    "status": "For Services",
     "label": "New Offer",
     "type": "House",
     "bedrooms": 2,
@@ -128,9 +128,9 @@
     "id": 5,
     "keyword": "Luxury Penthouse",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img13.png",
-      "img2": "/assets/img/all-images/properties/property-img14.png",
-      "img3": "/assets/img/all-images/properties/property-img15.png"
+      "img1": "/assets/img/all-images/Products/property-img13.png",
+      "img2": "/assets/img/all-images/Products/property-img14.png",
+      "img3": "/assets/img/all-images/Products/property-img15.png"
     },
     "address": "10 Skyline Ave, IL",
     "city": "Chicago",
@@ -160,14 +160,14 @@
     "id": 6,
     "keyword": "Family Home",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img16.png",
-      "img2": "/assets/img/all-images/properties/property-img17.png",
-      "img3": "/assets/img/all-images/properties/property-img18.png"
+      "img1": "/assets/img/all-images/Products/property-img16.png",
+      "img2": "/assets/img/all-images/Products/property-img17.png",
+      "img3": "/assets/img/all-images/Products/property-img18.png"
     },
     "address": "567 Maple Rd, GA",
     "city": "Atlanta",
     "state": "Georgia",
-    "status": "For Rent",
+    "status": "For Services",
     "label": "New Offer",
     "type": "Single Family",
     "bedrooms": 3,
@@ -193,9 +193,9 @@
     "id": 7,
     "keyword": "Lake House",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img19.png",
-      "img2": "/assets/img/all-images/properties/property-img20.png",
-      "img3": "/assets/img/all-images/properties/property-img21.png"
+      "img1": "/assets/img/all-images/Products/property-img19.png",
+      "img2": "/assets/img/all-images/Products/property-img20.png",
+      "img3": "/assets/img/all-images/Products/property-img21.png"
     },
     "address": "890 Lakeview Dr, CO",
     "city": "Denver",
@@ -225,14 +225,14 @@
     "id": 8,
     "keyword": "Downtown Loft",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img22.png",
-      "img2": "/assets/img/all-images/properties/property-img23.png",
-      "img3": "/assets/img/all-images/properties/property-img24.png"
+      "img1": "/assets/img/all-images/Products/property-img22.png",
+      "img2": "/assets/img/all-images/Products/property-img23.png",
+      "img3": "/assets/img/all-images/Products/property-img24.png"
     },
     "address": "321 Urban St, WA",
     "city": "Seattle",
     "state": "Washington",
-    "status": "For Rent",
+    "status": "For Services",
     "label": "New Offer",
     "type": "Apartment",
     "bedrooms": 2,
@@ -257,9 +257,9 @@
     "id": 9,
     "keyword": "Farmhouse",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img25.png",
-      "img2": "/assets/img/all-images/properties/property-img26.png",
-      "img3": "/assets/img/all-images/properties/property-img27.png"
+      "img1": "/assets/img/all-images/Products/property-img25.png",
+      "img2": "/assets/img/all-images/Products/property-img26.png",
+      "img3": "/assets/img/all-images/Products/property-img27.png"
     },
     "address": "67 Country Rd, TN",
     "city": "Nashville",
@@ -289,14 +289,14 @@
     "id": 10,
     "keyword": "Suburban House",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img28.png",
-      "img2": "/assets/img/all-images/properties/property-img29.png",
-      "img3": "/assets/img/all-images/properties/property-img30.png"
+      "img1": "/assets/img/all-images/Products/property-img28.png",
+      "img2": "/assets/img/all-images/Products/property-img29.png",
+      "img3": "/assets/img/all-images/Products/property-img30.png"
     },
     "address": "123 Suburb Lane, NJ",
     "city": "Bridgaport",
     "state": "New Jersey",
-    "status": "For Rent",
+    "status": "For Services",
     "label": "New Offer",
     "type": "House",
     "bedrooms": 3,
@@ -321,9 +321,9 @@
     "id": 11,
     "keyword": "Mountain Retreat",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img31.png",
-      "img2": "/assets/img/all-images/properties/property-img32.png",
-      "img3": "/assets/img/all-images/properties/property-img33.png"
+      "img1": "/assets/img/all-images/Products/property-img31.png",
+      "img2": "/assets/img/all-images/Products/property-img32.png",
+      "img3": "/assets/img/all-images/Products/property-img33.png"
     },
     "address": "456 Mountain View, CO",
     "city": "Aspen",
@@ -352,14 +352,14 @@
     "id": 12,
     "keyword": "Urban Townhouse",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img34.png",
-      "img2": "/assets/img/all-images/properties/property-img35.png",
-      "img3": "/assets/img/all-images/properties/property-img36.png"
+      "img1": "/assets/img/all-images/Products/property-img34.png",
+      "img2": "/assets/img/all-images/Products/property-img35.png",
+      "img3": "/assets/img/all-images/Products/property-img36.png"
     },
     "address": "789 City Center, MA",
     "city": "Boston",
     "state": "Massachusetts",
-    "status": "For Rent",
+    "status": "For Services",
     "label": "New Offer",
     "type": "Single Family",
     "bedrooms": 3,
@@ -383,9 +383,9 @@
     "id": 13,
     "keyword": "Waterfront Estate",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img37.png",
-      "img2": "/assets/img/all-images/properties/property-img38.png",
-      "img3": "/assets/img/all-images/properties/property-img39.png"
+      "img1": "/assets/img/all-images/Products/property-img37.png",
+      "img2": "/assets/img/all-images/Products/property-img38.png",
+      "img3": "/assets/img/all-images/Products/property-img39.png"
     },
     "address": "123 Lakeside Dr, WA",
     "city": "Seattle",
@@ -415,9 +415,9 @@
     "id": 14,
     "keyword": "Desert Oasis",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img40.png",
-      "img2": "/assets/img/all-images/properties/property-img41.png",
-      "img3": "/assets/img/all-images/properties/property-img42.png"
+      "img1": "/assets/img/all-images/Products/property-img40.png",
+      "img2": "/assets/img/all-images/Products/property-img41.png",
+      "img3": "/assets/img/all-images/Products/property-img42.png"
     },
     "address": "567 Palm Springs Rd, AZ",
     "city": "Phoenix",
@@ -445,9 +445,9 @@
     "id": 15,
     "keyword": "Historic Brownstone",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img43.png",
-      "img2": "/assets/img/all-images/properties/property-img44.png",
-      "img3": "/assets/img/all-images/properties/property-img45.png"
+      "img1": "/assets/img/all-images/Products/property-img43.png",
+      "img2": "/assets/img/all-images/Products/property-img44.png",
+      "img3": "/assets/img/all-images/Products/property-img45.png"
     },
     "address": "890 Heritage St, NY",
     "city": "New York",
@@ -475,14 +475,14 @@
     "id": 16,
     "keyword": "Eco-Friendly Home",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img46.png",
-      "img2": "/assets/img/all-images/properties/property-img47.png",
-      "img3": "/assets/img/all-images/properties/property-img1.png"
+      "img1": "/assets/img/all-images/Products/property-img46.png",
+      "img2": "/assets/img/all-images/Products/property-img47.png",
+      "img3": "/assets/img/all-images/Products/property-img1.png"
     },
     "address": "123 Green Living Way, OR",
     "city": "Portland",
     "state": "Oregon",
-    "status": "For Rent",
+    "status": "For Services",
     "label": "New Offer",
     "type": "House",
     "bedrooms": 3,
@@ -506,9 +506,9 @@
     "id": 17,
     "keyword": "Coastal Bungalow",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img2.png",
-      "img2": "/assets/img/all-images/properties/property-img3.png",
-      "img3": "/assets/img/all-images/properties/property-img4.png"
+      "img1": "/assets/img/all-images/Products/property-img2.png",
+      "img2": "/assets/img/all-images/Products/property-img3.png",
+      "img3": "/assets/img/all-images/Products/property-img4.png"
     },
     "address": "456 Shoreline Dr, CA",
     "city": "San Diego",
@@ -536,14 +536,14 @@
     "id": 18,
     "keyword": "City View Apartment",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img5.png",
-      "img2": "/assets/img/all-images/properties/property-img6.png",
-      "img3": "/assets/img/all-images/properties/property-img7.png"
+      "img1": "/assets/img/all-images/Products/property-img5.png",
+      "img2": "/assets/img/all-images/Products/property-img6.png",
+      "img3": "/assets/img/all-images/Products/property-img7.png"
     },
     "address": "789 Downtown Blvd, IL",
     "city": "Chicago",
     "state": "Illinois",
-    "status": "For Rent",
+    "status": "For Services",
     "label": "Hot Offer",
     "type": "Apartment",
     "bedrooms": 1,
@@ -566,9 +566,9 @@
     "id": 19,
     "keyword": "Rustic Cabin",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img8.png",
-      "img2": "/assets/img/all-images/properties/property-img9.png",
-      "img3": "/assets/img/all-images/properties/property-img10.png"
+      "img1": "/assets/img/all-images/Products/property-img8.png",
+      "img2": "/assets/img/all-images/Products/property-img9.png",
+      "img3": "/assets/img/all-images/Products/property-img10.png"
     },
     "address": "321 Forest Rd, MT",
     "city": "Bozeman",
@@ -596,14 +596,14 @@
     "id": 20,
     "keyword": "Luxury Condo",
     "images": {
-      "img1": "/assets/img/all-images/properties/property-img11.png",
-      "img2": "/assets/img/all-images/properties/property-img12.png",
-      "img3": "/assets/img/all-images/properties/property-img13.png"
+      "img1": "/assets/img/all-images/Products/property-img11.png",
+      "img2": "/assets/img/all-images/Products/property-img12.png",
+      "img3": "/assets/img/all-images/Products/property-img13.png"
     },
     "address": "567 Highrise Ave, FL",
     "city": "Miami",
     "state": "Florida",
-    "status": "For Rent",
+    "status": "For Services",
     "label": "Hot Offer",
     "type": "Apartment",
     "bedrooms": 2,

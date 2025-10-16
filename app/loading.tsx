@@ -1,14 +1,7 @@
+'use client'
 
-export default function Loading() {
-	return (
-		<>
-			<div className="preloader">
-				<div className="loading-container">
-					<div className="loading" />
-					<div id="loading-icon"><img src="/assets/img/logo/preloader.png" alt="Special Pumps" /></div>
-				</div>
-			</div>
+import Loading from '@/components/Loading'
 
-		</>
-	)
+export default function RouteLoading() {
+  return <Loading show={true} />
 }

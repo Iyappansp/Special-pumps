@@ -1,0 +1,34 @@
+.bookingNameField {
+  --label-line-height: 1.625;
+  --hover-border-color: #3b82f6;
+  --base-border-color: #d1d5db;
+  --base-padding-y: 10px;
+  --base-padding-x: 12px;
+}
+
+.bookingNameField label {
+  font-weight: 600;
+  line-height: var(--label-line-height);
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.bookingNameField input[type="text"] {
+  width: 100%;
+  border: 1px solid var(--base-border-color);
+  border-radius: 6px;
+  padding-block: calc(var(--base-padding-y) + 2px);
+  padding-inline: calc(var(--base-padding-x) + 2px);
+  transition: border-color 120ms ease;
+  background-color: #fff;
+}
+
+.bookingNameField input[type="text"]:hover {
+  border: 1px solid var(--hover-border-color);
+}
+
+.bookingNameField input[type="text"]:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  border-color: var(--hover-border-color);
+}

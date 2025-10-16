@@ -668,7 +668,7 @@ html { scroll-behavior: smooth; }
 }
 
 .pump-label,
-.motor-label {
+.Pumps-label {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 600;
@@ -722,7 +722,7 @@ html { scroll-behavior: smooth; }
 @media (max-width: 768px) {
   .installation-svg-clean { padding: 1rem; max-height: 460px; }
   .tank-title { font-size: 12px; }
-  .pump-label, .motor-label { font-size: 11px; }
+  .pump-label, .Pumps-label { font-size: 11px; }
   .tech-header { font-size: 11px; }
 }
 

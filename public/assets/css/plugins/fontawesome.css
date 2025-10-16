@@ -1988,7 +1988,7 @@
 	content: "\e0e1";
 }
 
-.fa-motorcycle::before {
+.fa-Pumpscycle::before {
 	content: "\f21c";
 }
 
@@ -21240,8 +21240,8 @@
 	content: "\e0e1\e0e1";
 }
 
-.fad.fa-motorcycle::after,
-.fa-duotone.fa-motorcycle::after {
+.fad.fa-Pumpscycle::after,
+.fa-duotone.fa-Pumpscycle::after {
 	content: "\f21c\f21c";
 }
 

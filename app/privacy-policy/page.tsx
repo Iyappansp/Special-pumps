@@ -1,219 +1,373 @@
+import type { Metadata } from 'next'
+import Layout from '@/components/layout/Layout'
+import { ShieldCheck, Eye, FileText, Users, ChevronRight } from 'lucide-react'
 
-import Layout from "@/components/layout/Layout"
-import Link from "next/link"
+export const metadata: Metadata = {
+  title: 'Privacy Policy | Special Pumps - Industrial Pump Solutions',
+  description: 'Privacy Policy for Special Pumps. Learn how we protect your data and maintain confidentiality in our industrial pump services.',
+  keywords: ['privacy policy', 'data protection', 'Special Pumps', 'industrial pumps', 'GDPR compliance'],
+  robots: 'index, follow',
+  openGraph: {
+    title: 'Privacy Policy | Special Pumps',
+    description: 'Privacy Policy for Special Pumps industrial pump solutions',
+    url: 'https://special-pumps.vercel.app/privacy-policy',
+    siteName: 'Special Pumps',
+    type: 'website',
+  },
+}
+
+const sections = [
+  { icon: Eye, title: 'Information We Collect', id: 'information-collection' },
+  { icon: FileText, title: 'How We Use Your Information', id: 'information-usage' },
+  { icon: ShieldCheck, title: 'Data Protection & Security', id: 'data-protection' },
+  { icon: Users, title: 'Third Party Services', id: 'third-parties' },
+]
+
 export default function PrivacyPolicy() {
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: 'Privacy Policy | Special Pumps',
+    url: 'https://special-pumps.vercel.app/privacy-policy',
+    inLanguage: 'en',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Special Pumps',
+      url: 'https://special-pumps.vercel.app',
+    },
+    dateModified: new Date().toISOString(),
+    description:
+      'Privacy Policy for Special Pumps. Learn how we protect your data and maintain confidentiality in our industrial pump services.',
+  }
 
-	return (
-		<>
+  return (
+    <Layout headerStyle={4} footerStyle={4}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
-			<Layout headerStyle={1} footerStyle={1}>
+      <main className="min-h-screen bg-neutral-50">
+        <section className="mx-auto max-w-6xl px-4 py-12">
+          <header className="mb-8 text-center">
+            <h1 className="text-3xl sm:text-4xl font-bold text-neutral-900">Privacy Policy</h1>
+            <p className="mt-2 text-sm text-neutral-500">
+              Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+            </p>
+            <p className="mt-4 text-neutral-600">
+              At Special Pumps, we are committed to protecting your privacy and maintaining the confidentiality of your industrial project information.
+            </p>
+          </header>
 
-				<div>
-					<div className="hero-inner-section-area-sidebar">
-						<img src="/assets/img/all-images/hero/hero-img1.png" alt="Special Pumps" className="hero-img1" />
-						<div className="container">
-							<div className="row">
-								<div className="col-lg-12">
-									<div className="hero-header-area text-center">
-										<Link href="/">Home <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-											<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
-										</svg> Listing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-												<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
-											</svg> Privacy &amp; Policy</Link>
-										<div className="space24" />
-										<h1>Privacy &amp; Policy</h1>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					{/*===== HERO AREA ENDS =======*/}
-					{/*===== WORKS AREA STARTS =======*/}
-					<div className="privacy-policy-area sp1">
-						<div className="container">
-							<div className="row">
-								<div className="col-lg-8">
-									<div className="policy-details">
-										<div className="heading1">
-											<h2>Privacy &amp; Policy</h2>
-											<div className="space24" />
-											<p>At Special Pumps, protecting your privacy is our top priority. This Privacy Policy outlines how we collect, use, and safeguard your personal information when you interact with our website and services.</p>
-											<div className="space24" />
-											<h4>Effective Date: 2 Dec 2024</h4>
-											<div className="space16" />
-											<p>At Special Pumps, protecting your privacy is our top priority. This Privacy Policy outlines how we collect, use, and safeguard your personal information when you interact with our website and services.</p>
-											<div className="space50" />
-											<h3>Information We Collect</h3>
-											<div className="space16" />
-											<p>We collect the following types of information to provide a seamless experience</p>
-											<div className="space32" />
-											<h4>Personal Information:</h4>
-											<div className="space12" />
-											<p>Name, email address, phone number, mailing address, and payment details.</p>
-											<div className="space16" />
-											<h4>Property Information</h4>
-											<div className="space12" />
-											<p>Details about properties you list or inquire about</p>
-											<div className="space16" />
-											<h4>Usages Data</h4>
-											<div className="space12" />
-											<p> IP address, browser type, pages visited, and other analytics to improve our services.</p>
-											<div className="space16" />
-											<h4>Cookies</h4>
-											<div className="space12" />
-											<p>Small data files stored on your device to enhance website functionality and remember preferences.</p>
-											<div className="space50" />
-											<h3>How We Use Your Information</h3>
-											<div className="space16" />
-											<p>We use the information we collect to:</p>
-											<div className="space16" />
-											<ul>
-												<li><svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 18 18" fill="none">
-													<path d="M1 0H17C17.5523 0 18 0.44772 18 1V17C18 17.5523 17.5523 18 17 18H1C0.44772 18 0 17.5523 0 17V1C0 0.44772 0.44772 0 1 0ZM8.0026 13L15.0737 5.92893L13.6595 4.51472L8.0026 10.1716L5.17421 7.3431L3.75999 8.7574L8.0026 13Z" fill="#073B3A" />
-												</svg> Provide and improve our real estate services.</li>
-												<li><svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 18 18" fill="none">
-													<path d="M1 0H17C17.5523 0 18 0.44772 18 1V17C18 17.5523 17.5523 18 17 18H1C0.44772 18 0 17.5523 0 17V1C0 0.44772 0.44772 0 1 0ZM8.0026 13L15.0737 5.92893L13.6595 4.51472L8.0026 10.1716L5.17421 7.3431L3.75999 8.7574L8.0026 13Z" fill="#073B3A" />
-												</svg> Process transactions and manage your listings or inquiries.</li>
-												<li><svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 18 18" fill="none">
-													<path d="M1 0H17C17.5523 0 18 0.44772 18 1V17C18 17.5523 17.5523 18 17 18H1C0.44772 18 0 17.5523 0 17V1C0 0.44772 0.44772 0 1 0ZM8.0026 13L15.0737 5.92893L13.6595 4.51472L8.0026 10.1716L5.17421 7.3431L3.75999 8.7574L8.0026 13Z" fill="#073B3A" />
-												</svg> Communicate updates, offers, and personalized recommendations.</li>
-												<li><svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 18 18" fill="none">
-													<path d="M1 0H17C17.5523 0 18 0.44772 18 1V17C18 17.5523 17.5523 18 17 18H1C0.44772 18 0 17.5523 0 17V1C0 0.44772 0.44772 0 1 0ZM8.0026 13L15.0737 5.92893L13.6595 4.51472L8.0026 10.1716L5.17421 7.3431L3.75999 8.7574L8.0026 13Z" fill="#073B3A" />
-												</svg> Ensure website security and fraud prevention.</li>
-											</ul>
-											<div className="space50" />
-											<h3>Information Sharing</h3>
-											<div className="space16" />
-											<p>We value your trust and do not sell or rent your personal information. However, we may share your information with:</p>
-											<div className="space16" />
-											<ul>
-												<li><svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 18 18" fill="none">
-													<path d="M1 0H17C17.5523 0 18 0.44772 18 1V17C18 17.5523 17.5523 18 17 18H1C0.44772 18 0 17.5523 0 17V1C0 0.44772 0.44772 0 1 0ZM8.0026 13L15.0737 5.92893L13.6595 4.51472L8.0026 10.1716L5.17421 7.3431L3.75999 8.7574L8.0026 13Z" fill="#073B3A" />
-												</svg> Trusted partners, such as payment processors or service providers, to facilitate transactions.</li>
-												<li><svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 18 18" fill="none">
-													<path d="M1 0H17C17.5523 0 18 0.44772 18 1V17C18 17.5523 17.5523 18 17 18H1C0.44772 18 0 17.5523 0 17V1C0 0.44772 0.44772 0 1 0ZM8.0026 13L15.0737 5.92893L13.6595 4.51472L8.0026 10.1716L5.17421 7.3431L3.75999 8.7574L8.0026 13Z" fill="#073B3A" />
-												</svg> Law enforcement or government authorities when required by law.</li>
-												<li><svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 18 18" fill="none">
-													<path d="M1 0H17C17.5523 0 18 0.44772 18 1V17C18 17.5523 17.5523 18 17 18H1C0.44772 18 0 17.5523 0 17V1C0 0.44772 0.44772 0 1 0ZM8.0026 13L15.0737 5.92893L13.6595 4.51472L8.0026 10.1716L5.17421 7.3431L3.75999 8.7574L8.0026 13Z" fill="#073B3A" />
-												</svg> Potential buyers, sellers, or tenants, with your consent, to complete real estate transactions.</li>
-											</ul>
-											<div className="space50" />
-											<h3>Data Security</h3>
-											<div className="space16" />
-											<p>We implement industry-standard measures to protect your information from unauthorized access, disclosure, or misuse. However, please note that no system is completely secure.</p>
-											<div className="space32" />
-											<h3>Third Party Links</h3>
-											<div className="space16" />
-											<p>Our website may contain links to third-party websites. We are not responsible for their privacy practices, so please review their policies independently.</p>
-											<div className="space16" />
-											<p>At Special Pumps, your privacy is our priority. We are committed to protecting the personal information you share with us when using our services. We collect information such as your name, contact details, and property preferences to provide a seamless experience in buying, selling, or renting properties. This data helps us personalize your journey, process transactions, and improve our services. Rest assured, we do not sell or rent your information to third parties. We use secure systems to safeguard your data and ensure compliance with privacy standards. For any questions or concerns, feel free to reach out to our team—we're here to assist you.</p>
-										</div>
-									</div>
-								</div>
-								<div className="col-lg-4">
-									<div className="all-category">
-										<div className="categories-area">
-											<h3>Categories</h3>
-											<ul>
-												<li><Link href="/#">Terms Of Use <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-													<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
-												</svg></Link></li>
-												<li><Link href="/#">Limitations <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-													<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
-												</svg></Link></li>
-												<li><Link href="/#">Revisions and Errata <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-													<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
-												</svg></Link></li>
-												<li><Link href="/#">Site Terms of Use <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-													<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
-												</svg></Link></li>
-												<li><Link href="/#">Modifications <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-													<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
-												</svg></Link></li>
-												<li><Link href="/#">Risks <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-													<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
-												</svg></Link></li>
-											</ul>
-										</div>
-										<div className="space30" />
-										<div className="details-siderbar2">
-											<h4>Contact Seller</h4>
-											<div className="space24" />
-											<div className="personal-info">
-												<div className="img1">
-													<img src="/assets/img/all-images/blog/blog-img17.png" alt="Special Pumps" />
-												</div>
-												<div className="content">
-													<Link href="/#">Ruhul Amin Jr</Link>
-													<Link href="/mailto:ruhulaminjr@.com"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-														<path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 7.23792L12.0718 14.338L4 7.21594V19H20V7.23792ZM4.51146 5L12.0619 11.662L19.501 5H4.51146Z" />
-													</svg>ruhulaminjr@.com</Link>
-													<Link href="/tel:(234)345-4574"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-														<path d="M9.36556 10.6821C10.302 12.3288 11.6712 13.698 13.3179 14.6344L14.2024 13.3961C14.4965 12.9845 15.0516 12.8573 15.4956 13.0998C16.9024 13.8683 18.4571 14.3353 20.0789 14.4637C20.599 14.5049 21 14.9389 21 15.4606V19.9234C21 20.4361 20.6122 20.8657 20.1022 20.9181C19.5723 20.9726 19.0377 21 18.5 21C9.93959 21 3 14.0604 3 5.5C3 4.96227 3.02742 4.42771 3.08189 3.89776C3.1343 3.38775 3.56394 3 4.07665 3H8.53942C9.0611 3 9.49513 3.40104 9.5363 3.92109C9.66467 5.54288 10.1317 7.09764 10.9002 8.50444C11.1427 8.9484 11.0155 9.50354 10.6039 9.79757L9.36556 10.6821ZM6.84425 10.0252L8.7442 8.66809C8.20547 7.50514 7.83628 6.27183 7.64727 5H5.00907C5.00303 5.16632 5 5.333 5 5.5C5 12.9558 11.0442 19 18.5 19C18.667 19 18.8337 18.997 19 18.9909V16.3527C17.7282 16.1637 16.4949 15.7945 15.3319 15.2558L13.9748 17.1558C13.4258 16.9425 12.8956 16.6915 12.3874 16.4061L12.3293 16.373C10.3697 15.2587 8.74134 13.6303 7.627 11.6707L7.59394 11.6126C7.30849 11.1044 7.05754 10.5742 6.84425 10.0252Z">
-														</path>
-													</svg>(234) 345-4574</Link>
-												</div>
-											</div>
-											<div className="space10" />
-											<div className="input-area">
-												<input type="text" placeholder="Full Name" />
-											</div>
-											<div className="input-area">
-												<input type="number" placeholder="Phone Number" />
-											</div>
-											<div className="input-area">
-												<input type="email" placeholder="Email Address" />
-											</div>
-											<div className="input-area">
-												<textarea placeholder="Your Message" />
-											</div>
-											<div className="input-area">
-												<button type="submit" className="theme-btn1">Find Properties <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
-													<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
-												</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
-													<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
-												</svg></span></button>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					{/*===== WORKS AREA ENDS =======*/}
-					{/*===== CTA AREA STARTS =======*/}
-					<div className="cta1-section-area">
-						<div className="container">
-							<div className="row">
-								<div className="col-lg-12">
-									<div className="cta-bg-area" style={{ backgroundImage: 'url(assets/img/all-images/bg/cta-bg1.png)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
-										<div className="row align-items-center">
-											<div className="col-lg-5">
-												<div className="cta-header">
-													<h2 className="text-anime-style-3">Step Into Your Dream Home with Special Pumps</h2>
-													<div className="space16" />
-													<p data-aos="fade-left" data-aos-duration={1000}>At Special Pumps, we believe your next home is more than just a place – it’s where your future begins you’re buy.</p>
-												</div>
-											</div>
-											<div className="col-lg-2" />
-											<div className="col-lg-5" data-aos="zoom-in" data-aos-duration={1000}>
-												<div className="btn-area1 text-center">
-													<Link href="/property-halfmap-grid" className="theme-btn1">Find Your Dream Home <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
-														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
-													</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
-														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
-													</svg></span></Link>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+          {/* Quick Navigation */}
+          <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 mb-8">
+            <h2 className="text-lg font-semibold text-gray-900 mb-4">Quick Navigation</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+              {sections.map((section) => (
+                <a
+                  key={section.id}
+                  href={`#${section.id}`}
+                  className="flex items-center p-3 rounded-lg border border-gray-200 hover:border-blue-300 hover:bg-blue-50 transition-colors group"
+                >
+                  <section.icon className="h-5 w-5 text-gray-400 group-hover:text-blue-600 mr-3 flex-shrink-0" />
+                  <span className="text-sm font-medium text-gray-700 group-hover:text-blue-900">{section.title}</span>
+                </a>
+              ))}
+            </div>
+          </div>
 
-			</Layout>
-		</>
-	)
+          <article className="space-y-8">
+            {/* Company Information */}
+            <section>
+              <h2 className="text-xl font-semibold text-neutral-900 flex items-center">
+                <ShieldCheck className="h-6 w-6 text-blue-600 mr-3" />
+                Who we are
+              </h2>
+              <div className="mt-4 bg-slate-50 rounded-lg p-6 border-l-4 border-blue-600">
+                <p className="text-neutral-700 mb-4">
+                  <strong>Special Pumps</strong> is a manufacturer based in Coimbatore, delivering industrial pumps for process, 
+                  chemical, hot oil, slurry, filtration, and dewatering applications. We specialize in custom pump solutions for 
+                  diverse industrial requirements across manufacturing, petrochemical, and processing industries.
+                </p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-neutral-600">
+                  <div><strong>Location:</strong> Coimbatore, Tamil Nadu, India</div>
+                  <div><strong>Industry:</strong> Industrial Pump Manufacturing</div>
+                  <div><strong>Website:</strong> special-pumps.vercel.app</div>
+                  <div><strong>Contact:</strong> Available on request</div>
+                </div>
+              </div>
+            </section>
+
+            {/* Information Collection */}
+            <section id="information-collection">
+              <h2 className="text-xl font-semibold text-neutral-900 flex items-center">
+                <Eye className="h-6 w-6 text-blue-600 mr-3" />
+                Data we collect
+              </h2>
+              <ul className="mt-2 list-disc pl-5 text-neutral-700 space-y-1">
+                <li>
+                  <span className="font-medium">Technical specifications:</span> Fluid type, viscosity, temperature, corrosiveness, flow rate, head requirements, NPSH values, and operating conditions.
+                </li>
+                <li>
+                  <span className="font-medium">Project details:</span> Application requirements, installation conditions, site specifications, timeline, and procurement needs.
+                </li>
+                <li>
+                  <span className="font-medium">Contact information:</span> Name, designation, company details, email, phone number, business address, and industry type.
+                </li>
+                <li>
+                  <span className="font-medium">Quote requests:</span> Technical drawings, specifications, quantity requirements, and delivery preferences.
+                </li>
+                <li>
+                  <span className="font-medium">Website usage:</span> IP address, browser type, device information, pages viewed, time spent, and referral sources (via analytics/cookies).
+                </li>
+                <li>
+                  <span className="font-medium">Support interactions:</span> Service requests, maintenance schedules, technical queries, and feedback.
+                </li>
+              </ul>
+            </section>
+
+            {/* Information Usage */}
+            <section id="information-usage">
+              <h2 className="text-xl font-semibold text-neutral-900 flex items-center">
+                <FileText className="h-6 w-6 text-blue-600 mr-3" />
+                How we use data
+              </h2>
+              <ul className="mt-2 list-disc pl-5 text-neutral-700 space-y-1">
+                <li>Provide technical consultation and accurate pump selection recommendations.</li>
+                <li>Generate detailed quotes, proposals, and technical documentation.</li>
+                <li>Coordinate installation, commissioning, and maintenance services.</li>
+                <li>Offer ongoing technical support and troubleshooting assistance.</li>
+                <li>Improve our product offerings and service quality through project analysis.</li>
+                <li>Communicate important updates, service notifications, and industry information.</li>
+                <li>Comply with manufacturing, safety, and regulatory requirements.</li>
+                <li>Maintain business records for warranty, service, and documentation purposes.</li>
+                <li>Send relevant product updates or technical information (only with consent; opt-out available).</li>
+              </ul>
+            </section>
+
+            {/* Legal Bases */}
+            <section>
+              <h2 className="text-xl font-semibold text-neutral-900">Legal bases</h2>
+              <p className="mt-2 text-neutral-700">
+                We process data to fulfill contractual obligations (pump supply and services), with your consent (marketing, 
+                technical newsletters where required), to comply with legal obligations (quality standards, safety regulations, 
+                tax requirements), and for legitimate business interests (prevent fraud, improve technical solutions, maintain 
+                customer relationships).
+              </p>
+            </section>
+
+            {/* Third Party Services */}
+            <section id="third-parties">
+              <h2 className="text-xl font-semibold text-neutral-900 flex items-center">
+                <Users className="h-6 w-6 text-blue-600 mr-3" />
+                Sharing & transfers
+              </h2>
+              <ul className="mt-2 list-disc pl-5 text-neutral-700 space-y-1">
+                <li>
+                  <span className="font-medium">Service partners:</span> Installation contractors, maintenance service providers, 
+                  and technical specialists—bound by confidentiality agreements.
+                </li>
+                <li>
+                  <span className="font-medium">Technology vendors:</span> Cloud hosting, analytics platforms, email services, 
+                  and technical documentation systems—under strict data processing agreements.
+                </li>
+                <li>
+                  <span className="font-medium">Manufacturing partners:</span> Component suppliers and testing facilities receive 
+                  only specifications necessary for pump production and quality assurance.
+                </li>
+                <li>
+                  <span className="font-medium">Legal compliance:</span> Regulatory authorities, quality certification bodies, 
+                  and legal requirements as mandated by industrial standards.
+                </li>
+                <li>
+                  <span className="font-medium">Business transitions:</span> As part of a merger, acquisition, or asset transfer 
+                  with appropriate data protection safeguards.
+                </li>
+              </ul>
+            </section>
+
+            {/* Data Security */}
+            <section id="data-protection">
+              <h2 className="text-xl font-semibold text-neutral-900">Data security</h2>
+              <div className="mt-4 bg-slate-900 rounded-lg p-6 text-white">
+                <h3 className="text-lg font-semibold mb-4">Our Commitment to Security</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm">
+                  <div>
+                    <h4 className="font-semibold text-slate-200 mb-3">Technical Measures</h4>
+                    <ul className="space-y-1 text-slate-300 list-disc pl-4">
+                      <li>Encrypted data transmission and storage</li>
+                      <li>Regular security audits and system updates</li>
+                      <li>Multi-factor authentication and access controls</li>
+                      <li>Secure server infrastructure and firewalls</li>
+                      <li>Regular backups and disaster recovery procedures</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-200 mb-3">Organizational Measures</h4>
+                    <ul className="space-y-1 text-slate-300 list-disc pl-4">
+                      <li>Staff training on data protection protocols</li>
+                      <li>Confidentiality agreements with all personnel</li>
+                      <li>Limited access on need-to-know basis</li>
+                      <li>Regular privacy impact assessments</li>
+                      <li>Incident response and breach notification procedures</li>
+                    </ul>
+                  </div>
+                </div>
+                <p className="mt-4 text-slate-300 text-sm">
+                  While no method is 100% secure, we implement industry-standard practices and continuously monitor 
+                  our systems to protect your technical and business information.
+                </p>
+              </div>
+            </section>
+
+            {/* Data Retention */}
+            <section>
+              <h2 className="text-xl font-semibold text-neutral-900">Data retention</h2>
+              <p className="mt-2 text-neutral-700">
+                Technical specifications and project records are retained for up to 7 years for warranty, service, and 
+                regulatory compliance purposes. Support and maintenance logs: up to 5 years. Marketing communications: 
+                until you unsubscribe or for 3 years after last interaction. Customer relationship data: maintained during 
+                active business relationship plus 2 years. We then securely delete or anonymize data as appropriate.
+              </p>
+            </section>
+
+            {/* Cookies & Tracking */}
+            <section>
+              <h2 className="text-xl font-semibold text-neutral-900">Cookies & tracking</h2>
+              <p className="mt-2 text-neutral-700">
+                We use essential cookies for website functionality and technical consultations, and (with consent) analytics 
+                cookies to understand user preferences and improve our technical resources. You can manage cookies via browser 
+                settings and our cookie preferences. We do not use tracking for advertising purposes.
+              </p>
+            </section>
+
+            {/* Your Rights */}
+            <section>
+              <h2 className="text-xl font-semibold text-neutral-900">Your rights</h2>
+              <div className="mt-4 bg-gradient-to-r from-blue-50 to-cyan-50 border border-blue-200 rounded-lg p-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 className="font-semibold text-blue-900 mb-3">Data Subject Rights</h3>
+                    <ul className="space-y-1 text-blue-800 text-sm list-disc pl-4">
+                      <li>Access and review your personal and technical data</li>
+                      <li>Correct or update your information and specifications</li>
+                      <li>Request deletion of your data (subject to legal retention requirements)</li>
+                      <li>Object to or restrict certain data processing activities</li>
+                      <li>Withdraw consent for marketing communications</li>
+                      <li>Request a copy of your data in portable format</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-blue-900 mb-3">How to Exercise Rights</h3>
+                    <p className="text-blue-800 text-sm mb-3">
+                      Contact us using the details below with your request. We will respond within 30 days and may 
+                      need to verify your identity for security purposes. Note that some technical data may need to 
+                      be retained for safety and regulatory compliance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* Children */}
+            <section>
+              <h2 className="text-xl font-semibold text-neutral-900">Professional services</h2>
+              <p className="mt-2 text-neutral-700">
+                Our services are directed to industrial professionals and businesses. We do not knowingly collect 
+                information from individuals under 18. If you believe a minor provided data, contact us to remove it.
+              </p>
+            </section>
+
+            {/* Third-party Links */}
+            <section>
+              <h2 className="text-xl font-semibold text-neutral-900">Third‑party links</h2>
+              <p className="mt-2 text-neutral-700">
+                Our website may link to technical resources, industry standards, or partner websites. Their privacy 
+                practices are their own; please review their policies before sharing information.
+              </p>
+            </section>
+
+            {/* International Transfers */}
+            <section>
+              <h2 className="text-xl font-semibold text-neutral-900">International transfers</h2>
+              <p className="mt-2 text-neutral-700">
+                If data is processed outside India for technical consulting or support purposes, we use appropriate 
+                safeguards such as standard contractual clauses and vendor security assessments to protect your information.
+              </p>
+            </section>
+
+            {/* Policy Changes */}
+            <section>
+              <h2 className="text-xl font-semibold text-neutral-900">Changes to this policy</h2>
+              <p className="mt-2 text-neutral-700">
+                We may update this policy to reflect changes in our services or legal requirements. The "Last updated" 
+                date reflects the latest revision. Significant changes will be communicated to active customers.
+              </p>
+            </section>
+
+            {/* Contact */}
+            <section>
+              <h2 className="text-xl font-semibold text-neutral-900">Contact us</h2>
+              <div className="mt-4 bg-slate-100 rounded-lg p-6 border-2 border-slate-200">
+                <div className="text-center">
+                  <p className="text-neutral-700 mb-4">For privacy-related questions or to exercise your rights, please contact us:</p>
+                  <div className="bg-white rounded-lg p-4 inline-block shadow-sm">
+                    <div className="space-y-1 text-sm text-neutral-600">
+                      <p><strong className="text-neutral-900">Special Pumps</strong></p>
+                      <p>Industrial Pump Solutions</p>
+                      <p>Coimbatore, Tamil Nadu, India</p>
+                      <p>Email: <a href="mailto:privacy@special-pumps.com" className="text-blue-600 hover:underline">privacy@special-pumps.com</a></p>
+                      <p>Phone: Available on request</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            {/* FAQs */}
+            <section>
+              <h2 className="text-xl font-semibold text-neutral-900">Frequently Asked Questions</h2>
+              
+              <details className="mt-4 rounded-lg border bg-white p-4">
+                <summary className="cursor-pointer font-medium">Do you sell technical data to third parties?</summary>
+                <p className="mt-2 text-neutral-700">
+                  No. We do not sell personal data or technical specifications. Your pump requirements and project 
+                  details remain confidential and are used solely for providing our services.
+                </p>
+              </details>
+
+              <details className="mt-2 rounded-lg border bg-white p-4">
+                <summary className="cursor-pointer font-medium">How do I request deletion of my project data?</summary>
+                <p className="mt-2 text-neutral-700">
+                  Contact us at privacy@special-pumps.com with your request. Note that some technical records may 
+                  need to be retained for warranty, safety, or regulatory compliance purposes even after account deletion.
+                </p>
+              </details>
+
+              <details className="mt-2 rounded-lg border bg-white p-4">
+                <summary className="cursor-pointer font-medium">Is my technical information secure?</summary>
+                <p className="mt-2 text-neutral-700">
+                  Yes. We use industry-standard encryption and security measures. Technical specifications are treated 
+                  as confidential business information and protected accordingly. Access is limited to authorized personnel only.
+                </p>
+              </details>
+
+              <details className="mt-2 rounded-lg border bg-white p-4">
+                <summary className="cursor-pointer font-medium">Do you share pump specifications with competitors?</summary>
+                <p className="mt-2 text-neutral-700">
+                  Absolutely not. Your technical requirements and project specifications are strictly confidential. 
+                  We maintain competitive confidentiality and do not share customer information with other clients or competitors.
+                </p>
+              </details>
+
+              <details className="mt-2 rounded-lg border bg-white p-4">
+                <summary className="cursor-pointer font-medium">How long do you keep my technical consultation data?</summary>
+                <p className="mt-2 text-neutral-700">
+                  Technical specifications are retained for up to 7 years for warranty and service purposes. 
+                  General inquiry data is kept for 3 years. You can request deletion of non-essential data at any time.
+                </p>
+              </details>
+            </section>
+          </article>
+        </section>
+      </main>
+    </Layout>
+  )
 }

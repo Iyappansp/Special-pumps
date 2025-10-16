@@ -5,9 +5,9 @@ export const runtime = 'nodejs'
 
 export async function POST(req: Request) {
   try {
-    const { name, email, phone, message } = await req.json()
+    const { name, phone, message, email } = await req.json()
 
-    if (!name || !email || !phone || !message) {
+    if (!name || !phone || !message) {
       return new Response(
         JSON.stringify({ success: false, error: "Missing fields" }),
         { status: 400, headers: { "Content-Type": "application/json" } }
@@ -40,7 +40,7 @@ export async function POST(req: Request) {
       <div style="font-family: Arial, sans-serif; color: #333;">
         <h3>New Contact Request</h3>
         <p><b>Name:</b> ${escapeHtml(name)}</p>
-        <p><b>Email:</b> ${escapeHtml(email)}</p>
+        ${email ? `<p><b>Email:</b> ${escapeHtml(email)}</p>` : ''}
         <p><b>Phone:</b> ${escapeHtml(phone)}</p>
         <p><b>Message:</b></p>
         <p style="background:#f8f9fa;padding:10px;border-radius:5px;white-space:pre-wrap;">${escapeHtml(message)}</p>
@@ -48,11 +48,11 @@ export async function POST(req: Request) {
     `
 
     await transporter.sendMail({
-      from: `Housebox Contact <${smtpUser}>`,
+      from: `Special Pumps <${smtpUser}>`,
       to: adminEmail,
       subject: `📩 New Message from ${name}`,
       html,
-      replyTo: email,
+      replyTo: email || undefined,
     })
 
     return new Response(JSON.stringify({ success: true }), {
