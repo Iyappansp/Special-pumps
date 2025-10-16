@@ -32,7 +32,7 @@ export default function About1() {
 								<h2 className="text-anime-style-3">Embrace the Elegance Our Exclusive Property</h2>
 								<div className="space18" />
 								<p data-aos="fade-left" data-aos-duration={900}>At Special Pumps, we’re redefining the way people
-									find, sell, and invest in properties. Our mission is to simplify real a estate by provide
+									find, sell, and invest in Products. Our mission is to simplify real a estate by provide
 									innovative solutions, expert guidance.</p>
 								<div className="space32" />
 								<div className="counter-boxes" data-aos="fade-left" data-aos-duration={1000}>
@@ -60,15 +60,22 @@ export default function About1() {
 											</div>
 										</div>
 									</div>
+									<div className="btn-area1" data-aos="fade-left" data-aos-duration={1100}>
+											<Link href="/product-gallery" className="theme-btn5">See All Products <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
+											</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
+											</svg></span></Link>
+										</div>
 								</div>
 								<div className="space32" />
-								<div className="btn-area1" data-aos="fade-left" data-aos-duration={1100}>
-									<Link href="/property-halfmap-grid" className="theme-btn1">See All Properties <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+								{/* <div className="btn-area1" data-aos="fade-left" data-aos-duration={1100}>
+									<Link href="/property-halfmap-grid" className="theme-btn5">See All Products <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 										<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 									</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 										<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 									</svg></span></Link>
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>

@@ -29,7 +29,7 @@ const featuredPosts = [
     {
         image: '/assets/img/all-images/blog/blog-img4.png',
         date: '8 December 2024',
-        title: '5 Tips Find Your Dream Home Without An Stress Know Budget',
+        title: '5 Tips Find Your Perfect Pump Without An Stress Know Budget',
         link: '/property-details-v1',
     },
     {

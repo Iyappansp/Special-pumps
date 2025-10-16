@@ -28,7 +28,7 @@ export default function Footer1() {
 								<ul>
 									<li><Link href="/">Home</Link></li>
 									<li><Link href="/sidebar-grid">Listing</Link></li>
-									<li><Link href="/property-halfmap-grid">Properties</Link></li>
+									<li><Link href="/property-halfmap-grid">Products</Link></li>
 									<li><Link href="/blog">Our Blog</Link></li>
 									<li><Link href="/dashboard">Dashboard</Link></li>
 								</ul>

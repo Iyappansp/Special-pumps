@@ -6,7 +6,6 @@ import Link from 'next/link'
 type EnquiryFormValues = {
   name: string;
   phone: string;
-  email: string;
   message: string;
   company?: string;
 }
@@ -15,12 +14,11 @@ type EnquiryFormErrors = {
   name?: string;
   phone?: string;
   message?: string;
-  email?: string;
 }
 
 export default function Hero4() {
   // Enquiry form state and handlers
-  const [values, setValues] = useState<EnquiryFormValues>({ name: '', phone: '', message: '', email: '', company: '' })
+  const [values, setValues] = useState<EnquiryFormValues>({ name: '', phone: '', message: '', company: '' })
   const [errors, setErrors] = useState<EnquiryFormErrors>({})
   const [showOptional, setShowOptional] = useState(false)
   const [toast, setToast] = useState<{ message: string; type: 'success' | 'error' } | null>(null)
@@ -35,8 +33,6 @@ export default function Hero4() {
     const msg = values.message.trim()
     // Up to 500 chars, must not be empty
     if (!msg || msg.length > 500) nextErrors.message = 'Please add a short message (max 500 characters).'
-    const email = values.email.trim()
-    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) nextErrors.email = 'Enter a valid email.'
     setErrors(nextErrors)
     return Object.keys(nextErrors).length === 0
   }
@@ -63,7 +59,6 @@ export default function Hero4() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           name: values.name,
-          email: values.email,
           phone: values.phone,
           message: values.message,
         }),
@@ -71,7 +66,7 @@ export default function Hero4() {
       const data = await res.json().catch(() => ({}))
       if (res.ok && (data as any)?.success) {
         setToast({ message: 'Message sent successfully ✅', type: 'success' })
-        setValues({ name: '', phone: '', message: '', email: '', company: '' })
+        setValues({ name: '', phone: '', message: '', company: '' })
         setShowOptional(false)
       } else {
         setToast({ message: 'Failed to send message. Try again.', type: 'error' })
@@ -88,15 +83,15 @@ export default function Hero4() {
     <>
 
       <div>
-        <div className="hero4-section-area sp1" style={{ backgroundImage: 'url(assets/img/all-images/hero/hero4-img1.png)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+        <div className="hero4-section-area sp1" style={{ backgroundImage: 'url(/property/hero-img.webp)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
           <div className="container">
             <div className="row align-items-center">
               <div className="col-lg-6">
                 <div className="hero-header">
-                  <h5 data-aos="fade-left" data-aos-duration={800}>
-                    Premium Pumps for Industrial Excellence</h5>
+              
                   <div className="space20" />
-                  <h1 className="text-anime-style-2">Industrial Pump Solutions for Every Industry</h1>
+                  <h1 className="text-anime-style-2">Power to Precision <span style={{ color: '#ff9800' }}>Special Pumps </span>Delivers Industrial Excellence</h1>
+                       <h5><span style={{ color: '#ff9800' }}>Premium Pumps for Industrial Excellence</span></h5>
                   <div className="space20" />
                   {/* <div className="btn-are1" data-aos="fade-left" data-aos-duration={1000}>
                     <Link href="/sidebar-grid" className="theme-btn5">Enquiry Now <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
@@ -115,23 +110,23 @@ export default function Hero4() {
                   <form onSubmit={handleSubmit} noValidate>
                     <div className="field" data-animate style={{ marginBottom: 10 }}>
                       <label className="label" htmlFor="name">Full Name</label>
-                      <input className="input" id="name" name="name" type="text" placeholder="Enter full name" value={values.name} onChange={handleChange} aria-invalid={!!errors.name} aria-describedby="name-error" autoComplete="name" required />
+                      <input className="input py-2" id="name" name="name" type="text" placeholder="Enter full name" value={values.name} onChange={handleChange} aria-invalid={!!errors.name} aria-describedby="name-error" autoComplete="name" required />
                       {errors.name && <div id="name-error" style={{ color: '#dc2626' }}>Please enter a valid name.</div>}
                     </div>
                     <div className="field" data-animate style={{ marginBottom: 10 }}>
                       <label className="label" htmlFor="phone">Mobile Number</label>
-                      <input className="input" id="phone" name="phone" type="tel" inputMode="tel" pattern="[0-9\s+()\-]*" placeholder="+91 XXXXX XXXXX" value={values.phone} onChange={handleChange} aria-invalid={!!errors.phone} aria-describedby="phone-help phone-error" autoComplete="tel" required />
+                      <input className="input py-2" id="phone" name="phone" type="tel" inputMode="tel" pattern="[0-9\s+()\-]*" placeholder="+91 XXXXX XXXXX" value={values.phone} onChange={handleChange} aria-invalid={!!errors.phone} aria-describedby="phone-help phone-error" autoComplete="tel" required />
                       {/* <span className="helper" id="phone-help">WhatsApp number preferred</span> */}
                       {errors.phone && <div id="phone-error" style={{ color: '#dc2626' }}>Enter a valid mobile number.</div>}
                     </div>
-                    <div className="field" data-animate style={{ marginBottom: 10 }}>
+                    {/* <div className="field" data-animate style={{ marginBottom: 10 }}>
                       <label className="label" htmlFor="email">Email</label>
                       <input className="input" id="email" name="email" type="email" placeholder="you@example.com" value={values.email} onChange={handleChange} aria-invalid={!!errors.email} aria-describedby="email-error" autoComplete="email" required />
                       {errors.email && <div id="email-error" style={{ color: '#dc2626' }}>Enter a valid email.</div>}
-                    </div>
+                    </div> */}
                     <div className="field" data-animate style={{ marginBottom: 10 }}>
-                      <label className="label" htmlFor="message">Message</label>
-                      <textarea className="textarea" id="message" name="message" rows={3} placeholder="Describe fluid, flow (m³/hr), head (m), temperature (°C), and application" value={values.message} onChange={handleChange} aria-invalid={!!errors.message} aria-describedby="message-error message-counter" maxLength={500} required />
+                      <label className="label py-2" htmlFor="message">Message</label>
+                      <textarea className="textarea" id="message" name="message" rows={3} placeholder="Descriptions" value={values.message} onChange={handleChange} aria-invalid={!!errors.message} aria-describedby="message-error message-counter" maxLength={500} required />
                       <div id="message-counter" className="char-counter" aria-live="polite" aria-atomic="true">{values.message.length}/500</div>
                       {errors.message && <div id="message-error" style={{ color: '#dc2626' }}>{errors.message}</div>}
                     </div>

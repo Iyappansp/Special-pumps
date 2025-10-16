@@ -1,0 +1,66 @@
+/* CTA Unification – align all call/contact CTAs to header .theme-btn5 look */
+
+/* Variables are already defined in main.css; reused here */
+:root {
+  --cta-bg: var(--ztc-bg-bg-7);       /* #FF6B00 */
+  --cta-text: var(--ztc-text-text-1); /* #ffffff */
+  --cta-hover: var(--ztc-bg-bg-2);    /* #030E0F */
+  --cta-radius: 8px;
+}
+
+/* Target common call/contact anchors and the header CTA class itself.
+   We DO NOT change padding, width, or positioning. */
+.theme-btn5[href^="tel:"],
+.theme-btn5[href*="/contact"],
+.theme-btn5[href*="contact"],
+.theme-btn5[href*="quote"],
+.theme-btn5,
+ a.cta-unify,
+ button.cta-unify {
+  background-color: var(--cta-bg) !important;
+  color: var(--cta-text) !important;
+  border-radius: var(--cta-radius) !important;
+  font-family: var(--ztc-family-font1) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ensure hover overlay uses the header overlay color */
+.theme-btn5[href^="tel:"]::after,
+.theme-btn5[href*="/contact"]::after,
+.theme-btn5[href*="contact"]::after,
+.theme-btn5[href*="quote"]::after,
+.theme-btn5::after {
+  background: var(--cta-hover) !important;
+}
+
+/* If you add .cta-unify to any CTA that doesn't already have ::after, we provide it */
+a.cta-unify::after,
+button.cta-unify::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--cta-hover);
+  border-radius: 6px;
+  z-index: -1;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+a.cta-unify:hover::after,
+button.cta-unify:hover::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Keep header-like hover text color */
+.theme-btn5[href^="tel:"]:hover,
+.theme-btn5[href*="/contact"]:hover,
+.theme-btn5[href*="contact"]:hover,
+.theme-btn5[href*="quote"]:hover,
+.theme-btn5:hover,
+a.cta-unify:hover,
+button.cta-unify:hover {
+  color: var(--cta-text) !important;
+}

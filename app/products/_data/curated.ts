@@ -14,15 +14,15 @@ export type CuratedSlug = typeof allowedProductSlugs[number]
 
 export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://special-pumps.vercel.app'
 
-// Map curated slugs to exact files under public/images/motors (filenames preserved as-is)
+// Map curated slugs to exact files under public/images/Pumpss (filenames preserved as-is)
 const heroImageBySlug: Record<CuratedSlug, string> = {
-  'chemical-process': '/images/motors/chemical-process-pumps .png',
-  'filter-press': '/images/motors/filter-press pumps.jpg',
-  'non-clog': '/images/motors/non-clog-pumps.png',
-  'polypropylene': '/images/motors/polypropylene-pumps.png',
-  'stainless-steel': '/images/motors/stainless-steel-pumps.png',
-  'thermic-fluid': '/images/motors/thermic-fluid-pumps.png',
-  'vacuum': '/images/motors/vaccum-pumps.png',
+  'chemical-process': '/property/Rotomech_chemical_process_pumps_2.webp',
+  'filter-press': '/property/Rotomech_filter_press_pumps_2.webp',
+  'non-clog': '/property/Rotomech_non_clog_pumps_2.webp',
+  'polypropylene': '/property/Rotomech_polypropylene_pumps_2.webp',
+  'stainless-steel': '/property/Rotomech_stainless_steel_pumps_2.webp',
+  'thermic-fluid': '/property/Rotomech_thermic_fluid_pumps_2.webp',
+  'vacuum': '/property/Rotomech_vaccum_pumps_2.webp',
 }
 
 function mapSlug(slug: CuratedSlug): { key: string | null; title: string; description?: string } {
@@ -40,7 +40,7 @@ function mapSlug(slug: CuratedSlug): { key: string | null; title: string; descri
     case 'thermic-fluid':
       return { key: 'thermic-fluid-hot-oil-pump', title: 'Thermic Fluid Pumps', description: 'High-temperature thermic fluid circulation up to 320°C with reinforced bearings and cooling.' }
     case 'vacuum':
-      return { key: null, title: 'Vacuum Pumps', description: 'Industrial vacuum solutions for process and utility applications with dependable performance.' }
+      return { key: null, title: 'Vacuum Pumps', description: 'Industrial vacuum pump for process and utility applications with dependable performance.' }
   }
 }
 

@@ -1,4 +1,4 @@
-import initialProperties from "@/data/property.json"
+import initialProducts from "@/data/property.json"
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit"
 
 // Define types for our state
@@ -59,8 +59,8 @@ interface SortOption {
 }
 
 interface PropertyState {
-  properties: Property[]
-  favoriteProperties: number[]
+  Products: Property[]
+  favoriteProducts: number[]
   propertyTypes: PropertyType[]
   amenitiesList: Amenity[]
   cities: City[]
@@ -76,8 +76,8 @@ interface UpdatePropertyPayload {
 }
 
 const initialState: PropertyState = {
-  properties: initialProperties as Property[],
-  favoriteProperties: [],
+  Products: initialProducts as Property[],
+  favoriteProducts: [],
   propertyTypes: [
     { id: 1, name: "House", value: "house" },
     { id: 2, name: "Apartment", value: "apartment" },
@@ -153,7 +153,7 @@ const initialState: PropertyState = {
   // Added statuses array based on the JSON data
   statuses: [
     { id: 1, name: "For Sale", value: "for-sale" },
-    { id: 2, name: "For Rent", value: "for-rent" },
+    { id: 2, name: "For Services", value: "for-rent" },
   ],
   sortOptions: [
     { id: 1, name: "Price: Low to High", value: "price-asc" },
@@ -173,12 +173,12 @@ export const propertySlice = createSlice({
   reducers: {
     toggleFavoriteProperty: (state, { payload }: PayloadAction<number>) => {
       const propertyId = payload
-      const isExist = state.favoriteProperties.includes(propertyId)
+      const isExist = state.favoriteProducts.includes(propertyId)
 
       if (isExist) {
-        state.favoriteProperties = state.favoriteProperties.filter((id) => id !== propertyId)
+        state.favoriteProducts = state.favoriteProducts.filter((id) => id !== propertyId)
       } else {
-        state.favoriteProperties.push(propertyId)
+        state.favoriteProducts.push(propertyId)
       }
     },
     toggleAmenityCheck: (state, { payload }: PayloadAction<number>) => {
@@ -197,18 +197,18 @@ export const propertySlice = createSlice({
     },
     addProperty: (state, { payload }: PayloadAction<Omit<Property, "id">>) => {
       // Generate a new ID based on the highest existing ID
-      const newId = Math.max(...state.properties.map((p) => p.id)) + 1
-      state.properties.push({ ...payload, id: newId })
+      const newId = Math.max(...state.Products.map((p) => p.id)) + 1
+      state.Products.push({ ...payload, id: newId })
     },
     updateProperty: (state, { payload }: PayloadAction<UpdatePropertyPayload>) => {
       const { id, ...updatedData } = payload
-      const index = state.properties.findIndex((property) => property.id === id)
+      const index = state.Products.findIndex((property) => property.id === id)
       if (index !== -1) {
-        state.properties[index] = { ...state.properties[index], ...updatedData }
+        state.Products[index] = { ...state.Products[index], ...updatedData }
       }
     },
     deleteProperty: (state, { payload }: PayloadAction<number>) => {
-      state.properties = state.properties.filter((property) => property.id !== payload)
+      state.Products = state.Products.filter((property) => property.id !== payload)
     },
   },
 })

@@ -3,6 +3,7 @@ import { useState, useRef } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Layout from '@/components/layout/Layout'
 import ComponentDetails from '@/components/ComponentDetails'
+import { div } from 'framer-motion/client'
 export default function InstallationMethodsPage() {
   const [activeStep, setActiveStep] = useState<number>(0)
   const [isFlowing, setIsFlowing] = useState<boolean>(false)
@@ -359,13 +360,13 @@ function AnimatedInstallationSVG_Clean({
           <rect x="350" y="200" width="100" height="60" fill="#2d3748" stroke="#4a5568" strokeWidth="3" rx="8" filter="url(#shadowFilter)" />
           <use href="#pumpImpeller" x="400" y="230" />
 
-          {/* Motor */}
+          {/* Pumps */}
           <rect x="480" y="190" width="80" height="80" fill="#4a5568" stroke="#2d3748" strokeWidth="3" rx="8" filter="url(#shadowFilter)" />
           {[...Array(6)].map((_, i) => (
             <line key={i} x1={490 + i * 12} y1="195" x2={490 + i * 12} y2="265" stroke="#718096" strokeWidth="2" />
           ))}
           <text x="400" y="180" textAnchor="middle" className="pump-label">Pump 2HP</text>
-          <text x="520" y="175" textAnchor="middle" className="motor-label">Motor 1450 RPM</text>
+          <text x="520" y="175" textAnchor="middle" className="Pumps-label">Pumps 1450 RPM</text>
 
           {/* Suction and Discharge Lines */}
           <path d="M 220 230 L 350 230" stroke={config.color} strokeWidth="12" strokeLinecap="round" fill="none" />
@@ -423,10 +424,10 @@ function AnimatedInstallationSVG_Clean({
           <rect x="320" y="190" width="110" height="70" fill="#2d3748" stroke="#4a5568" strokeWidth="3" rx="8" filter="url(#shadowFilter)" />
           <use href="#pumpImpeller" x="375" y="225" />
 
-          {/* 3HP Motor */}
+          {/* 3HP Pumps */}
           <rect x="460" y="180" width="90" height="90" fill="#4a5568" stroke="#2d3748" strokeWidth="3" rx="8" filter="url(#shadowFilter)" />
           <text x="375" y="175" textAnchor="middle" className="pump-label">Pump 3HP</text>
-          <text x="505" y="165" textAnchor="middle" className="motor-label">Motor 1450 RPM</text>
+          <text x="505" y="165" textAnchor="middle" className="Pumps-label">Pumps 1450 RPM</text>
 
           {/* Main Process Line */}
           <path d="M 200 225 L 320 225" stroke={config.color} strokeWidth="12" strokeLinecap="round" fill="none" />
@@ -480,12 +481,12 @@ function AnimatedInstallationSVG_Clean({
           ))}
           <text x="730" y="310" textAnchor="middle" className="tank-title">Filter Press</text>
 
-          {/* 5HP Pump and Motor */}
+          {/* 5HP Pump and Pumps */}
           <rect x="280" y="180" width="120" height="80" fill="#2d3748" stroke="#4a5568" strokeWidth="4" rx="8" filter="url(#shadowFilter)" />
           <use href="#pumpImpeller" x="340" y="220" />
           <rect x="430" y="170" width="100" height="100" fill="#4a5568" stroke="#2d3748" strokeWidth="4" rx="8" filter="url(#shadowFilter)" />
           <text x="340" y="165" textAnchor="middle" className="pump-label">Pump 5HP</text>
-          <text x="480" y="155" textAnchor="middle" className="motor-label">1450 RPM Motor</text>
+          <text x="480" y="155" textAnchor="middle" className="Pumps-label">1450 RPM Pumps</text>
 
           {/* Lines */}
           <path d="M 190 220 L 280 220" stroke={config.color} strokeWidth="14" strokeLinecap="round" fill="none" />
@@ -526,8 +527,8 @@ function AnimatedInstallationSVG_Clean({
         <motion.circle className="clean-hotspot" cx={activeStep === 0 ? 160 : activeStep === 1 ? 140 : 125} cy={215} r={12} fill="rgba(56, 178, 172, 0.3)" stroke="#38b2ac" strokeWidth={3} whileHover={{ r: 18, fill: 'rgba(56, 178, 172, 0.6)' }} onClick={() => onComponentClick('tank')} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.5, type: 'spring' }} />
         {/* Pump */}
         <motion.circle className="clean-hotspot" cx={activeStep === 0 ? 400 : activeStep === 1 ? 375 : 340} cy={activeStep === 0 ? 230 : activeStep === 1 ? 225 : 220} r={12} fill="rgba(56, 178, 172, 0.3)" stroke="#38b2ac" strokeWidth={3} whileHover={{ r: 18, fill: 'rgba(56, 178, 172, 0.6)' }} onClick={() => onComponentClick('pump')} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.7, type: 'spring' }} />
-        {/* Motor */}
-        <motion.circle className="clean-hotspot" cx={activeStep === 0 ? 520 : activeStep === 1 ? 505 : 480} cy={activeStep === 0 ? 230 : activeStep === 1 ? 225 : 220} r={12} fill="rgba(56, 178, 172, 0.3)" stroke="#38b2ac" strokeWidth={3} whileHover={{ r: 18, fill: 'rgba(56, 178, 172, 0.6)' }} onClick={() => onComponentClick('motor')} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.9, type: 'spring' }} />
+        {/* Pumps */}
+        <motion.circle className="clean-hotspot" cx={activeStep === 0 ? 520 : activeStep === 1 ? 505 : 480} cy={activeStep === 0 ? 230 : activeStep === 1 ? 225 : 220} r={12} fill="rgba(56, 178, 172, 0.3)" stroke="#38b2ac" strokeWidth={3} whileHover={{ r: 18, fill: 'rgba(56, 178, 172, 0.6)' }} onClick={() => onComponentClick('Pumps')} initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.9, type: 'spring' }} />
       </g>
 
       {/* Smooth Bubble Effects inside tank */}
@@ -683,10 +684,10 @@ function AnimatedInstallationSVG_Oldv2({
                 fill="#1f2937" stroke="#374151" strokeWidth="2" rx="6" />
           <use href="#impellerRotor" x="285" y="200" />
           
-          {/* Motor */}
+          {/* Pumps */}
           <rect x="340" y="175" width="60" height="50" 
                 fill="#374151" stroke="#4b5563" strokeWidth="2" rx="4" />
-          <text x="370" y="165" textAnchor="middle" className="component-label">2HP Motor</text>
+          <text x="370" y="165" textAnchor="middle" className="component-label">2HP Pumps</text>
 
           {/* Suction Pipe */}
           <path d="M 160 200 L 250 200" 
@@ -791,10 +792,10 @@ function AnimatedInstallationSVG_Oldv2({
                 fill="#1f2937" stroke="#374151" strokeWidth="2" rx="6" />
           <use href="#impellerRotor" x="270" y="200" />
           
-          {/* 3HP Motor (Larger) */}
+          {/* 3HP Pumps (Larger) */}
           <rect x="330" y="170" width="70" height="60" 
                 fill="#374151" stroke="#4b5563" strokeWidth="2" rx="4" />
-          <text x="365" y="160" textAnchor="middle" className="component-label">3HP Motor</text>
+          <text x="365" y="160" textAnchor="middle" className="component-label">3HP Pumps</text>
 
           {/* Main Process Line */}
           <path d="M 140 200 L 230 200" 
@@ -865,8 +866,11 @@ function AnimatedInstallationSVG_Oldv2({
       )}
 
       {/* STEP 3: QUARTZ POWDER TRANSFER */}
+      
       {activeStep === 2 && (
         <g className="quartz-system">
+              
+
           {/* Quartz Feed Tank */}
           <rect x="30" y="110" width="110" height="130" 
                 fill="white" stroke={config.color} strokeWidth="3" rx="8" 
@@ -925,7 +929,7 @@ function AnimatedInstallationSVG_Oldv2({
                 fill="#1f2937" stroke="#374151" strokeWidth="3" rx="6" />
           <use href="#impellerRotor" x="265" y="200" />
           
-          {/* 5HP Motor (Largest) */}
+          {/* 5HP Pumps (Largest) */}
           <rect x="330" y="160" width="80" height="80" 
                 fill="#374151" stroke="#4b5563" strokeWidth="3" rx="4" />
           <text x="370" y="150" textAnchor="middle" className="component-label">5HP 1450 RPM</text>
@@ -1043,7 +1047,7 @@ function AnimatedInstallationSVG_Oldv2({
           transition={{ delay: 0.7, type: 'spring' }}
         />
 
-        {/* Motor Hotspot */}
+        {/* Pumps Hotspot */}
         <motion.circle
           className="hotspot-circle"
           cx={activeStep === 0 ? 370 : activeStep === 1 ? 365 : 370}
@@ -1053,7 +1057,7 @@ function AnimatedInstallationSVG_Oldv2({
           stroke="#22d3ee"
           strokeWidth="2"
           whileHover={{ r: 12, fill: 'rgba(34, 211, 238, 0.8)' }}
-          onClick={() => onComponentClick('motor')}
+          onClick={() => onComponentClick('Pumps')}
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ delay: 0.9, type: 'spring' }}
@@ -1084,5 +1088,6 @@ function AnimatedInstallationSVG_Oldv2({
       )}
     </motion.svg>
   )
+  
 }
 

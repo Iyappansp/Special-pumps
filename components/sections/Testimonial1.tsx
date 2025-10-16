@@ -122,7 +122,7 @@ export default function Testimonial1() {
 					<div className="row">
 						<div className="col-lg-6">
 							<div className="testimonial-header space-margin60 heading1">
-								<h5 data-aos="fade-left" data-aos-duration={800}>feedback/testimonial</h5>
+								<h5 data-aos="fade-left" data-aos-duration={800}>Testimonial</h5>
 								<div className="space20" />
 								<h2 className="text-anime-style-3">A Legacy Of Happy Clients</h2>
 							</div>
@@ -160,7 +160,7 @@ export default function Testimonial1() {
 																<p>Happy Client</p>
 															</div>
 														</div>
-														<img src="/assets/img/elements/brand1.png" alt="Special Pumps" className="brand1" />
+														<img src="\image.png" alt="Special Pumps" className="brand1" />
 													</div>
 												</div>
 											))}

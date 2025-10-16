@@ -10,7 +10,7 @@ export const processStainlessSteelPump = {
     title: "Process Pump and Stainless Steel Pump",
     subtitle: "International standard design for chemical and petrochemical industries",
     mainImage: "/images/process-pump-hero.jpg",
-    gallery: ["/images/process-pump-1.jpg", "/images/process-pump-2.jpg"],
+    // gallery: ["/images/process-pump-1.jpg", "/images/process-pump-2.jpg"],
     badges: ["SS316/304", "Mechanical Seal", "Parallel Operation"],
   },
 

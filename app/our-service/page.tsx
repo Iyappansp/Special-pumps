@@ -59,14 +59,12 @@ export default function OurService() {
 
 				<div>
 					<div className="hero-inner-section-area-sidebar">
-						<img src="/assets/img/all-images/hero/hero-img1.png" alt="Special Pumps" className="hero-img1" />
+						<img src="/property/hero-img.webp" alt="Special Pumps" className="hero-img1" />
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-12">
 									<div className="hero-header-area text-center">
-										<Link href="/">Home <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-											<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
-										</svg> Listing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+										<Link href="/">Home<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 												<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
 											</svg> Our Services</Link>
 										<div className="space24" />
@@ -101,7 +99,7 @@ export default function OurService() {
 										<p>Get the right pump first time. Share flow, head, temperature, and fluid; receive a matched model and BOM.</p>
 										<div className="space24" />
 										<div className="btn-area1">
-											<Link href="/contact" className="theme-btn1">Buy A Pump <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+											<Link href="/contact" className="theme-btn5">Buy A Pump <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 											</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -120,7 +118,7 @@ export default function OurService() {
 										<p>Get the right pump first time. Share flow, head, temperature, and fluid; receive a matched model and BOM.</p>
 										<div className="space24" />
 										<div className="btn-area1">
-											<Link href="/contact" className="theme-btn1">Book Installation <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+											<Link href="/contact" className="theme-btn5">Book Installation <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 											</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -141,7 +139,7 @@ export default function OurService() {
 										<p>Preventive service, overhauls, seals, bearings, and OEM spares to keep uptime high and costs low.</p>
 										<div className="space24" />
 										<div className="btn-area1">
-											<Link href="/contact" className="theme-btn1">Get Service <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+											<Link href="/contact" className="theme-btn5">Get Service <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 											</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
@@ -159,7 +157,7 @@ export default function OurService() {
 							<div className="row">
 								<div className="col-lg-6">
 									<div className="testimonial-header space-margin60 heading1">
-										<h5 data-aos="fade-left" data-aos-duration={800}>feedback/testimonial</h5>
+										<h5 data-aos="fade-left" data-aos-duration={800}>Testimonial</h5>
 										<div className="space20" />
 										<h2 className="text-anime-style-3">A Legacy Of Happy Clients</h2>
 									</div>
@@ -172,16 +170,16 @@ export default function OurService() {
 											<div className="col-lg-5">
 												<Slider {...settings2} className="images-area2 slider2">
 													<div className="img1 image-anime">
-														<img src="/assets/img/all-images/testimonial/testimonial-img1.png" alt="Special Pumps" />
+														<img src="property/testinomials.webp" alt="Special Pumps" />
 													</div>
 													<div className="img1 image-anime">
-														<img src="/assets/img/all-images/testimonial/testimonial-img1.png" alt="Special Pumps" />
+														<img src="property/testinomials.webp" alt="Special Pumps" />
 													</div>
 													<div className="img1 image-anime">
-														<img src="/assets/img/all-images/testimonial/testimonial-img1.png" alt="Special Pumps" />
+														<img src="property/testinomials.webp" alt="Special Pumps" />
 													</div>
 													<div className="img1 image-anime">
-														<img src="/assets/img/all-images/testimonial/testimonial-img1.png" alt="Special Pumps" />
+														<img src="property/testinomials.webp" alt="Special Pumps" />
 													</div>
 												</Slider>
 											</div>
@@ -190,7 +188,7 @@ export default function OurService() {
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p>"When I decided to sell my home, I was overwhelmed with where to start. Special Pumps stepped in with a clear plan, professional marketing, constant communicate. Within two weeks, my house was sold above asking.â€</p>
+														<p>"When I decided to sell my home, I was overwhelmed with where to start. Special Pumps stepped in with a clear plan, professional marketing, constant communicate. Within two weeks, my house was sold above asking.</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -203,7 +201,7 @@ export default function OurService() {
 																	<p>Happy Client</p>
 																</div>
 															</div>
-															<img src="/assets/img/elements/brand1.png" alt="Special Pumps" className="brand1" />
+															<img src="\image.png" alt="Special Pumps" className="brand1" />
 														</div>
 													</div>
 													<div className="testimonial-box">
@@ -217,12 +215,12 @@ export default function OurService() {
 																	<img src="/assets/img/all-images/testimonial/testimonial-img3.png" alt="Special Pumps" />
 																</div>
 																<div className="text">
-																	<Link href="/#">Xavi Alonso</Link>
+																	<Link href="/#">Kuamr P</Link>
 																	<div className="space10" />
 																	<p>Happy Client</p>
 																</div>
 															</div>
-															<img src="/assets/img/elements/brand1.png" alt="Special Pumps" className="brand1" />
+															<img src="\image.png" alt="Special Pumps" className="brand1" />
 														</div>
 													</div>
 													<div className="testimonial-box">
@@ -236,12 +234,12 @@ export default function OurService() {
 																	<img src="/assets/img/all-images/testimonial/testimonial-img4.png" alt="Special Pumps" />
 																</div>
 																<div className="text">
-																	<Link href="/#">Granit Xhaka</Link>
+																	<Link href="/#">Sasi K</Link>
 																	<div className="space10" />
 																	<p>Happy Client</p>
 																</div>
 															</div>
-															<img src="/assets/img/elements/brand1.png" alt="Special Pumps" className="brand1" />
+															<img src="\image.png" alt="Special Pumps" className="brand1" />
 														</div>
 													</div>
 													<div className="testimonial-box">
@@ -255,12 +253,12 @@ export default function OurService() {
 																	<img src="/assets/img/all-images/testimonial/testimonial-img5.png" alt="Special Pumps" />
 																</div>
 																<div className="text">
-																	<Link href="/#">Alex Garcia</Link>
+																	<Link href="/#">Kumaresan</Link>
 																	<div className="space10" />
 																	<p>Happy Client</p>
 																</div>
 															</div>
-															<img src="/assets/img/elements/brand1.png" alt="Special Pumps" className="brand1" />
+															<img src="\image.png" alt="Special Pumps" className="brand1" />
 														</div>
 													</div>
 												</Slider>
@@ -278,7 +276,7 @@ export default function OurService() {
 							<div className="row">
 								<div className="col-lg-6 m-auto">
 									<div className="heading1 text-center space-margin60">
-										<h5>FAQ,s</h5>
+										<h5>FAQ</h5>
 										<div className="space20" />
 										<h2>Frequently Asked Question</h2>
 									</div>
@@ -315,7 +313,7 @@ export default function OurService() {
 											<div className="accordion-item">
 												<h2 className="accordion-header">
 													<button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-														Can I find rental properties on Special Pumps?
+														Can I find rental Products on Special Pumps?
 													</button>
 												</h2>
 												<div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
@@ -388,15 +386,15 @@ export default function OurService() {
 										<div className="row align-items-center">
 											<div className="col-lg-5">
 												<div className="cta-header">
-													<h2 className="text-anime-style-3">Step Into Your Dream Home with Special Pumps</h2>
+													<h2 className="text-anime-style-3">Step Into Your Home with Special Pumps</h2>
 													<div className="space16" />
-													<p data-aos="fade-left" data-aos-duration={1000}>At Special Pumps, we believe your next home is more than just a place â€“ itâ€™s where your future begins youâ€™re buy.</p>
+													<p data-aos="fade-left" data-aos-duration={1000}>At Special Pumps, we believe your next home is more than just a place it's where your future begins you are buy.</p>
 												</div>
 											</div>
 											<div className="col-lg-2" />
 											<div className="col-lg-5" data-aos="zoom-in" data-aos-duration={1000}>
 												<div className="btn-area1 text-center">
-													<Link href="/product-gallery" className="theme-btn1">Find Your Dream Home <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+													<Link href="/product-gallery" className="theme-btn5">Find Your Perfect Pump <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 													</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 														<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />

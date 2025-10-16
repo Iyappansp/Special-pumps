@@ -70,7 +70,7 @@ export default function Others4() {
 										<div className="text">
 											<Link href="/property-details-v1">Los Angeles</Link>
 											<div className="space12" />
-											<p>3 Properties</p>
+											<p>3 Products</p>
 										</div>
 										<div className="arrow">
 											<Link href="/property-details-v1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -88,7 +88,7 @@ export default function Others4() {
 										<div className="text">
 											<Link href="/property-details-v1">Los Angeles</Link>
 											<div className="space12" />
-											<p>3 Properties</p>
+											<p>3 Products</p>
 										</div>
 										<div className="arrow">
 											<Link href="/property-details-v1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -106,7 +106,7 @@ export default function Others4() {
 										<div className="text">
 											<Link href="/property-details-v1">Los Angeles</Link>
 											<div className="space12" />
-											<p>3 Properties</p>
+											<p>3 Products</p>
 										</div>
 										<div className="arrow">
 											<Link href="/property-details-v1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -124,7 +124,7 @@ export default function Others4() {
 										<div className="text">
 											<Link href="/property-details-v1">Los Angeles</Link>
 											<div className="space12" />
-											<p>3 Properties</p>
+											<p>3 Products</p>
 										</div>
 										<div className="arrow">
 											<Link href="/property-details-v1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -142,7 +142,7 @@ export default function Others4() {
 										<div className="text">
 											<Link href="/property-details-v1">Los Angeles</Link>
 											<div className="space12" />
-											<p>3 Properties</p>
+											<p>3 Products</p>
 										</div>
 										<div className="arrow">
 											<Link href="/property-details-v1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -160,7 +160,7 @@ export default function Others4() {
 										<div className="text">
 											<Link href="/property-details-v1">Los Angeles</Link>
 											<div className="space12" />
-											<p>3 Properties</p>
+											<p>3 Products</p>
 										</div>
 										<div className="arrow">
 											<Link href="/property-details-v1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

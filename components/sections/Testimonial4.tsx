@@ -57,9 +57,11 @@ export default function Testimonial4() {
 						<div className="row">
 							<div className="col-lg-7 m-auto text-center">
 								<div className="heading3  text-center">
-									<h5>our testimonials</h5>
-									<div className="space20" />
-									<h2 className="text-anime-style-3">Feedback From Our Clients</h2>
+									<h2 className="text-anime-style-3">OUR TESTIMONIALS</h2>
+
+							<div className="space20" />
+											<h5>Feedback From Our Clients</h5>
+
 								</div>
 							</div>
 						</div>
@@ -181,7 +183,7 @@ export default function Testimonial4() {
 													</div>
 													<div className="space16" />
 													<p className="text">
-														"Special Pumps delivered and installed our complete pumping system ahead of schedule. The 3HP motor has been running continuously for 18 months without a single breakdown. Their preventive maintenance program is exceptional - they catch issues before they become problems.."
+														"Special Pumps delivered and installed our complete pumping system ahead of schedule. The 3HP Pumps has been running continuously for 18 months without a single breakdown. Their preventive maintenance program is exceptional - they catch issues before they become problems.."
 													</p>
 													<div className="triangle">
 														<svg xmlns="http://www.w3.org/2000/svg" width={42} height={35} viewBox="0 0 42 35" fill="none">
@@ -339,9 +341,7 @@ export default function Testimonial4() {
 													</div>
 													<div className="space16" />
 													<p className="text">
-													"Special Pumps designed a custom pumping solution for our dyeing operations. The energy-efficient motors reduced our electricity bills by ₹15,000 per month. The payback period was just 14 months, and the system has been flawless for 2 years."
-
-
+													"Special Pumps designed a custom pumping solution for our dyeing operations. The payback period was just 14 months, and the system has been flawless for 2 years."
 													</p>
 													<div className="triangle">
 														<svg xmlns="http://www.w3.org/2000/svg" width={42} height={35} viewBox="0 0 42 35" fill="none">

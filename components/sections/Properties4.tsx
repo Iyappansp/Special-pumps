@@ -1,4 +1,4 @@
-﻿'use client'
+'use client'
 import Link from 'next/link'
 import { Autoplay, Navigation, Pagination } from "swiper/modules"
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -25,16 +25,15 @@ const swiperFade = {
 export default function Properties4() {
 	return (
 		<>
-
-			<div className="properties4-section-area sp2" style={{ backgroundImage: 'url(assets/img/all-images/bg/bg5.png)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+			<div className="Properties4-section-area sp2" style={{ backgroundImage: 'url(assets/img/all-images/bg/bg5.png)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-12">
 							<div className="property-heading space-margin60">
 								<div className="heading3">
-									<h5 data-aos="fade-left" data-aos-duration={800}>Our Serivces</h5>
+									<h2 className="text-anime-style-3">OUR PRODUCTS</h2>
 									<div className="space20" />
-									<h2 className="text-anime-style-3">Our Featured Products</h2>
+									<h5 data-aos="fade-left" data-aos-duration={800}>Our Featured Products</h5>
 								</div>
 								<div className="btn-area1">
 									<Link href="/product-gallery" className="theme-btn5">See All Products <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
@@ -111,68 +110,19 @@ export default function Properties4() {
 									<div className="tab-content" id="pills-tabContent">
 										<div className="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabIndex={0}>
 											<div className="row">
-												<div className="col-lg-4 col-md-6">
+											<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<Swiper {...swiperFade} className="swiper swiper-fade" >
-																<div className="swiper-wrapper">
-																	<SwiperSlide>
-																		<img src="/assets/img/all-images/properties/property-img19.png" alt="Special Pumps" />
-																	</SwiperSlide>
-																	<SwiperSlide>
-																		<img src="/assets/img/all-images/properties/property-img18.png" alt="Special Pumps" />
-																	</SwiperSlide>
-																</div>
-																<div className="swiper-pagination" />
-															</Swiper>
+															<img src="property/Rotomech_chemical_process_pumps_2.webp" alt="Special Pumps" />
 														</div>
-														<ul className="category-list">
+														{/* <ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
-														</ul>
+															<li><Link href="/#">For Services</Link></li>
+														</ul> */}
 														<div className="content-area">
-															<Link href="/products/chemical-process" className="head">Back Pullout And Processed Pump</Link>
+															<Link href="/products/chemical-process" className="head">Chemical Process Pumps</Link>
 															<div className="space16" />
-															<p> Endâ€‘suction centrifugal with easy motor-backâ€‘pullout service for fast maintenance.</p>
-															<div className="space24" />
-															{/* <ul>
-																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
-																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bath1.svg" alt="Special Pumps" /></span> 08</Link></li>
-																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/sqare1.svg" alt="Special Pumps" /></span> 1200 SQ</Link></li>
-															</ul> */}
-															<div className="space24" />
-															{/* <div className="btn-area">
-																<div className="nm-btn">
-																	<Link href="/#">$820,000</Link>
-																</div>
-																<div className="love-share">
-																	<Link href="#" className="heart"><img src="/assets/img/icons/heart3.svg" alt="Special Pumps" className="heart1" /> <img src="/assets/img/icons/heart4.svg" alt="Special Pumps" className="heart2" /></Link>
-																	<Link href="/#" className="share"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-																		<path d="M13.1202 17.0228L8.92129 14.7324C8.19135 15.5125 7.15261 16 6 16C3.79086 16 2 14.2091 2 12C2 9.79086 3.79086 8 6 8C7.15255 8 8.19125 8.48746 8.92118 9.26746L13.1202 6.97713C13.0417 6.66441 13 6.33707 13 6C13 3.79086 14.7909 2 17 2C19.2091 2 21 3.79086 21 6C21 8.20914 19.2091 10 17 10C15.8474 10 14.8087 9.51251 14.0787 8.73246L9.87977 11.0228C9.9583 11.3355 10 11.6629 10 12C10 12.3371 9.95831 12.6644 9.87981 12.9771L14.0788 15.2675C14.8087 14.4875 15.8474 14 17 14C19.2091 14 21 15.7909 21 18C21 20.2091 19.2091 22 17 22C14.7909 22 13 20.2091 13 18C13 17.6629 13.0417 17.3355 13.1202 17.0228ZM6 14C7.10457 14 8 13.1046 8 12C8 10.8954 7.10457 10 6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14ZM17 8C18.1046 8 19 7.10457 19 6C19 4.89543 18.1046 4 17 4C15.8954 4 15 4.89543 15 6C15 7.10457 15.8954 8 17 8ZM17 20C18.1046 20 19 19.1046 19 18C19 16.8954 18.1046 16 17 16C15.8954 16 15 16.8954 15 18C15 19.1046 15.8954 20 17 20Z">
-																		</path>
-																	</svg></Link>
-																	<Link href="#;" className="share"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-																		<path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748ZM10 10V7H12V10H15V12H12V15H10V12H7V10H10Z">
-																		</path>
-																	</svg></Link>
-																</div>
-															</div> */}
-														</div>
-													</div>
-												</div>
-												<div className="col-lg-4 col-md-6">
-													<div className="property-single-boxarea">
-														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img20.png" alt="Special Pumps" />
-														</div>
-														<ul className="category-list">
-															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
-														</ul>
-														<div className="content-area">
-															<Link href="/products/stainless-steel" className="head">Process Pump and Stainless Steel Pump</Link>
-															<div className="space16" />
-															<p>Robust SS construction coupled to standard TEFC motors for chemical/process duty.</p>
+															<p className='para-line-h'>International standard design for chemical and petrochemical industries</p>
 															{/* <div className="space24" /> */}
 															{/* <ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -202,80 +152,18 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<Swiper {...swiperFade} className="swiper swiper-fade" >
-																<div className="swiper-wrapper">
-																	<SwiperSlide>
-																		<img src="/assets/img/all-images/properties/property-img21.png" alt="Special Pumps" />
-																	</SwiperSlide>
-																	<SwiperSlide>
-																		<img src="/assets/img/all-images/properties/property-img17.png" alt="Special Pumps" />
-																	</SwiperSlide>
-																</div>
-																<div className="swiper-pagination" />
-															</Swiper>
+															<img src="property/Rotomech_filter_press_pumps_2.webp" alt="Special Pumps" />
 														</div>
-														<ul className="category-list">
+														{/* <ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
-														</ul>
+															<li><Link href="/#">For Services</Link></li>
+														</ul> */}
 														<div className="content-area">
-															<Link href="/products/chemical-process" className="head">High Pressure Multistage Pumps
-</Link>
+															<Link href="/products/filter-press" className="head">Filter Press Pumps</Link>
 															<div className="space16" />
-															<p>Multistage centrifugal design with greased antifriction bearings; vertical discharge for clearâ€‘liquid high head</p>
-															{/* <div className="space24" />
-															<ul>
-																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
-																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bath1.svg" alt="Special Pumps" /></span> 08</Link></li>
-																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/sqare1.svg" alt="Special Pumps" /></span> 1200 SQ</Link></li>
-															</ul> */}
-															<div className="space24" />
-																{/* <div className="btn-area">
-																<div className="nm-btn">
-																	<Link href="/#">$820,000</Link>
-																</div>
-																<div className="love-share">
-																	<Link href="#" className="heart"><img src="/assets/img/icons/heart3.svg" alt="Special Pumps" className="heart1" /> <img src="/assets/img/icons/heart4.svg" alt="Special Pumps" className="heart2" /></Link>
-																	<Link href="/#" className="share"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-																		<path d="M13.1202 17.0228L8.92129 14.7324C8.19135 15.5125 7.15261 16 6 16C3.79086 16 2 14.2091 2 12C2 9.79086 3.79086 8 6 8C7.15255 8 8.19125 8.48746 8.92118 9.26746L13.1202 6.97713C13.0417 6.66441 13 6.33707 13 6C13 3.79086 14.7909 2 17 2C19.2091 2 21 3.79086 21 6C21 8.20914 19.2091 10 17 10C15.8474 10 14.8087 9.51251 14.0787 8.73246L9.87977 11.0228C9.9583 11.3355 10 11.6629 10 12C10 12.3371 9.95831 12.6644 9.87981 12.9771L14.0788 15.2675C14.8087 14.4875 15.8474 14 17 14C19.2091 14 21 15.7909 21 18C21 20.2091 19.2091 22 17 22C14.7909 22 13 20.2091 13 18C13 17.6629 13.0417 17.3355 13.1202 17.0228ZM6 14C7.10457 14 8 13.1046 8 12C8 10.8954 7.10457 10 6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14ZM17 8C18.1046 8 19 7.10457 19 6C19 4.89543 18.1046 4 17 4C15.8954 4 15 4.89543 15 6C15 7.10457 15.8954 8 17 8ZM17 20C18.1046 20 19 19.1046 19 18C19 16.8954 18.1046 16 17 16C15.8954 16 15 16.8954 15 18C15 19.1046 15.8954 20 17 20Z">
-																		</path>
-																	</svg></Link>
-																	<Link href="#;" className="share"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-																		<path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748ZM10 10V7H12V10H15V12H12V15H10V12H7V10H10Z">
-																		</path>
-																	</svg></Link>
-																</div>
-															</div> */}
-														</div>
-													</div>
-												</div>
-												<div className="col-lg-4 col-md-6">
-													<div className="property-single-boxarea">
-														<div className="img1 image-anime">
-															<Swiper {...swiperFade} className="swiper swiper-fade" >
-																<div className="swiper-wrapper">
-																	<SwiperSlide>
-																		<img src="/assets/img/all-images/properties/property-img22.png" alt="Special Pumps" />
-																	</SwiperSlide>
-																	<SwiperSlide>
-																		<img src="/assets/img/all-images/properties/property-img1.png" alt="Special Pumps" />
-																	</SwiperSlide>
-																</div>
-																<div className="swiper-pagination" />
-															</Swiper>
-														</div>
-														<ul className="category-list">
-															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
-														</ul>
-														<div className="content-area">
-															<Link href="/products/polypropylene" className="head">Polypropylene Pump
-
-</Link>
-															<div className="space16" />
-															<p>Nonâ€‘metallic wetted parts; couples with standard motors using ceramic/SS/Hastelloy sleeves for corrosives.</p>
-															{/* <div className="space24" />
-															<ul>
+															<p className='para-line-h'>Reliable press-feed pumping for filtration lines and Progress</p>
+															{/* <div className="space24" /> */}
+															{/* <ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bath1.svg" alt="Special Pumps" /></span> 08</Link></li>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/sqare1.svg" alt="Special Pumps" /></span> 1200 SQ</Link></li>
@@ -303,31 +191,21 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<Swiper {...swiperFade} className="swiper swiper-fade" >
-																<div className="swiper-wrapper">
-																	<SwiperSlide>
-																		<img src="/assets/img/all-images/properties/property-img23.png" alt="Special Pumps" />
-																	</SwiperSlide>
-																	<SwiperSlide>
-																		<img src="/assets/img/all-images/properties/property-img4.png" alt="Special Pumps" />
-																	</SwiperSlide>
-																	<SwiperSlide>
-																		<img src="/assets/img/all-images/properties/property-img3.png" alt="Special Pumps" />
-																	</SwiperSlide>
-																</div>
-																<div className="swiper-pagination" />
-															</Swiper>
+															<img src="property/Rotomech_stainless_steel_pumps_2.webp" alt="Special Pumps" />
 														</div>
-														<ul className="category-list">
+														{/* <ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
-														</ul>
+															<li><Link href="/#">For Services</Link></li>
+														</ul> */}
 														<div className="content-area">
-															<Link href="/products/filter-press" className="head">Filter Press Pump</Link>
+															<Link href="/products/stainless-steel" className="head">Stainless Steel Pumps
+</Link>
 															<div className="space16" />
-															<p>Filter press pump with selfâ€‘priming capability; suitable for wastewater and sludge handling.</p>
-															{/* <div className="space24" />
-															<ul>
+															<p className='para-line-h'>International standard design for chemical & petrochemical industries
+
+</p>
+															{/* <div className="space24" /> */}
+															{/* <ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bath1.svg" alt="Special Pumps" /></span> 08</Link></li>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/sqare1.svg" alt="Special Pumps" /></span> 1200 SQ</Link></li>
@@ -355,21 +233,19 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img24.png" alt="Special Pumps" />
+															<img src="property/Rotomech_non_clog_pumps_2.webp" alt="Special Pumps" />
 														</div>
-														<ul className="category-list">
+														{/* <ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
-														</ul>
+															<li><Link href="/#">For Services</Link></li>
+														</ul> */}
 														<div className="content-area">
-															<Link href="/products/chemical-process" className="head">Rotary Gear Pump
-
-
+															<Link href="/products/non-clog" className="head">Non-Clog Pumps
 </Link>
 															<div className="space16" />
-															<p>External gear positiveâ€‘displacement; pairs with geared/TEFC motors for viscous fluids and smooth flow.</p>
-															{/*<div className="space24" />
-															 <ul>
+															<p className='para-line-h'>Handles solids in suspension with ease areas and Good in Long terms</p>
+															{/* <div className="space24" /> */}
+															{/* <ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bath1.svg" alt="Special Pumps" /></span> 08</Link></li>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/sqare1.svg" alt="Special Pumps" /></span> 1200 SQ</Link></li>
@@ -393,6 +269,93 @@ export default function Properties4() {
 															</div> */}
 														</div>
 													</div>
+												</div>
+												<div className="col-lg-4 col-md-6">
+													<div className="property-single-boxarea">
+														<div className="img1 image-anime">
+															<img src="property/Rotomech_polypropylene_pumps_2.webp" alt="Special Pumps" />
+														</div>
+														{/* <ul className="category-list">
+															<li><Link href="/#">Featured</Link></li>
+															<li><Link href="/#">For Services</Link></li>
+														</ul> */}
+														<div className="content-area">
+															<Link href="/products/polypropylene" className="head">Polypropylene Pumps
+</Link>
+															<div className="space16" />
+															<p className='para-line-h'>Non-metallic wetted parts for corrosive applications
+
+</p>
+															{/* <div className="space24" /> */}
+															{/* <ul>
+																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
+																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bath1.svg" alt="Special Pumps" /></span> 08</Link></li>
+																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/sqare1.svg" alt="Special Pumps" /></span> 1200 SQ</Link></li>
+															</ul> */}
+															<div className="space24" />
+															{/* <div className="btn-area">
+																<div className="nm-btn">
+																	<Link href="/#">$820,000</Link>
+																</div>
+																<div className="love-share">
+																	<Link href="#" className="heart"><img src="/assets/img/icons/heart3.svg" alt="Special Pumps" className="heart1" /> <img src="/assets/img/icons/heart4.svg" alt="Special Pumps" className="heart2" /></Link>
+																	<Link href="/#" className="share"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+																		<path d="M13.1202 17.0228L8.92129 14.7324C8.19135 15.5125 7.15261 16 6 16C3.79086 16 2 14.2091 2 12C2 9.79086 3.79086 8 6 8C7.15255 8 8.19125 8.48746 8.92118 9.26746L13.1202 6.97713C13.0417 6.66441 13 6.33707 13 6C13 3.79086 14.7909 2 17 2C19.2091 2 21 3.79086 21 6C21 8.20914 19.2091 10 17 10C15.8474 10 14.8087 9.51251 14.0787 8.73246L9.87977 11.0228C9.9583 11.3355 10 11.6629 10 12C10 12.3371 9.95831 12.6644 9.87981 12.9771L14.0788 15.2675C14.8087 14.4875 15.8474 14 17 14C19.2091 14 21 15.7909 21 18C21 20.2091 19.2091 22 17 22C14.7909 22 13 20.2091 13 18C13 17.6629 13.0417 17.3355 13.1202 17.0228ZM6 14C7.10457 14 8 13.1046 8 12C8 10.8954 7.10457 10 6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14ZM17 8C18.1046 8 19 7.10457 19 6C19 4.89543 18.1046 4 17 4C15.8954 4 15 4.89543 15 6C15 7.10457 15.8954 8 17 8ZM17 20C18.1046 20 19 19.1046 19 18C19 16.8954 18.1046 16 17 16C15.8954 16 15 16.8954 15 18C15 19.1046 15.8954 20 17 20Z">
+																		</path>
+																	</svg></Link>
+																	<Link href="#;" className="share"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+																		<path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748ZM10 10V7H12V10H15V12H12V15H10V12H7V10H10Z">
+																		</path>
+																	</svg></Link>
+																</div>
+															</div> */}
+														</div>
+													</div>
+												</div>
+												<div className="col-lg-4 col-md-6">
+													<div className="property-single-boxarea">
+														<div className="img1 image-anime">
+															<img src="property/Rotomech_thermic_fluid_pumps_2.webp" alt="Special Pumps" />
+														</div>
+														{/* <ul className="category-list">
+															<li><Link href="/#">Featured</Link></li>
+															<li><Link href="/#">For Services</Link></li>
+														</ul> */}
+														<div className="content-area">
+															<Link href="/products/thermic-fluid" className="head">Thermic Fluid Pumps
+</Link>
+															<div className="space16" />
+															<p className='para-line-h'>International standard design for chemical & petrochemical industries
+
+</p>
+															{/* <div className="space24" /> */}
+															{/* <ul>
+																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
+																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bath1.svg" alt="Special Pumps" /></span> 08</Link></li>
+																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/sqare1.svg" alt="Special Pumps" /></span> 1200 SQ</Link></li>
+															</ul> */}
+															<div className="space24" />
+															{/* <div className="btn-area">
+																<div className="nm-btn">
+																	<Link href="/#">$820,000</Link>
+																</div>
+																<div className="love-share">
+																	<Link href="#" className="heart"><img src="/assets/img/icons/heart3.svg" alt="Special Pumps" className="heart1" /> <img src="/assets/img/icons/heart4.svg" alt="Special Pumps" className="heart2" /></Link>
+																	<Link href="/#" className="share"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+																		<path d="M13.1202 17.0228L8.92129 14.7324C8.19135 15.5125 7.15261 16 6 16C3.79086 16 2 14.2091 2 12C2 9.79086 3.79086 8 6 8C7.15255 8 8.19125 8.48746 8.92118 9.26746L13.1202 6.97713C13.0417 6.66441 13 6.33707 13 6C13 3.79086 14.7909 2 17 2C19.2091 2 21 3.79086 21 6C21 8.20914 19.2091 10 17 10C15.8474 10 14.8087 9.51251 14.0787 8.73246L9.87977 11.0228C9.9583 11.3355 10 11.6629 10 12C10 12.3371 9.95831 12.6644 9.87981 12.9771L14.0788 15.2675C14.8087 14.4875 15.8474 14 17 14C19.2091 14 21 15.7909 21 18C21 20.2091 19.2091 22 17 22C14.7909 22 13 20.2091 13 18C13 17.6629 13.0417 17.3355 13.1202 17.0228ZM6 14C7.10457 14 8 13.1046 8 12C8 10.8954 7.10457 10 6 10C4.89543 10 4 10.8954 4 12C4 13.1046 4.89543 14 6 14ZM17 8C18.1046 8 19 7.10457 19 6C19 4.89543 18.1046 4 17 4C15.8954 4 15 4.89543 15 6C15 7.10457 15.8954 8 17 8ZM17 20C18.1046 20 19 19.1046 19 18C19 16.8954 18.1046 16 17 16C15.8954 16 15 16.8954 15 18C15 19.1046 15.8954 20 17 20Z">
+																		</path>
+																	</svg></Link>
+																	<Link href="#;" className="share"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+																		<path d="M18.031 16.6168L22.3137 20.8995L20.8995 22.3137L16.6168 18.031C15.0769 19.263 13.124 20 11 20C6.032 20 2 15.968 2 11C2 6.032 6.032 2 11 2C15.968 2 20 6.032 20 11C20 13.124 19.263 15.0769 18.031 16.6168ZM16.0247 15.8748C17.2475 14.6146 18 12.8956 18 11C18 7.1325 14.8675 4 11 4C7.1325 4 4 7.1325 4 11C4 14.8675 7.1325 18 11 18C12.8956 18 14.6146 17.2475 15.8748 16.0247L16.0247 15.8748ZM10 10V7H12V10H15V12H12V15H10V12H7V10H10Z">
+																		</path>
+																	</svg></Link>
+																</div>
+															</div> */}
+														</div>
+													</div>
+												</div>
+											<div className="col-lg-4 col-md-6">
+													
 												</div>
 											</div >
 										</div >
@@ -401,18 +364,18 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img19.png" alt="Special Pumps" />
+															<img src="property/Rotomech_horizontal_non_clog_pump_2.webp" alt="Special Pumps" />
 														</div>
-														<ul className="category-list">
+														{/* <ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
-														</ul>
+															<li><Link href="/#">For Services</Link></li>
+														</ul> */}
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Horizontal Nonâ€‘Clog Pump
 
 </Link>
 															<div className="space16" />
-															<p>Horizontal nonâ€‘clog pump with selfâ€‘priming capability; suitable for wastewater and sludge handling.</p>
+															<p className='para-line-h'>Horizontal nonâ€‘clog pump with selfâ€‘priming capability; suitable for wastewater and sludge handling.</p>
 															{/* <div className="space24" />
 															<ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -442,18 +405,18 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img20.png" alt="Special Pumps" />
+															<img src="property/Rotomech_filter_press_pumps_2.webp" alt="Special Pumps" />
 														</div>
-														<ul className="category-list">
+														{/* <ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
-														</ul>
+															<li><Link href="/#">For Services</Link></li>
+														</ul> */}
 														<div className="content-area">
 															<Link href="/products/filter-press" className="head">Filter Press Pump
 
 </Link>
 															{/* <div className="space16" /> */}
-															<p>Filter press pump with selfâ€‘priming capability; suitable for wastewater and sludge handling.</p>
+															<p className='para-line-h'>Filter press pump with selfâ€‘priming capability; suitable for wastewater and sludge handling.</p>
 															{/* <div className="space24" />
 															<ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -483,17 +446,17 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img21.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img21.png" alt="Special Pumps" />
 														</div>
-														<ul className="category-list">
+														{/* <ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
-														</ul>
+															<li><Link href="/#">For Services</Link></li>
+														</ul> */}
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Silver Birch
 																Residence</Link>
 															<div className="space16" />
-															<p>Los Angeles City, CA, USA</p>
+															<p className='para-line-h'>Los Angeles City, CA, USA</p>
 															<div className="space24" />
 															<ul>
 																<li><Link href="/#"><span className="icon"><img src="/assets/img/icons/bed1.svg" alt="Special Pumps" /></span> 12</Link></li>
@@ -523,12 +486,12 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img22.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img22.png" alt="Special Pumps" />
 														</div>
-														<ul className="category-list">
+														{/* <ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
-														</ul>
+															<li><Link href="/#">For Services</Link></li>
+														</ul> */}
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">The Parkview
 																Residence</Link>
@@ -563,12 +526,12 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img23.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img23.png" alt="Special Pumps" />
 														</div>
-														<ul className="category-list">
+														{/* <ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
-														</ul>
+															<li><Link href="/#">For Services</Link></li>
+														</ul> */}
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Golden Valley
 																Estates</Link>
@@ -603,12 +566,12 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img24.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img24.png" alt="Special Pumps" />
 														</div>
-														<ul className="category-list">
+														{/* <ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
-														</ul>
+															<li><Link href="/#">For Services</Link></li>
+														</ul> */}
 														<div className="content-area">
 															<Link href="/products/filter-press" className="head">Filter Press Pump</Link>
 															<div className="space16" />
@@ -646,11 +609,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img19.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img19.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">The Parkview
@@ -686,11 +649,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img20.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img20.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Golden Valley
@@ -726,11 +689,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img21.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img21.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/products/filter-press" className="head">Filter Press Pump</Link>
@@ -765,11 +728,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img22.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img22.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">The Parkview
@@ -805,11 +768,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img23.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img23.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Golden Valley
@@ -845,11 +808,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img24.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img24.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Silver Birch
@@ -889,11 +852,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img19.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img19.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">The Parkview
@@ -929,11 +892,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img20.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img20.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Golden Valley
@@ -969,11 +932,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img21.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img21.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Silver Birch
@@ -1009,11 +972,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img22.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img22.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">The Parkview
@@ -1049,11 +1012,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img23.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img23.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Golden Valley
@@ -1089,11 +1052,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img24.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img24.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Silver Birch
@@ -1133,11 +1096,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img19.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img19.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">The Parkview
@@ -1173,11 +1136,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img20.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img20.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Golden Valley
@@ -1213,11 +1176,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img21.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img21.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Silver Birch
@@ -1253,11 +1216,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img22.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img22.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">The Parkview
@@ -1293,11 +1256,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img23.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img23.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Golden Valley
@@ -1333,11 +1296,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img24.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img24.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Silver Birch
@@ -1377,11 +1340,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img19.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img19.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">The Parkview
@@ -1417,11 +1380,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img20.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img20.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Golden Valley
@@ -1457,11 +1420,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img21.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img21.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Silver Birch
@@ -1497,11 +1460,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img22.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img22.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">The Parkview
@@ -1537,11 +1500,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img23.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img23.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head">Golden Valley
@@ -1577,11 +1540,11 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="/assets/img/all-images/properties/property-img24.png" alt="Special Pumps" />
+															<img src="/assets/img/all-images/Products/property-img24.png" alt="Special Pumps" />
 														</div>
 														<ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
-															<li><Link href="/#">For Rent</Link></li>
+															<li><Link href="/#">For Services</Link></li>
 														</ul>
 														<div className="content-area">
 															<Link href="/property-details-v1" className="head"></Link>

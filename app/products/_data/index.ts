@@ -14,7 +14,6 @@ export const pumpsData = {
       title: "Thermic Fluid Hot Oil Pump",
       subtitle: "High-temperature heat transfer circulation up to 320°C",
       mainImage: "/images/thermic-fluid-hero.svg",
-      gallery: ["/images/thermic-fluid-1.jpg", "/images/thermic-fluid-2.jpg"],
     },
     quickSpecs: [
       { label: "Max Temperature", value: "320°C", icon: "temperature" },
@@ -52,7 +51,6 @@ export const pumpsData = {
       title: "Polypropylene Pump",
       subtitle: "Non-metallic wetted parts for corrosive applications",
       mainImage: "/images/polypropylene-hero.svg",
-      gallery: ["/images/polypropylene-1.jpg", "/images/polypropylene-2.jpg"],
     },
     quickSpecs: [
       { label: "Capacity", value: "Up to 150 m³/h", icon: "flow" },
@@ -92,7 +90,7 @@ export const pumpsData = {
       title: "Back Pullout Process Pump",
       subtitle: "Easy maintenance with vertically split casing",
       mainImage: "/images/back-pullout-hero.svg",
-      gallery: ["/images/back-pullout-1.jpg", "/images/back-pullout-2.jpg"],
+      // gallery: ["/images/back-pullout-1.jpg", "/images/back-pullout-2.jpg"],
     },
     quickSpecs: [
       { label: "Type", value: "End-suction volute", icon: "pump" },
@@ -134,12 +132,12 @@ export const pumpsData = {
     hero: {
       breadcrumbs: ["Home", "Products", "Horizontal Non-Clog Pump"],
       title: "Horizontal Non-Clog Pump",
-      subtitle: "Handles solids in suspension with ease",
+      subtitle: "Handles solids in suspension with ease and Good in Long terms",
       mainImage: "/images/non-clog-hero.svg",
     },
     quickSpecs: [
       { label: "Design", value: "Double-ducted, vaneless impeller", icon: "pump" },
-      { label: "Drive", value: "Close-coupled or belt drive", icon: "motor" },
+      { label: "Drive", value: "Close-coupled or belt drive", icon: "Pumps" },
       { label: "Materials", value: "Grey cast iron with steel shaft", icon: "material" },
       { label: "Applications", value: "Sewage, slurry, contaminated liquids", icon: "water" },
     ],
@@ -289,4 +287,4 @@ export const pumpsData = {
     },
   },
 
-} as const
+}

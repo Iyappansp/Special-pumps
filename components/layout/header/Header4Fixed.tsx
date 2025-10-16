@@ -1,25 +1,29 @@
+ 'use client'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 export default function Header4Fixed({ scroll, isMobileMenu, handleMobileMenu }: any) {
+  const pathname = usePathname()
+  const isProductsActive = pathname?.startsWith('/products') || pathname === '/installation-methods'
   return (
     <>
       <header>
-        <div className="header-area homepage4 header header-sticky d-none d-lg-block " id="header">
+        <div className="header-area homepage4 header-sticky d-none d-lg-block sticky">
           <div className="container">
             <div className="row">
               <div className="col-lg-12">
                 <div className="header-elements">
                   <div className="site-logo">
-                    <Link href="/"><img src="/assets/img/logo/logo5.png" alt="Special Pumps" /></Link>
+                    <Link href="property/logos1.png"><img src="/property/logos1.png" alt="Special Pumps" /></Link>
                   </div>
                   <div className="main-menu">
                     <ul>
-                      <li><Link href="/">Home</Link></li>
-                      <li><Link href="/about-us">About Us</Link></li>
-                      <li><Link href="/our-service">Our Services</Link></li>
-                      <li><Link href="/product-gallery">Product Gallery</Link></li>
+                      <li><Link href="/" className={pathname === '/' ? 'active' : ''}>Home</Link></li>
+                      <li><Link href="/about-us" className={pathname === '/about-us' ? 'active' : ''}>About Us</Link></li>
+                      <li><Link href="/our-service" className={pathname === '/our-service' ? 'active' : ''}>Our Services</Link></li>
+                      <li><Link href="/product-gallery" className={pathname === '/product-gallery' ? 'active' : ''}>Product Gallery</Link></li>
                       <li className="has-dropdown">
-                        <Link href="/#" className="plus">Products <i className="fa-solid fa-angle-down" /></Link>
+                        <Link href="/#" className={`plus ${isProductsActive ? 'active' : ''}`}>Products <i className="fa-solid fa-angle-down" /></Link>
                         <ul className="dropdown-padding">
                           <li className="has-flyout">
                             <Link href="" className="flyout-trigger">
@@ -38,7 +42,7 @@ export default function Header4Fixed({ scroll, isMobileMenu, handleMobileMenu }:
                           <li><Link href="/installation-methods">Installation Method</Link></li>
                         </ul>
                       </li>
-                      <li><Link href="/contact">Contact</Link></li>
+                      <li><Link href="/contact" className={pathname === '/contact' ? 'active' : ''}>Contact</Link></li>
                     </ul>
                   </div>
                   <div className="btn-area">
