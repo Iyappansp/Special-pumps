@@ -7853,7 +7853,7 @@ Location:
 .footer4-section-area {
 	position: relative;
 	z-index: 1;
-	padding: 222px 0 32px;
+	padding: 2px 0 32px;
 }
 
 .footer4-section-area .footer-others-section {
@@ -7940,6 +7940,7 @@ Location:
 
 .footer4-section-area .footer-others-section .footer-widget-section ul li {
 	display: inline-block;
+	
 }
 
 @media (max-width: 767px) {
@@ -8076,7 +8077,10 @@ Location:
 	font-style: normal;
 	font-weight: var(--ztc-weight-regular);
 	line-height: 16px;
-	display: inline-block;
+	display: flex;
+	align-items: flex-start;
+	gap: 8px; /* space between icon and text */
+	margin-bottom: 8px;
 	transition: all 0.4s;
 	margin-top: 24px;
 }
@@ -8085,6 +8089,7 @@ Location:
 	margin: 0 4px 0 0;
 	height: 24px;
 	width: 24px;
+	flex-shrink: 0; /* prevent icon from shrinking */
 }
 
 .footer4-section-area .footer-content2 ul li a:hover {
@@ -24578,7 +24583,7 @@ Location:
 .cta1-section-area {
 	position: relative;
 	z-index: 2;
-	margin-bottom: -140px;
+	margin-bottom: 50px;
 }
 
 .cta1-section-area .cta-bg-area {
@@ -24944,8 +24949,7 @@ Location:
 
 .testimonial1-section-area .testimonial-slider-area .testimonial-box .test-images .brand1 {
 	width: 122px;
-	height: 40px;
-	object-fit: contain;
+	height: 120px;
 }
 
 @media (max-width: 767px) {

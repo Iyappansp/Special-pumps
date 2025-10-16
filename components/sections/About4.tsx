@@ -79,14 +79,14 @@ export default function About4() {
 									<div className="row">
 										<div className="col-lg-4 col-md-4 col-6">
 											<div className="counter-boxarea text-center">
-												<h2><CounterUp className="counter">10</CounterUp>+</h2>
+												<h2><CounterUp end={150} suffix="+" /></h2>
 												<div className="space12" />
 												<p>Pumps Sold</p>
 											</div>
 										</div>
 										<div className="col-lg-4 col-md-4 col-6">
 											<div className="counter-boxarea text-center">
-												<h2><CounterUp className="counter">9</CounterUp>+</h2>
+												<h2><CounterUp end={100} suffix="+" /></h2>
 												<div className="space12" />
 												<p>Happy Client</p>
 											</div>
@@ -94,7 +94,7 @@ export default function About4() {
 										<div className="col-lg-4 col-md-4 col-6">
 											<div className="space20 d-md-none d-block" />
 											<div className="counter-boxarea text-center">
-												<h2><CounterUp className="counter">98</CounterUp>%</h2>
+												<h2><CounterUp end={90} suffix="%" /></h2>
 												<div className="space12" />
 												<p>Satisfaction Rate</p>
 											</div>
@@ -103,7 +103,7 @@ export default function About4() {
 								</div>
 								<br />
 								<div className="btn-area1" data-aos="fade-left" data-aos-duration={1100}>
-											<Link href="/product-gallery" className="theme-btn5">See All Products <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
+											<Link href="/about-us" className="theme-btn5">Know more <span className="arrow1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
 											</svg></span><span className="arrow2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} fill="currentColor">
 												<path d="M12 13H4V11H12V4L20 12L12 20V13Z" />
