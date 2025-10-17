@@ -35,7 +35,7 @@ export default function Footer4() {
 						{/* <div className="space60" /> */}
 						<div className="col-lg-3 col-md-6">
 							<div className="footer-logoarea">
-								<img src="property/logos1.png" alt="Special Pumps" />
+								<img src="/property/logos1.png" alt="Special Pumps" />
 								<div className="space24" />
 								<p>As Special Pumps’s lead negotiator, Chris brings years of experience in securing the best deals
 									both.</p>

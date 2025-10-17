@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import ProductTemplate from '../_components/ProductTemplate'
+import ChemicalProcessPumpTemplate from '../_components/ChemicalProcessPumpTemplate'
 import { allowedProductSlugs, curatedProductsData, siteUrl } from '../_data/curated'
 
 export function generateStaticParams() {
@@ -41,5 +42,11 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   if (!product) {
     notFound()
   }
+  
+  // Use the new ChemicalProcessPumpTemplate for all enhanced pump products
+  if (['chemical-process', 'filter-press', 'non-clog', 'polypropylene', 'stainless-steel', 'thermic-fluid', 'vacuum'].includes(slug)) {
+    return <ChemicalProcessPumpTemplate data={product} />
+  }
+  
   return <ProductTemplate data={product} />
 }
