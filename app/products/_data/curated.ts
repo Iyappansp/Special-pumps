@@ -28,11 +28,11 @@ const heroImageBySlug: Record<CuratedSlug, string> = {
 function mapSlug(slug: CuratedSlug): { key: string | null; title: string; description?: string } {
   switch (slug) {
     case 'chemical-process':
-      return { key: 'process-pump', title: 'Chemical Process Pumps', description: 'Chemical process pumps engineered for aggressive fluids with high efficiency and reliable sealing.' }
-    case 'stainless-steel':
-      return { key: 'process-pump', title: 'Stainless Steel Pumps', description: 'Industrial stainless steel pumps in SS316/SS304 for hygienic and corrosive service.' }
+      return { key: 'chemical-process-pumps', title: 'Chemical Process Pumps', description: 'Built to handle aggressive and corrosive liquids safely and reliably in chemical and petrochemical plants.' }
     case 'filter-press':
-      return { key: 'filter-press-pump', title: 'Filter Press Pumps', description: 'Reliable press-feed pumping for filtration, sludge pumping and dewatering operations.' }
+      return { key: 'filter-press-pumps-rfp', title: 'Filter Press Pumps (RFP Series)', description: 'Specifically designed for demanding jobs like pumping sludges, slurries, and liquids with a high percentage of solids.' }
+    case 'stainless-steel':
+      return { key: 'stainless-steel-pump', title: 'Stainless Steel Pumps (Type: SS-304 / SS-316)', description: 'Industrial pumps made from SS304/SS316 for hygienic and corrosive applications.' }
     case 'non-clog':
       return { key: 'horizontal-non-clog-pump', title: 'Non-Clog Pumps', description: 'Heavy-duty non-clog pumps designed to handle solids in suspension and slurry duties.' }
     case 'polypropylene':
@@ -40,7 +40,7 @@ function mapSlug(slug: CuratedSlug): { key: string | null; title: string; descri
     case 'thermic-fluid':
       return { key: 'thermic-fluid-hot-oil-pump', title: 'Thermic Fluid Pumps', description: 'High-temperature thermic fluid circulation up to 320°C with reinforced bearings and cooling.' }
     case 'vacuum':
-      return { key: null, title: 'Vacuum Pumps', description: 'Industrial vacuum pump for process and utility applications with dependable performance.' }
+      return { key: 'vacuum-pump', title: 'Vacuum Pumps', description: 'Reliable vacuum pumps for various industrial applications requiring efficient air and gas evacuation.' }
   }
 }
 

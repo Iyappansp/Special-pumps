@@ -18,6 +18,7 @@ import "/public/assets/css/typography.css"
 import "/public/assets/css/privacy-policy-utilities.css"
 import "/public/assets/css/cta-override.css"
 import "/public/assets/css/product-cards.css"
+import "/public/assets/css/chemical-process-pumps.css"
 
 import StoreProvider from '@/features/StoreProvider'
 import FloatingContacts from '@/components/FloatingContacts'
@@ -38,8 +39,8 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: "Special Pumps - Best Pumps",
-  description: "Recovery Form Your Damaged",
+  title: "Industrial Pumps Manufacturer in Coimbatore | Special Pumps by Rotomech Industries",
+  description: "Premium industrial pumps from Coimbatore for process, chemical, slurry, and dewatering needs.",
 }
 export default function RootLayout({
   children,

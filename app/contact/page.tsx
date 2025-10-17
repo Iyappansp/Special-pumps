@@ -88,9 +88,7 @@ export default function Contact() {
 									<div className="hero-header-area text-center">
 										<Link href="/">Home <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 											<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
-										</svg> Listing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-												<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z" />
-											</svg> Contact Us </Link>
+										</svg> Contact Us </Link>
 										<div className="space24" />
 										<h1>Contact Us </h1>
 									</div>
@@ -312,7 +310,16 @@ export default function Contact() {
 					</div>
 					<div className="mapouter text-center">
 						<div className="gmap_canvas">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4506257.120552435!2d88.67021924228865!3d21.954385721237916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1704088968016!5m2!1sen!2sbd" width={600} height={450} style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+							<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3915.7054506334853!2d76.9157491!3d11.060696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8f5fbdca3fb6b%3A0xa71c81020d929109!2sRotomech%20Industries!5e0!3m2!1sen!2sin!4v1760693189632!5m2!1sen!2sin"
+  width="600"
+  height="450"
+  style={{ border: 0 }}
+  allowFullScreen
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+/>
+
 						</div>
 					</div>
 					{/*===== CONTACT AREA ENDS =======*/}
