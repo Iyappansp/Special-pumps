@@ -1,3 +1,4 @@
+'use client'
 
 import Link from 'next/link'
 
@@ -9,14 +10,14 @@ export default function Cta2() {
 				<div className="container">
 					<div className="row">
 						<div className="col-lg-12">
-							<div className="cta-bg-area" style={{ backgroundImage: 'url(assets/img/all-images/bg/cta-bg2.png)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
+							<div className="cta-bg-area" style={{ backgroundImage: 'url(/assets/img/all-images/bg/cta-bg2.png)', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}>
 								<div className="row align-items-center">
 									<div className="col-lg-5">
 										<div className="cta-header">
 											<h2 className="text-anime-style-3">Step Into Your Home with Special Pumps</h2>
 											<div className="space16" />
 											<p data-aos="fade-left" data-aos-duration={1000}>At Special Pumps, we believe your next
-												home is more than just a place – it’s where your future begins you’re buy.</p>
+											home is more than just a place – it’s where your future begins you’re buy.</p>
 										</div>
 									</div>
 									<div className="col-lg-2" />

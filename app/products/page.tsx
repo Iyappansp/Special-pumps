@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { allowedProductSlugs, curatedProductsData } from './_data/curated'
-
+// import Cta1 from "@/components/sections/Cta1"
+import Cta2 from "@/components/sections/Cta2"
 export default function ProductsPage() {
   return (
     <div className="container mx-auto px-4 py-8">
@@ -25,6 +26,14 @@ export default function ProductsPage() {
           </Link>
         )})}
       </div>
+
+      {/* <br />
+      <Cta1 /> */}
+      <br /> <br /><br /><br />
+      <div className="space24"> 
+        <Cta2 />
+      </div>
+     
     </div>
   )
 }

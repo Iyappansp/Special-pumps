@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import Link from 'next/link'
 import Layout from '@/components/layout/Layout'
 // import Cta1 from '@/components/sections/Cta1'
+import Cta2 from '@/components/sections/Cta2'
 
 export default function ProductTemplate({ data }: { data: any }) {
   const [values, setValues] = useState({
@@ -231,7 +232,7 @@ export default function ProductTemplate({ data }: { data: any }) {
             {toast.message}
           </div>
         )}
-        {/* <Cta1/> */}
+        <Cta2 />
       </div>
     </Layout>
   )
