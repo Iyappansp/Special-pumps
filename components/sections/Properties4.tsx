@@ -152,7 +152,7 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="property/Rotomech_filter_press_pumps_2.webp" alt="Special Pumps" />
+															<img src="/new-filter-pumps.jpg" alt="Special Pumps" />
 														</div>
 														{/* <ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>
@@ -405,7 +405,7 @@ export default function Properties4() {
 												<div className="col-lg-4 col-md-6">
 													<div className="property-single-boxarea">
 														<div className="img1 image-anime">
-															<img src="property/Rotomech_filter_press_pumps_2.webp" alt="Special Pumps" />
+															<img src="/new-filter-pumps.jpg" alt="Special Pumps" />
 														</div>
 														{/* <ul className="category-list">
 															<li><Link href="/#">Featured</Link></li>

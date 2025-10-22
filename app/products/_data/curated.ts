@@ -17,7 +17,7 @@ export const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://special-pump
 // Map curated slugs to exact files under public/images/Pumpss (filenames preserved as-is)
 const heroImageBySlug: Record<CuratedSlug, string> = {
   'chemical-process': '/property/Rotomech_chemical_process_pumps_2.webp',
-  'filter-press': '/property/Rotomech_filter_press_pumps_2.webp',
+  'filter-press': '/new-filter-pumps.jpg',
   'non-clog': '/property/Rotomech_non_clog_pumps_2.webp',
   'polypropylene': '/property/Rotomech_polypropylene_pumps_2.webp',
   'stainless-steel': '/property/Rotomech_stainless_steel_pumps_2.webp',

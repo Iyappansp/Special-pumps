@@ -20,7 +20,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
 						<div className="col-12">
 							<div className="mobile-header-elements">
 								<div className="mobile-logo">
-									<Link href="/"><img src="/assets/img/logo/logo1.png" alt="Special Pumps" /></Link>
+									<Link href="/"><img src="/property/logos1.png" alt="Special Pumps" /></Link>
 								</div>
 								<div className="mobile-right d-flex gap-1 align-items-center">
 									<Link className="circle-button user-icon" href="/my-profile">
@@ -61,7 +61,7 @@ export default function MobileMenu({ isMobileMenu, handleMobileMenu }: any) {
 				<div className="mobile-sidebar mobile-sidebar1">
 					<div className="logosicon-area">
 						<div className="logos">
-							<img src="/assets/img/logo/logo1.png" alt="Special Pumps" />
+							<img src="/property/logos1.png" alt="Special Pumps" />
 						</div>
 						<div className="menu-close">
 							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

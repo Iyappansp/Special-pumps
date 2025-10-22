@@ -553,85 +553,89 @@ export default function AboutUs() {
 												</Slider>
 											</div>
 											<div className="col-lg-7">
-												<Slider {...settings1} className="testimonial-slider-area slider1">
-													<div className="testimonial-box">
-														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
-														<div className="space16" />
-														<p>"When I decided to sell my home, I was overwhelmed with where to start. Special Pumps stepped in with a clear plan, professional marketing, constant communicate. Within two weeks, my house was sold above asking.</p>
-														<div className="space32" />
-														<div className="test-images">
-															<div className="auhtor-area">
-																<div className="img1">
-																	<img src="/assets/img/all-images/testimonial/testimonial-img2.png" alt="Special Pumps" />
-																</div>
-																<div className="text">
-																	<Link href="/#">Shakib Mahmud</Link>
-																	<div className="space10" />
-																	<p>Happy Client</p>
-																</div>
-															</div>
-															<img src="\image.png" alt="Special Pumps" width={100} height={100} className="brand1" />
-														</div>
-													</div>
-													<div className="testimonial-box">
-														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
-														<div className="space16" />
-														<p>"Selling our home felt like a huge challenge until we found. Their team guided us every step of the way, from staging the property to negotiating offers. Within days, our home was sold for more than we expected."</p>
-														<div className="space32" />
-														<div className="test-images">
-															<div className="auhtor-area">
-																<div className="img1">
-																	<img src="/assets/img/all-images/testimonial/testimonial-img3.png" alt="Special Pumps" />
-																</div>
-																<div className="text">
-																	<Link href="/#">Kumar P</Link>
-																	<div className="space10" />
-																	<p>Happy Client</p>
-																</div>
-															</div>
-															<img src="\image.png" alt="Special Pumps" className="brand1" />
-														</div>
-													</div>
-													<div className="testimonial-box">
-														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
-														<div className="space16" />
-														<p>"We were first-time buyers, and the process seemed daunting. made everything so simple and stress-free. They listened to our needs, showed us perfect options"</p>
-														<div className="space32" />
-														<div className="test-images">
-															<div className="auhtor-area">
-																<div className="img1">
-																	<img src="/assets/img/all-images/testimonial/testimonial-img4.png" alt="Special Pumps" />
-																</div>
-																<div className="text">
-																	<Link href="/#">Sasi K</Link>
-																	<div className="space10" />
-																	<p>Happy Client</p>
-																</div>
-															</div>
-															<img src="\image.png" alt="Special Pumps" className="brand1" />
-														</div>
-													</div>
-													<div className="testimonial-box">
-														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
-														<div className="space16" />
-														<p>"I relocated for work and needed to sell my house quickly. [Your Real Estate Agency] delivered! They handled everything smoothly, and I could focus on my move without worry. I highly recommend their services."</p>
-														<div className="space32" />
-														<div className="test-images">
-															<div className="auhtor-area">
-																<div className="img1">
-																	<img src="/assets/img/all-images/testimonial/testimonial-img5.png" alt="Special Pumps" />
-																</div>
-																<div className="text">
-																	<Link href="/#">Kumaresan</Link>
-																	<div className="space10" />
-																	<p>Happy Client</p>
-																</div>
-															</div>
-															<img src="\image.png" alt="Special Pumps" className="brand1" />
-														</div>
-													</div>
-												</Slider>
-											</div>
+    <Slider {...settings1} className="testimonial-slider-area slider1">
+        <div className="testimonial-box">
+            <img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
+            <div className="space16" />
+            <p>"Special Pumps surveyed our site, sized the right booster, and installed it the same day with a clean, quiet setup that finally stabilized our water pressure across all floors. The team's commissioning checklist and training were clear, and they fine‑tuned the system to cut cycling and noise while improving efficiency during peak hours."</p>
+            <div className="space32" />
+            <div className="test-images">
+                <div className="auhtor-area">
+                    <div className="img1">
+                        <img src="/assets/img/all-images/testimonial/testimonial-img2.png" alt="Special Pumps" />
+                    </div>
+                    <div className="text">
+                        <Link href="/#">Priya Sharma</Link>
+                        <div className="space10" />
+                        <p>Homeowner, Coimbatore</p>
+                    </div>
+                </div>
+                <img src="\image.png" alt="Special Pumps" width={100} height={100} className="brand1" />
+            </div>
+        </div>
+
+        <div className="testimonial-box">
+            <img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
+            <div className="space16" />
+            <p>"We needed dependable boosting for our 6-storey retail property. Special Pumps sized the system correctly, coordinated installation after-hours, and delivered stable pressure across all outlets. Their duplex setup with duty/standby logic has run continuously through peak loads with zero downtime."</p>
+            <div className="space32" />
+            <div className="test-images">
+                <div className="auhtor-area">
+                    <div className="img1">
+                        <img src="/assets/img/all-images/testimonial/testimonial-img3.png" alt="Special Pumps" />
+                    </div>
+                    <div className="text">
+                        <Link href="/#">Rajesh Kumar</Link>
+                        <div className="space10" />
+                        <p>Facility Manager</p>
+                    </div>
+                </div>
+                <img src="\image.png" alt="Special Pumps" className="brand1" />
+            </div>
+        </div>
+
+        <div className="testimonial-box">
+            <img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
+            <div className="space16" />
+            <p>"We pump abrasive wastewater and Special Pumps recommended the right materials and sealed units. They specified tougher components for our harsh conditions, which stopped leaks and reduced maintenance calls dramatically over the last six months."</p>
+            <div className="space32" />
+            <div className="test-images">
+                <div className="auhtor-area">
+                    <div className="img1">
+                        <img src="/assets/img/all-images/testimonial/testimonial-img4.png" alt="Special Pumps" />
+                    </div>
+                    <div className="text">
+                        <Link href="/#">Amit Patel</Link>
+                        <div className="space10" />
+                        <p>Plant Engineer</p>
+                    </div>
+                </div>
+                <img src="\image.png" alt="Special Pumps" className="brand1" />
+            </div>
+        </div>
+
+        <div className="testimonial-box">
+            <img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
+            <div className="space16" />
+            <p>"Their flood-control station upgrade worked flawlessly through the monsoon season. Support has been proactive with checks and alerts, ensuring redundancy that kept our municipal services online without interruptions during critical periods."</p>
+            <div className="space32" />
+            <div className="test-images">
+                <div className="auhtor-area">
+                    <div className="img1">
+                        <img src="/assets/img/all-images/testimonial/testimonial-img5.png" alt="Special Pumps" />
+                    </div>
+                    <div className="text">
+                        <Link href="/#">S. Krishnan</Link>
+                        <div className="space10" />
+                        <p>Municipal Engineer</p>
+                    </div>
+                </div>
+                <img src="\image.png" alt="Special Pumps" className="brand1" />
+            </div>
+        </div>
+    </Slider>
+</div>
+
 										</div>
 									</div>
 								</div>
