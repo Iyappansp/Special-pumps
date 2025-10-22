@@ -188,7 +188,7 @@ export default function OurService() {
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p>"When I decided to sell my home, I was overwhelmed with where to start. Special Pumps stepped in with a clear plan, professional marketing, constant communicate. Within two weeks, my house was sold above asking.</p>
+														<p>"Special Pumps surveyed our site, sized the right booster, and installed it the same day with a clean, quiet setup that finally stabilized our water pressure across all floors.</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -207,7 +207,7 @@ export default function OurService() {
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p>"Selling our home felt like a huge challenge until we found. Their team guided us every step of the way, from staging the property to negotiating offers. Within days, our home was sold for more than we expected."</p>
+														<p>"The team’s commissioning checklist and training were clear, and they fine‑tuned the system to cut cycling and noise while improving efficiency during peak hours.They also specified durable materials for our abrasive flow, which stopped leaks and slashed maintenance calls over the last quarter"</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -226,7 +226,7 @@ export default function OurService() {
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p>"We were first-time buyers, and the process seemed daunting. made everything so simple and stress-free. They listened to our needs, showed us perfect options"</p>
+														<p>"We were first-time buyers, and the process seemed daunting. made everything so simple and stress-free. They listened to our needs, showed us perfect options.Their commissioning and training were clear, and they fine‑tuned setpoints to cut cycling and noise while improving efficiency during peak demand."</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -245,7 +245,7 @@ export default function OurService() {
 													<div className="testimonial-box">
 														<img src="/assets/img/icons/quoto-icon1.svg" alt="Special Pumps" />
 														<div className="space16" />
-														<p>"I relocated for work and needed to sell my house quickly. [Your Real Estate Agency] delivered! They handled everything smoothly, and I could focus on my move without worry. I highly recommend their services."</p>
+														<p>"Support has been proactive with checks and alerts, so we’ve had zero unplanned downtime even through heavy rains."</p>
 														<div className="space32" />
 														<div className="test-images">
 															<div className="auhtor-area">
@@ -294,7 +294,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you are buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -306,7 +306,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you are buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -318,7 +318,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you are buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -330,7 +330,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseFour" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you are buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -342,7 +342,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseFive" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you are buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -354,7 +354,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseSix" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you are buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
@@ -366,7 +366,7 @@ export default function OurService() {
 												</h2>
 												<div id="collapseSeven" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
 													<div className="accordion-body">
-														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether youâ€™re buying, selling, renting, or managing a property.</p>
+														<p>We charge a transparent fee for our services, which will be discussed upfront depending on whether you are buying, selling, renting, or managing a property.</p>
 													</div>
 												</div>
 											</div>
