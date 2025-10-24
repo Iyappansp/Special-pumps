@@ -1,7 +1,9 @@
 import { processStainlessSteelPump } from "../process-pump/data"
 
+
 export const pumpsData = {
   "process-pump": processStainlessSteelPump,
+
 
   "chemical-process-pumps": {
     seo: {
@@ -60,25 +62,25 @@ export const pumpsData = {
         ]
       },
       applications: [
-        {
-          category: "Chemical & Refining",
-          items: ["Fertilizer Plants", "Chemical Plants", "Petrochemical Plants"]
-        },
-        {
-          category: "Industrial Use",
-          items: ["Effluent Treatment", "Brewing", "Textile Industries", "Paper Industries", "General Industries"]
-        },
-        {
-          category: "Water Services",
-          items: ["Primary & Auxiliary Water Supply", "Circulation Water Systems", "Fire Fighting", "Municipal Water Supply"]
-        },
-        {
-          category: "Power",
-          items: ["Power Generations", "Cooling Water", "Boiler make-up water"]
-        }
+        "Fertilizer Plants",
+        "Chemical Plants",
+        "Petrochemical Plants",
+        "Effluent Treatment",
+        "Brewing",
+        "Textile Industries",
+        "Paper Industries",
+        "General Industries",
+        "Primary & Auxiliary Water Supply",
+        "Circulation Water Systems",
+        "Fire Fighting",
+        "Municipal Water Supply",
+        "Power Generations",
+        "Cooling Water",
+        "Boiler make-up water"
       ]
     }
   },
+
 
   "filter-press-pumps-rfp": {
     seo: {
@@ -139,10 +141,18 @@ export const pumpsData = {
         { detail: "Temperature", specification: "Up to 120°C" }
       ],
       applications: [
-        "Pumping to Filter Presses, Tiles & Marbles",
-        "High Pressure Pumping", 
-        "Pumping Sludges for General De-Watering",
-        "Transferring various kinds of liquid slurry in Industrial and Textile Dyeing applications"
+        "Pumping to Filter Press",
+        "Tiles & Marbles",
+        "High Pressure Pumping",
+        "Textiles",
+        "Dyeing Industries",
+        "Slurry Transfer for Industrial Applications",
+        "Filter For Sludge's",
+        "Mud Pumping for General De-Watering",
+        "Excavations",
+        "Embems",
+        "Sludge Pumping",
+        "Suitable for Muddy Water"
       ],
       constructionFeatures: [
         "Heavy duty design for demanding applications",
@@ -153,6 +163,7 @@ export const pumpsData = {
       ]
     }
   },
+
 
   "thermic-fluid-hot-oil-pump": {
     seo: {
@@ -167,33 +178,33 @@ export const pumpsData = {
       badges: ["High Temperature Capability", "Robust Construction", "Efficient Heat Transfer", "Low Maintenance"],
     },
     quickSpecs: [
-      { label: "Capacity", value: "Up to 100 m³/hr", icon: "flow" },
-      { label: "Head", value: "Up to 80 meters", icon: "pressure" },
-      { label: "Size", value: "25 mm to 100 mm", icon: "settings" },
-      { label: "Temperature", value: "Up to 350°C", icon: "temperature" },
+      { label: "Max Temperature", value: "320°C", icon: "temperature" },
+      { label: "Internal Pressure", value: "10 Bar", icon: "pressure" },
+      { label: "Supply Pressure", value: "5 Bar", icon: "pressure" },
+      { label: "Design", value: "Back Pull-Out", icon: "settings" },
     ],
     mainContent: {
-      general: "Manufactured for heat oil transfer circulation with admissible temperature up to 320°C, internal pump pressure 10 bar, supply pressure 5 bar. NPSH available must exceed pump NPSH required.",
+      general: "Thermic Fluid Hot Oil Pumps are manufactured in special constructions for the circulation of heat Transfer Oils. The application fields are covered by the following high temperature and pressure limits: Admissible Temperature of Flow Medium - 320°C, Admissible Internal Pump Pressure - 10 Bar, Admissible Supply Pressure - 5 Bar. See to it that the existing NPSH Values of the plant should always be greater than the required NPSH Values of the Pump.",
       keyFeatures: [
         {
           title: "High Temperature Capability",
-          description: "Designed to handle temperatures up to 350°C for demanding applications."
+          description: "Designed to handle temperatures up to 320°C for demanding applications."
         },
         {
-          title: "Robust Construction",
-          description: "Heavy duty design ensures reliable operation in high-temperature environments."
-        },
-        {
-          title: "Efficient Heat Transfer",
-          description: "Optimized design maximizes heat transfer efficiency."
+          title: "Low Down-time and Recurring Costs",
+          description: "Back-Pull-Out Design permits quick and easy access to rotating parts without disturbing suction and discharge pipes, electric motor, its connections and alignment."
         },
         {
           title: "Low Maintenance",
-          description: "Simple design and quality components minimize maintenance requirements."
+          description: "Inventory and standardization because of Module System. 39 Sizes with 4 Bearing Housing Units ensure minimum of inventory for maintenance and standardization."
         },
         {
-          title: "Reliable Operation",
-          description: "Proven design ensures consistent performance in critical applications."
+          title: "International Standards Conformity",
+          description: "Generally in conformity with international Standards DIN/ISO/API/BS/ANSI. Ensure reliability and standardization in construction, layout design and foundation. Saves time and cost on drawing and design."
+        },
+        {
+          title: "High Efficiency",
+          description: "The pump is designed to achieve a low NPSH requirement and high efficiency. It is rugged in construction and is versatile in applications."
         }
       ],
       materialConstruction: {
@@ -205,27 +216,25 @@ export const pumpsData = {
           { part: "Mechanical Seal", materials: ["Carbon", "Ceramic", "Silicon Carbide"] }
         ]
       },
-      specifications: [
-        { detail: "Capacity", specification: "Up to 100 m³/hr" },
-        { detail: "Head", specification: "Up to 80 meters" },
-        { detail: "Size", specification: "25 mm to 100 mm" },
-        { detail: "Temperature", specification: "Up to 350°C" }
+      constructionFeatures: [
+        "Volute - Type, end Suction, Backpullout, Centre Line Top discharge, integrally Cast feet, also available center line support casing",
+        "Low down-time and recurring costs Back-Pull-Out Design",
+        "Permits quick and easy access to rotating parts without disturbing suction and discharge pipes, electric motor, its connections and alignment",
+        "Low Maintenance, inventory and standardization because of Module System",
+        "39 Sizes with 4 BearingHousing Units ensure minimum of inventory for maintenance and standardization",
+        "Generally in conformity with international Standards DIN/ISO/API/BS/ANSI",
+        "The pump is designed to achieve a low NPSH requirement and high efficiency"
       ],
       applications: [
-        "Thermic fluid circulation",
-        "Heat transfer systems",
-        "Boiler loops",
-        "Process heating"
-      ],
-      constructionFeatures: [
-        "Volute casing, end-suction, back-pullout, center-line top discharge",
-        "Enclosed impeller with back vanes for pressure reduction",
-        "Graphite packing with cooling chamber",
-        "Reinforced bearing assemblies for high temperature",
-        "Throat ring/bush for stuffing box pressure reduction"
+        "Thermic fluid circulation in industrial heating systems",
+        "Heat transfer oil circulation",
+        "Process heating applications",
+        "Industrial boiler systems",
+        "Manufacturing plants requiring heat transfer"
       ]
     }
   },
+
 
   "polypropylene-pump": {
     seo: {
@@ -237,32 +246,32 @@ export const pumpsData = {
       title: "Polypropylene Pumps",
       subtitle: "Corrosion-resistant pumps for handling aggressive chemicals, acids, and alkalis in various industries",
       mainImage: "/images/polypropylene-hero.svg",
-      badges: ["Corrosion Resistant", "Robust Construction", "High Efficiency", "Leak-proof Design"],
+      badges: ["Corrosion Resistant", "100% Leak Proof", "High Efficiency", "All Liquid Contact Parts Non-Metallic"],
     },
     quickSpecs: [
-      { label: "Capacity", value: "Up to 150 m³/h", icon: "flow" },
-      { label: "Head", value: "Up to 50 m", icon: "pressure" },
-      { label: "Temperature", value: "Up to 90°C", icon: "temperature" },
-      { label: "Speed", value: "1450/2900 rpm", icon: "settings" },
+      { label: "Material", value: "Polypropylene / Mono(ke)", icon: "material" },
+      { label: "Seal Type", value: "Mechanical Seal", icon: "seal" },
+      { label: "Shaft Sleeve", value: "Ceramic", icon: "settings" },
+      { label: "Design", value: "Leak-proof", icon: "water" },
     ],
     mainContent: {
-      general: "Corrosion-resistant pumps for handling aggressive chemicals, acids, and alkalis in various industries.",
+      general: "Corrosion Resistant - All Liquid Contact Parts Non-Metallic. These pumps are designed with 100% Leak Proof Design with Mechanical Seal location by Type Teflon. Ceramic Shaft Sleeve provided for protection of pumps shaft.",
       keyFeatures: [
         {
           title: "Corrosion Resistant",
-          description: "Non-metallic wetted parts resist aggressive chemicals and acids."
+          description: "All Liquid Contact Parts are Non-Metallic, ensuring complete resistance to aggressive chemicals."
         },
         {
-          title: "Robust Construction",
-          description: "Heavy duty design ensures reliable operation in harsh environments."
+          title: "100% Leak Proof Design",
+          description: "Mechanical Seal location by Type Teflon ensures zero leakage."
         },
         {
-          title: "High Efficiency",
-          description: "Optimized design provides excellent performance and energy savings."
+          title: "Ceramic Shaft Sleeve",
+          description: "Provided for protection of pump shaft against wear and corrosion."
         },
         {
-          title: "Leak-proof Design",
-          description: "Advanced sealing technology prevents leaks and contamination."
+          title: "Material Options",
+          description: "Available in Polypropylene, Mono(ke) Polypropylene construction for different chemical compatibilities."
         },
         {
           title: "Easy Maintenance",
@@ -270,25 +279,28 @@ export const pumpsData = {
         }
       ],
       materialConstruction: {
-        description: "These pumps use specialized materials for chemical resistance:",
+        description: "Material of Construction:",
         materials: [
-          { part: "Casing", materials: ["PP", "UHMW-PE"] },
-          { part: "Impeller", materials: ["PP", "UHMW-PE"] },
-          { part: "Shaft", materials: ["SS-316", "Hastelloy"] },
-          { part: "Mechanical Seal", materials: ["Ceramic", "Silicon Carbide"] }
+          { part: "Casing, Impeller, All Wetted Parts", materials: ["Polypropylene", "Mono(ke) Polypropylene"] },
+          { part: "Shaft Sleeve", materials: ["Ceramic"] },
+          { part: "Mechanical Seal", materials: ["Teflon", "Ceramic", "Silicon Carbide"] },
+          { part: "Shaft", materials: ["SS-316", "Hastelloy"] }
         ]
       },
       applications: [
-        "Chemical processing",
-        "Pharmaceutical",
-        "Electroplating",
-        "Effluent treatment",
-        "Dyes & pigments",
-        "Paper & pulp",
-        "Petrochemical"
+        "Chemical processing plants",
+        "Pharmaceutical industries",
+        "Electroplating applications",
+        "Effluent treatment plants",
+        "Dyes & pigments manufacturing",
+        "Paper & pulp industries",
+        "Petrochemical plants",
+        "Acid and alkali handling",
+        "Corrosive liquid transfer"
       ]
     }
   },
+
 
   "stainless-steel-pump": {
     seo: {
@@ -352,6 +364,7 @@ export const pumpsData = {
     }
   },
 
+
   "horizontal-non-clog-pump": {
     seo: {
       title: "Horizontal Non-Clog Slurry Pump | Special Pumps",
@@ -359,60 +372,66 @@ export const pumpsData = {
     },
     hero: {
       breadcrumbs: ["Home", "Products", "Non-Clog Pumps"],
-      title: "Non-Clog Pumps",
-      subtitle: "Heavy-duty non-clog pumps designed to handle solids in suspension and slurry duties",
+      title: "Non-Clog Pumps (Horizontal Type)",
+      subtitle: "Heavy-duty non-clog pumps designed to handle muddy liquids with solids in suspension",
       mainImage: "/images/non-clog-hero.svg",
-      badges: ["Solids Handling", "Robust Construction", "High Efficiency", "Easy Maintenance"],
+      badges: ["Solids Handling", "Open Impeller Design", "Cannot be Clogged", "Robust Construction"],
     },
     quickSpecs: [
-      { label: "Capacity", value: "Up to 200 m³/hr", icon: "flow" },
-      { label: "Head", value: "Up to 60 meters", icon: "pressure" },
-      { label: "Size", value: "25 mm to 200 mm", icon: "settings" },
-      { label: "Solids", value: "Up to 50mm", icon: "water" },
+      { label: "Type", value: "Horizontal, Axially Split", icon: "settings" },
+      { label: "Stage", value: "Single Stage", icon: "pump" },
+      { label: "Impeller", value: "Open Design", icon: "settings" },
+      { label: "Application", value: "Muddy liquids with solids", icon: "water" },
     ],
     mainContent: {
-      general: "Heavy-duty non-clog pumps designed to handle solids in suspension and slurry duties.",
+      general: "Non-Clog pumps are horizontal, type end suction centrifugal pumps for handling heavily contaminated liquids with solids in suspension such as mash, pulps, beet slices, sewage, etc. The impeller has an open design and cannot be contaminated or clogged.",
       keyFeatures: [
         {
+          title: "Open Impeller Design",
+          description: "The impeller has an open design that cannot be contaminated or clogged."
+        },
+        {
           title: "Solids Handling",
-          description: "Designed to handle large solids and fibrous materials without clogging."
+          description: "Designed to handle muddy liquids with solids in suspension such as mash, pulps, beet slices, sewage, etc."
+        },
+        {
+          title: "Horizontal Design",
+          description: "Horizontal, Axially Split casing, Single Stage construction for easy maintenance."
         },
         {
           title: "Robust Construction",
           description: "Heavy duty design ensures reliable operation in demanding conditions."
         },
         {
-          title: "High Efficiency",
-          description: "Optimized impeller design provides excellent performance and energy savings."
-        },
-        {
-          title: "Easy Maintenance",
-          description: "Simple design allows for quick and easy maintenance procedures."
-        },
-        {
           title: "Versatile Applications",
-          description: "Suitable for various industrial applications requiring reliable pumping."
+          description: "Suitable for various industrial applications requiring non-clog pumping."
         }
       ],
       materialConstruction: {
         description: "These pumps use durable materials for solids handling:",
         materials: [
           { part: "Casing", materials: ["Cast Iron", "Cast Steel", "SS-304", "SS-316"] },
-          { part: "Impeller", materials: ["Cast Iron", "Bronze", "SS-304", "SS-316"] },
+          { part: "Impeller (Open Design)", materials: ["Cast Iron", "Bronze", "SS-304", "SS-316"] },
           { part: "Shaft", materials: ["SS-410", "SS-304", "SS-316"] },
           { part: "Mechanical Seal", materials: ["Carbon", "Ceramic", "Silicon Carbide"] }
         ]
       },
       applications: [
-        "Apartment sewage pumping",
+        "Muddy liquids with solids in suspension",
+        "Mash pumping",
+        "Pulps handling",
+        "Beet slices transfer",
+        "Sewage pumping",
+        "Apartment sewage systems",
         "Farm fibrous water",
         "Settling tank mud",
         "Textile dyeing sludge",
-        "Food processing mashes",
-        "Brewery solids removal"
+        "Food processing industries",
+        "Brewery applications"
       ]
     }
   },
+
 
   "vacuum-pump": {
     seo: {
@@ -481,6 +500,7 @@ export const pumpsData = {
     }
   },
 
+
   "filter-press-pump": {
     seo: {
       title: "Filter Press Pump | Special Pumps",
@@ -512,6 +532,7 @@ export const pumpsData = {
     },
   },
 
+
   "high-pressure-multistage-pump": {
     seo: {
       title: "High Pressure Multistage Pump | Special Pumps",
@@ -542,6 +563,7 @@ export const pumpsData = {
     },
   },
 
+
   "rotary-gear-pump": {
     seo: {
       title: "Rotary External Gear Pump | Special Pumps",
@@ -568,6 +590,15 @@ export const pumpsData = {
         "Rolling mill lubrication",
         "Thermic fluid circulation",
         "Viscous liquid transfer",
+        "Glucose pumping",
+        "Mineral oil transfer",
+        "Molasses handling",
+        "Paints pumping",
+        "Caustic lye transfer",
+        "Transformer oil circulation",
+        "Furnace oil pumping",
+        "Adhesives handling",
+        "Sodium silicate transfer"
       ],
       typicalLiquids: [
         "Glucose",
@@ -582,6 +613,7 @@ export const pumpsData = {
       ],
     },
   },
+
 
   "dewatering-mud-pump": {
     seo: {
@@ -612,5 +644,6 @@ export const pumpsData = {
       ],
     },
   },
+
 
 }

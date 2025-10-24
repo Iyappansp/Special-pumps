@@ -30,7 +30,7 @@ function mapSlug(slug: CuratedSlug): { key: string | null; title: string; descri
     case 'chemical-process':
       return { key: 'chemical-process-pumps', title: 'Chemical Process Pumps', description: 'Built to handle aggressive and corrosive liquids safely and reliably in chemical and petrochemical plants.' }
     case 'filter-press':
-      return { key: 'filter-press-pumps-rfp', title: 'Filter Press Pumps (RFP Series)', description: 'Specifically designed for demanding jobs like pumping sludges, slurries, and liquids with a high percentage of solids.' }
+      return { key: 'filter-press-pumps-rfp', title: 'Filter Press Pumps', description: 'Specifically designed for demanding jobs like pumping sludges, slurries, and liquids with a high percentage of solids.' }
     case 'stainless-steel':
       return { key: 'stainless-steel-pump', title: 'Stainless Steel Pumps (Type: SS-304 / SS-316)', description: 'Industrial pumps made from SS304/SS316 for hygienic and corrosive applications.' }
     case 'non-clog':

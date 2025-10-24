@@ -212,32 +212,35 @@ export default function ComponentDetails({ component, onClose }: ComponentDetail
         </motion.div>
 
         {/* Features */}
-        <motion.div 
-          className="features-section"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-        >
-          <h4 className="section-title">
-            <span className="title-icon">✨</span>
-            Key Features
-          </h4>
-          <div className="features-grid">
-            {data.features.map((feature: string, index: number) => (
-              <motion.div 
-                key={index} 
-                className="feature-item"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.4 + index * 0.1 }}
-                whileHover={{ scale: 1.05 }}
-              >
-                <div className="feature-icon">●</div>
-                <span>{feature}</span>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+     <motion.div 
+  className="features-section"
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.3 }}
+>
+  <h4 className="section-title">
+    <span className="title-icon">✨</span>
+    Key Features
+  </h4>
+  <div className="features-grid">
+    {data.mainContent.keyFeatures.map((feature: any, index: number) => (
+      <motion.div 
+        key={index} 
+        className="feature-item"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ delay: 0.4 + index * 0.1 }}
+        whileHover={{ scale: 1.05 }}
+      >
+        <div className="feature-content">
+          <h5 className="feature-heading">{feature.title}</h5>
+          <p className="feature-description">{feature.description}</p>
+        </div>
+      </motion.div>
+    ))}
+  </div>
+</motion.div>
+
         
         {/* Maintenance Schedule */}
         <motion.div 

@@ -9,10 +9,9 @@ export default function Cta3() {
 					<div className="row">
 						<div className="col-lg-6">
 							<div className="cta-header heading2">
-								<h2 className="text-anime-style-3">Find Your Perfect Pump Today Where Comfort Meets Style</h2>
+								<h2 className="text-anime-style-3">Step Into Performance with Special Pumps</h2>
 								<div className="space16" />
-								<p data-aos="fade-left" data-aos-duration={900}>At Special Pumps, we believe the finding a home is
-									more a transaction-it’s a journey discovering the perfect space that fits your lifestyles.
+								<p data-aos="fade-left" data-aos-duration={900}>At Special Pumps, we believe your next home is more than just a place it's where your future begins you are buy.
 								</p>
 								<div className="space30" />
 								<form data-aos="fade-left" data-aos-duration={1100}>

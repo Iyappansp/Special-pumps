@@ -13,10 +13,10 @@ export default function Cta1() {
 								<div className="row align-items-center">
 									<div className="col-lg-5">
 										<div className="cta-header">
-											<h2 className="text-anime-style-3">Step Into Your Home with Special Pumps</h2>
+											<h2 className="text-anime-style-3">Step Into Performance with Special Pumps</h2>
 											<div className="space16" />
-											<p data-aos="fade-left" data-aos-duration={1000}>At Special Pumps, we believe your next
-												home is more than just a place – it’s where your future begins you’re buy.</p>
+											<p data-aos="fade-left" data-aos-duration={1000}>
+At Special Pumps, we believe your next home is more than just a place it's where your future begins you are buy.</p>
 										</div>
 									</div>
 									<div className="col-lg-2" />

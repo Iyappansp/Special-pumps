@@ -4,6 +4,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import Layout from '@/components/layout/Layout'
 import ComponentDetails from '@/components/ComponentDetails'
 import { div } from 'framer-motion/client'
+import Link from "next/link"
+
+import Cta2 from '@/components/sections/Cta2'
 export default function InstallationMethodsPage() {
   const [activeStep, setActiveStep] = useState<number>(0)
   const [isFlowing, setIsFlowing] = useState<boolean>(false)
@@ -59,6 +62,23 @@ export default function InstallationMethodsPage() {
   return (
     <Layout headerStyle={4} footerStyle={4}>
       {/* Hero Section with Integrated Controls */}
+        <div className="hero-inner-section-area-sidebar">
+						<img src="/property/hero-img.webp" alt="Special Pumps" className="hero-img1" />
+						<div className="container">
+							<div className="row">
+								<div className="col-lg-12">
+									<div className="hero-header-area text-center">
+										<Link href="/">Home <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+												<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
+												</path>
+											</svg>Installation Methods</Link>
+										<div className="space24" />
+										<h1>Installation Methods</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
       <section className="installation-hero">
         <div className="hero-background">
           <div className="hero-overlay" />
@@ -73,10 +93,12 @@ export default function InstallationMethodsPage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
+              
               <span className="hero-badge">Installation Methods</span>
               <h1 className="hero-title">
-                Interactive Pump
-                <span className="title-highlight"> Installation Guide</span>
+                Interactive Pump &
+                Installation Guide
+                <span className="title-highlight"> </span>
               </h1>
               <p className="hero-description">
                 Step-by-step visual guide for industrial pump installation with real-time simulation and technical specifications.
@@ -176,14 +198,14 @@ export default function InstallationMethodsPage() {
 
             <div className="diagram-container">
               <AnimatePresence mode="wait">
-                <motion.div
+                {/* <motion.div
                   key={activeStep}
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
                   transition={{ duration: 0.5 }}
                   className="svg-container"
-                >
+                > */}
                   <AnimatedInstallationSVG 
                     activeStep={activeStep}
                     isFlowing={isFlowing}
@@ -191,7 +213,7 @@ export default function InstallationMethodsPage() {
                     steps={steps}
                     isLoading={isLoading}
                   />
-                </motion.div>
+                {/* </motion.div> */}
               </AnimatePresence>
 
               {/* Instructions */}
@@ -255,6 +277,8 @@ export default function InstallationMethodsPage() {
           </motion.div>
         )}
       </AnimatePresence>
+      <Cta2 />
+
     </Layout>
   )
 }
@@ -1090,4 +1114,5 @@ function AnimatedInstallationSVG_Oldv2({
   )
   
 }
+
 

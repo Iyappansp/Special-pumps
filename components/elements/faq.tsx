@@ -184,8 +184,8 @@ export default function Faq() {
 						<div className="container">
 							<div className="row">
 								<div className="col-lg-10 m-auto">
-									<div className="heading1">
-										<h2>Frequently Asked Questions-Faq's</h2>
+									<div className="heading1 text-center">
+										<h2>Frequently Asked Questions</h2>
 										<div className="space50" />
 									</div>
 									<div className="faq-area">
