@@ -12,13 +12,13 @@ export default function Cta4() {
 								<div className="row align-items-center">
 									<div className="col-lg-5">
 										<div className="cta-header">
-											<h2 className="text-anime-style-3">Experience Real Estate The Ways It Should Be</h2>
+											<h2 className="text-anime-style-3">Step Into Performance with Special Pumps</h2>
 											<div className="space16" />
-											<p data-aos="fade-left" data-aos-duration={900}>Take next step toward finding your
-												dream home with ease and confidence. At Special Pumps, we’re dedicated.</p>
+											<p data-aos="fade-left" data-aos-duration={900}>Step Into Your Home with Special Pumps
+At Special Pumps, we believe your next home is more than just a place it's where your future begins you are buy.</p>
 										</div>
 									</div>
-									<div className="col-lg-2" />
+	 								<div className="col-lg-2" />
 									<div className="col-lg-5" data-aos="zoom-in-up" data-aos-duration={1000}>
 										<form>
 											<input type="text" placeholder="Email Address" />

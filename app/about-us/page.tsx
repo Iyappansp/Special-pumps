@@ -6,8 +6,6 @@ import Slider from "react-slick"
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import CounterUp from '@/components/elements/CounterUp'
-
-
 export default function AboutUs() {
 	const settings2 = {
 		slidesToShow: 1,
@@ -66,8 +64,7 @@ export default function AboutUs() {
 							<div className="row">
 								<div className="col-lg-12">
 									<div className="hero-header-area text-center">
-										<Link href="/">Home 
-										
+										<Link href="/">Home 		
 										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
 												<path d="M13.1717 12.0007L8.22192 7.05093L9.63614 5.63672L16.0001 12.0007L9.63614 18.3646L8.22192 16.9504L13.1717 12.0007Z">
 												</path>
@@ -102,7 +99,7 @@ export default function AboutUs() {
 								<div className="col-lg-1" />
 								<div className="col-lg-5">
 									<div className="about-heading heading1">
-																				<h2 className="text-anime-style-3">About Us</h2>
+									<h2 className="text-anime-style-3">About Us</h2>
 
 										<div className="space20" />
 										<h5 data-aos="fade-left" data-aos-duration={800}>Excellence Industrials Pump Engineering</h5>
@@ -113,7 +110,7 @@ export default function AboutUs() {
 											<div className="row">
 											<div className="col-lg-4 col-md-4 col-6">
   <div className="counter-boxarea text-center">
-    <h2><CounterUp end={150} /></h2>
+    <h2><CounterUp end={150} />+</h2>
     <div className="space12" />
     <p>Pumps Sold</p>
   </div>
@@ -121,7 +118,7 @@ export default function AboutUs() {
 
 <div className="col-lg-4 col-md-4 col-6">
   <div className="counter-boxarea text-center">
-    <h2><CounterUp end={100} /></h2>
+    <h2><CounterUp end={100} />+</h2>
     <div className="space12" />
     <p>Happy Clients</p>
   </div>
@@ -134,9 +131,7 @@ export default function AboutUs() {
     <div className="space12" />
     <p>Satisfaction Rate</p>
   </div>
-</div>
-
-											</div>
+</div>				</div>
 										</div>
 										<div className="space32" />
 										<div className="btn-area1" data-aos="fade-left" data-aos-duration={1100}>
@@ -313,100 +308,125 @@ export default function AboutUs() {
 									</div>
 								</div>
 								<div className="col-lg-8">
-									<div className="row">
-										<div className="col-lg-6 col-md-6">
-											<div className="offer-boxarea">
-												<div className="icons">
-													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-														<path d="M19 21H5C4.44772 21 4 20.5523 4 20V11L1 11L11.3273 1.6115C11.7087 1.26475 12.2913 1.26475 12.6727 1.6115L23 11L20 11V20C20 20.5523 19.5523 21 19 21ZM6 19H18V9.15745L12 3.7029L6 9.15745V19ZM8 15H16V17H8V15Z">
-														</path>
-													</svg>
-												</div>
-												<div className="space24" />
-												<div className="content">
-													<Link href="/products/chemical-process">Pump Selection & Sizing
+  <div className="row">
+    {/* Pump Selection & Sizing */}
+    <div className="col-lg-6 col-md-6">
+      <div className="offer-boxarea">
+        <div className="icons text-orange-500">
+          {/* Pump Icon */}
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.8" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM19.4 15a8 8 0 0 0 0-6l2.1-1.2-1.4-2.4-2.4 1.4a8 8 0 0 0-6-2.1L11 2H9l-.7 2.7a8 8 0 0 0-6 2.1L0 5.4l1.4 2.4 2.1 1.2a8 8 0 0 0 0 6l-2.1 1.2 1.4 2.4 2.4-1.4a8 8 0 0 0 6 2.1l.7 2.7h2l.7-2.7a8 8 0 0 0 6-2.1l2.4 1.4 1.4-2.4L19.4 15z" />
+</svg>
 
-</Link>
-													<div className="space16" />
-													<p>Get the right pump for flow, head, temperature, and fluid compatibility across Thermic Fluid, Polypropylene, Process/SS, Multistage, Non Clog, Filter Press, Rotary Gear, and Dewatering ranges.</p>
-													<div className="space24" />
-													<Link href="/" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-														<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z">
-														</path>
-													</svg></Link>
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 col-md-6">
-											<div className="offer-boxarea">
-												<div className="icons">
-													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-														<path d="M12.5812 2.68627C12.2335 2.43791 11.7664 2.43791 11.4187 2.68627L1.9187 9.47198L3.08118 11.0994L11.9999 4.7289L20.9187 11.0994L22.0812 9.47198L12.5812 2.68627ZM19.5812 12.6863L12.5812 7.68627C12.2335 7.43791 11.7664 7.43791 11.4187 7.68627L4.4187 12.6863C4.15591 12.874 3.99994 13.177 3.99994 13.5V20C3.99994 20.5523 4.44765 21 4.99994 21H18.9999C19.5522 21 19.9999 20.5523 19.9999 20V13.5C19.9999 13.177 19.844 12.874 19.5812 12.6863ZM5.99994 19V14.0146L11.9999 9.7289L17.9999 14.0146V19H5.99994Z">
-														</path>
-													</svg>
-												</div>
-												<div className="space24" />
-												<div className="content">
-													<Link href="/products/chemical-process">Installation & Commissioning
+        </div>
+        <div className="space24" />
+        <div className="content">
+          <Link href="/products/chemical-process">Pump Selection & Sizing</Link>
+          <div className="space16" />
+          <p>
+            Get the right pump for flow, head, temperature, and fluid compatibility across Thermic Fluid, Polypropylene,
+            Process/SS, Multistage, Non Clog, Filter Press, Rotary Gear, and Dewatering ranges.
+          </p>
+          <div className="space24" />
+          <Link href="/" className="readmore">
+            Learn More{" "}
+      <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M13.05 12.36L7.39 18.02l-1.41-1.41 5.66-5.66-4.95-4.95H18v11.31l-4.95-4.95z" />
+            </svg>
 
-</Link>
-													<div className="space16" />
-													<p>Foundation, alignment, piping interface, and start‘up checks to put new or replacement pumps into reliable operation, fast, Complete foundation, and start-up checks to get new or replacement pumps.</p>
-													<div className="space24" />
-													<Link href="/" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-														<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z">
-														</path>
-													</svg></Link>
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 col-md-6">
-											<div className="offer-boxarea">
-												<div className="icons">
-													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-														<path d="M10.7577 11.8281L18.6066 3.97919L20.0208 5.3934L18.6066 6.80761L21.0815 9.28249L19.6673 10.6967L17.1924 8.22183L15.7782 9.63604L17.8995 11.7574L16.4853 13.1716L14.364 11.0503L12.1719 13.2423C13.4581 15.1837 13.246 17.8251 11.5355 19.5355C9.58291 21.4882 6.41709 21.4882 4.46447 19.5355C2.51184 17.5829 2.51184 14.4171 4.46447 12.4645C6.17493 10.754 8.81633 10.5419 10.7577 11.8281ZM10.1213 18.1213C11.2929 16.9497 11.2929 15.0503 10.1213 13.8787C8.94975 12.7071 7.05025 12.7071 5.87868 13.8787C4.70711 15.0503 4.70711 16.9497 5.87868 18.1213C7.05025 19.2929 8.94975 19.2929 10.1213 18.1213Z">
-														</path>
-													</svg>
-												</div>
-												<div className="space24" />
-												<div className="content">
-													<Link href="/products/chemical-process"> Maintenance & Rentals</Link>
-													<div className="space16" />
-													<p> Preventive servicing, overhauls, and OEM spares to maximize uptime, reduce costs, and extend pump life.</p>
-													<div className="space24" />
-													<Link href="/" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-														<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z">
-														</path>
-													</svg></Link>
-												</div>
-											</div>
-										</div>
-										<div className="col-lg-6 col-md-6">
-											<div className="offer-boxarea">
-												<div className="icons">
-													<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-														<path d="M8.68637 4.00008L11.293 1.39348C11.6835 1.00295 12.3167 1.00295 12.7072 1.39348L15.3138 4.00008H19.0001C19.5524 4.00008 20.0001 4.4478 20.0001 5.00008V8.68637L22.6067 11.293C22.9972 11.6835 22.9972 12.3167 22.6067 12.7072L20.0001 15.3138V19.0001C20.0001 19.5524 19.5524 20.0001 19.0001 20.0001H15.3138L12.7072 22.6067C12.3167 22.9972 11.6835 22.9972 11.293 22.6067L8.68637 20.0001H5.00008C4.4478 20.0001 4.00008 19.5524 4.00008 19.0001V15.3138L1.39348 12.7072C1.00295 12.3167 1.00295 11.6835 1.39348 11.293L4.00008 8.68637V5.00008C4.00008 4.4478 4.4478 4.00008 5.00008 4.00008H8.68637ZM6.00008 6.00008V9.5148L3.5148 12.0001L6.00008 14.4854V18.0001H9.5148L12.0001 20.4854L14.4854 18.0001H18.0001V14.4854L20.4854 12.0001L18.0001 9.5148V6.00008H14.4854L12.0001 3.5148L9.5148 6.00008H6.00008ZM12.0001 16.0001C9.79094 16.0001 8.00008 14.2092 8.00008 12.0001C8.00008 9.79094 9.79094 8.00008 12.0001 8.00008C14.2092 8.00008 16.0001 9.79094 16.0001 12.0001C16.0001 14.2092 14.2092 16.0001 12.0001 16.0001ZM12.0001 14.0001C13.1047 14.0001 14.0001 13.1047 14.0001 12.0001C14.0001 10.8955 13.1047 10.0001 12.0001 10.0001C10.8955 10.0001 10.0001 10.8955 10.0001 12.0001C10.0001 13.1047 10.8955 14.0001 12.0001 14.0001Z">
-														</path>
-													</svg>
-												</div>
-												<div className="space24" />
-												<div className="content">
-													<Link href="/products/chemical-process">Performance Optimization
-</Link>
-													<div className="space16" />
-													<p>Troubleshooting and efficiency upgrades for hot oil, chemical, slurry, filtration, and dewatering duty cycles.
+          </Link>
+        </div>
+      </div>
+    </div>
 
-</p>
-													<div className="space24" />
-													<Link href="/" className="readmore">learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-														<path d="M13.0508 12.361L7.39395 18.0179L5.97974 16.6037L11.6366 10.9468L6.68684 5.99707H18.0006V17.3108L13.0508 12.361Z">
-														</path>
-													</svg></Link>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
+    {/* Installation & Commissioning */}
+    <div className="col-lg-6 col-md-6">
+      <div className="offer-boxarea">
+        <div className="icons text-orange-500">
+          {/* Wrench Icon */}
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.8" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM19.4 15a8 8 0 0 0 0-6l2.1-1.2-1.4-2.4-2.4 1.4a8 8 0 0 0-6-2.1L11 2H9l-.7 2.7a8 8 0 0 0-6 2.1L0 5.4l1.4 2.4 2.1 1.2a8 8 0 0 0 0 6l-2.1 1.2 1.4 2.4 2.4-1.4a8 8 0 0 0 6 2.1l.7 2.7h2l.7-2.7a8 8 0 0 0 6-2.1l2.4 1.4 1.4-2.4L19.4 15z" />
+</svg>
+
+
+        </div>
+        <div className="space24" />
+        <div className="content">
+          <Link href="/products/chemical-process">Installation & Commissioning</Link>
+          <div className="space16" />
+          <p>
+            Foundation, alignment, piping interface, and start-up checks to put new or replacement pumps into reliable operation quickly and efficiently.
+          </p>
+          <div className="space24" />
+          <Link href="/" className="readmore">
+            Learn More{" "}
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M13.05 12.36L7.39 18.02l-1.41-1.41 5.66-5.66-4.95-4.95H18v11.31l-4.95-4.95z" />
+            </svg>
+
+          </Link>
+        </div>
+      </div>
+    </div>
+
+    {/* Maintenance & Rentals */}
+    <div className="col-lg-6 col-md-6">
+      <div className="offer-boxarea">
+        <div className="icons text-orange-500">
+          {/* Gear Icon */}
+         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.8" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM19.4 15a8 8 0 0 0 0-6l2.1-1.2-1.4-2.4-2.4 1.4a8 8 0 0 0-6-2.1L11 2H9l-.7 2.7a8 8 0 0 0-6 2.1L0 5.4l1.4 2.4 2.1 1.2a8 8 0 0 0 0 6l-2.1 1.2 1.4 2.4 2.4-1.4a8 8 0 0 0 6 2.1l.7 2.7h2l.7-2.7a8 8 0 0 0 6-2.1l2.4 1.4 1.4-2.4L19.4 15z" />
+</svg>
+
+        </div>
+        <div className="space24" />
+        <div className="content">
+          <Link href="/products/chemical-process">Maintenance & Rentals</Link>
+          <div className="space16" />
+          <p>
+            Preventive servicing, overhauls, and OEM spares to maximize uptime, reduce costs, and extend pump life.
+          </p>
+          <div className="space24" />
+          <Link href="/" className="readmore">
+            Learn More{" "}
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M13.05 12.36L7.39 18.02l-1.41-1.41 5.66-5.66-4.95-4.95H18v11.31l-4.95-4.95z" />
+            </svg>
+          </Link>
+        </div>
+      </div>
+    </div>
+
+    {/* Performance Optimization */}
+    <div className="col-lg-6 col-md-6">
+      <div className="offer-boxarea">
+        <div className="icons text-orange-500">
+          {/* Motor Icon */}
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.8" stroke="currentColor">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM19.4 15a8 8 0 0 0 0-6l2.1-1.2-1.4-2.4-2.4 1.4a8 8 0 0 0-6-2.1L11 2H9l-.7 2.7a8 8 0 0 0-6 2.1L0 5.4l1.4 2.4 2.1 1.2a8 8 0 0 0 0 6l-2.1 1.2 1.4 2.4 2.4-1.4a8 8 0 0 0 6 2.1l.7 2.7h2l.7-2.7a8 8 0 0 0 6-2.1l2.4 1.4 1.4-2.4L19.4 15z" />
+</svg>
+
+        </div>
+        <div className="space24" />
+        <div className="content">
+          <Link href="/products/chemical-process">Performance Optimization</Link>
+          <div className="space16" />
+          <p>
+            Troubleshooting and efficiency upgrades for hot oil, chemical, slurry, filtration, and dewatering duty cycles.
+          </p>
+          <div className="space24" />
+          <Link href="/" className="readmore">
+            Learn More{" "}
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M13.05 12.36L7.39 18.02l-1.41-1.41 5.66-5.66-4.95-4.95H18v11.31l-4.95-4.95z" />
+            </svg>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 							</div>
 						</div>
 					</div>

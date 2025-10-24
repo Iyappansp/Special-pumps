@@ -242,7 +242,6 @@ export default function ChemicalProcessPumpTemplate({ data }: { data: any }) {
                   } else if (typeof category === 'string') {
                     return (
                       <div key={index} className="application-category">
-                        <h4>Application</h4>
                         <p style={{ color: '#475569', margin: 0 }}>{category}</p>
                       </div>
                     )
@@ -372,7 +371,9 @@ export default function ChemicalProcessPumpTemplate({ data }: { data: any }) {
             {toast.message}
           </div>
         )}
+        <br />
         <Cta2 />
+        <br />
       </div>
     </Layout>
   )
