@@ -1,0 +1,49 @@
+@media (prefers-reduced-motion: reduce) {
+  .spinner,
+  .blade,
+  .label {
+    animation: none !important;
+  }
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-family: system-ui, sans-serif;
+}
+
+/* .visible preserved for compatibility but not required */
+
+.spinner {
+  width: 70px;
+  height: 70px;
+  border: 6px solid #64748b;
+  border-top-color: #1e40af;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+/* blade styles removed; ring spinner used */
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* fadeIn removed */

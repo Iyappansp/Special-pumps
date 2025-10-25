@@ -24,7 +24,9 @@ import StoreProvider from '@/features/StoreProvider'
 import FloatingContacts from '@/components/FloatingContacts'
 import type { Metadata } from "next"
 import { Inter, DM_Sans } from "next/font/google"
-import ClientLoader from './ClientLoader'
+import { Suspense } from 'react'
+import GlobalLoader from '@/components/GlobalLoader'
+import PageLoader from '@/components/ui/PageLoader'
 const inter = Inter({
 	weight: ['300', '400', '500', '600', '700', '800', '900'],
 	subsets: ['latin'],
@@ -50,12 +52,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${dmSans.variable} ${inter.className} homepage4-body`}>
-        <ClientLoader>
-          <StoreProvider>
+        <StoreProvider>
+          <Suspense fallback={<PageLoader autoDismissMs={null} />}>
+            <GlobalLoader />
             {children}
             <FloatingContacts />
-          </StoreProvider>
-        </ClientLoader>
+          </Suspense>
+        </StoreProvider>
       </body>
     </html>
   )
