@@ -1,7 +1,7 @@
 'use client'
 
-import Loading from '@/components/Loading'
+import PageLoader from '@/components/ui/PageLoader'
 
 export default function RouteLoading() {
-  return <Loading show={true} />
+  return <PageLoader autoDismissMs={null} />
 }

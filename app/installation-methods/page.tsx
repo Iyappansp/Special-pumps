@@ -492,11 +492,11 @@ function AnimatedInstallationSVG_Clean({
           <rect x="60" y="140" width="130" height="150" fill="white" stroke={config.color} strokeWidth="4" rx="10" filter="url(#shadowFilter)" />
           <motion.rect x="70" y="230" width="110" fill="url(#waterGradient)" initial={{ height: 0 }} animate={{ height: isFlowing ? 50 : 30 }} transition={{ duration: 2 }} rx="5" />
           <text x="125" y="125" textAnchor="middle" className="tank-title">Quartz Tank</text>
-
+br
           {/* Collection Tank */}
           <rect x="700" y="100" width="110" height="140" fill="white" stroke={config.color} strokeWidth="4" rx="10" filter="url(#shadowFilter)" />
           <motion.rect x="710" y="180" width="90" fill={config.color} opacity="0.7" initial={{ height: 0 }} animate={{ height: isFlowing ? 50 : 25 }} transition={{ duration: 2 }} rx="5" />
-          <text x="755" y="85" textAnchor="middle" className="tank-title">Collection Tank</text>
+          {/* <text x="755" y="85" textAnchor="middle" className="tank-title">Collection Tank</text> */}
 
           {/* Filter Press */}
           <rect x="650" y="320" width="160" height="80" fill="#f7fafc" stroke="#718096" strokeWidth="3" rx="8" filter="url(#shadowFilter)" />
@@ -929,7 +929,7 @@ function AnimatedInstallationSVG_Oldv2({
             transition={{ duration: 1 }}
             rx="4"
           />
-
+                      
           <text x="625" y="70" textAnchor="middle" className="component-title">
             Collection Tank
           </text>
